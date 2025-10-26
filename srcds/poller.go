@@ -3,6 +3,7 @@ package srcds
 import (
 	"log"
 	"os"
+	"sidecar/srcds/metrics"
 	"strconv"
 	"time"
 
@@ -47,13 +48,7 @@ func pollMetrics(addr string, password string) bool {
 	}
 	defer conn.Close()
 
-	stats, err := conn.Execute("stats")
-	if err != nil {
-		log.Printf("Failed to execute RCON command: %v", err)
-		return false
-	}
-
-	ParseAndRecordSrcdsMetrics(stats)
+	metrics.CollectMetrics(conn)
 
 	return true
 }

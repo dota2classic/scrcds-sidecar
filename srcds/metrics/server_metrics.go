@@ -1,25 +1,17 @@
-package srcds
+package metrics
 
 import (
 	"fmt"
 	"log"
-	"os"
 	"sidecar/state"
 	"strconv"
 	"strings"
-	"sync"
 
+	"github.com/gorcon/rcon"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/push"
 )
 
 var (
-	registry     = prometheus.NewRegistry()
-	pushgateway  = os.Getenv("PUSHGATEWAY_URL")
-	jobName      = "gameserver_sidecar"
-	registerOnce sync.Once
-
-	// Metrics definitions
 	LoadingTime = prometheus.NewHistogramVec(
 		prometheus.HistogramOpts{
 			Name:    "d2c_game_server_loading_time",
@@ -60,23 +52,6 @@ var (
 		},
 		[]string{"host", "match_id", "server_url", "lobby_type"},
 	)
-
-	PingGauge = prometheus.NewGaugeVec(
-		prometheus.GaugeOpts{
-			Name: "srcds_metrics_ping",
-			Help: "Ping per player",
-		},
-		[]string{"host", "match_id", "server_url", "lobby_type", "steam_id"},
-	)
-
-	LossGauge = prometheus.NewGaugeVec(
-		prometheus.GaugeOpts{
-			Name: "srcds_metrics_loss",
-			Help: "Packet loss per player",
-		},
-		[]string{"host", "match_id", "server_url", "lobby_type", "steam_id"},
-	)
-
 	PlayerCountGauge = prometheus.NewGaugeVec(
 		prometheus.GaugeOpts{
 			Name: "srcds_player_count",
@@ -86,8 +61,8 @@ var (
 	)
 )
 
-// SrcdsServerMetrics represents server stats
-type SrcdsServerMetrics struct {
+// ServerMetrics represents server stats
+type ServerMetrics struct {
 	CPU     float64
 	In      float64
 	Out     float64
@@ -97,9 +72,18 @@ type SrcdsServerMetrics struct {
 	Players int
 }
 
-// ParseAndRecordSrcdsMetrics parses the raw stats string into SrcdsServerMetrics
-func ParseAndRecordSrcdsMetrics(statsRaw string) {
-	stats, err := parseRawStats(statsRaw)
+func collectServerMetrics(conn *rcon.Conn) {
+	stats, err := conn.Execute("stats")
+	if err != nil {
+		log.Printf("Failed to execute RCON command: %v", err)
+		return
+	}
+	parseAndRecordSrcdsMetrics(stats)
+}
+
+// parseAndRecordSrcdsMetrics parses the raw stats string into ServerMetrics
+func parseAndRecordSrcdsMetrics(statsRaw string) {
+	stats, err := parseRawRconStatsResponse(statsRaw)
 	if err != nil {
 		log.Println("Error parsing stats: ", err)
 		return
@@ -120,7 +104,7 @@ func ParseAndRecordSrcdsMetrics(statsRaw string) {
 
 }
 
-func parseRawStats(statsRaw string) (*SrcdsServerMetrics, error) {
+func parseRawRconStatsResponse(statsRaw string) (*ServerMetrics, error) {
 	lines := strings.Split(statsRaw, "\n")
 	if len(lines) < 3 {
 		return nil, fmt.Errorf("invalid stats format")
@@ -163,7 +147,7 @@ func parseRawStats(statsRaw string) (*SrcdsServerMetrics, error) {
 		return nil, err
 	}
 
-	return &SrcdsServerMetrics{
+	return &ServerMetrics{
 		CPU:     cpu,
 		In:      in,
 		Out:     out,
@@ -172,34 +156,4 @@ func parseRawStats(statsRaw string) (*SrcdsServerMetrics, error) {
 		FPS:     fps,
 		Players: players,
 	}, nil
-}
-
-// Register all metrics once
-func initMetrics() {
-	registerOnce.Do(func() {
-		registry.MustRegister(
-			LoadingTime,
-			CpuGauge,
-			FpsGauge,
-			InGauge,
-			OutGauge,
-			PingGauge,
-			LossGauge,
-			PlayerCountGauge,
-		)
-	})
-}
-
-// Push all metrics to the Pushgateway
-func PushMetrics(groupLabels map[string]string) {
-	initMetrics()
-
-	pusher := push.New(pushgateway, jobName).Gatherer(registry)
-	for k, v := range groupLabels {
-		pusher = pusher.Grouping(k, v)
-	}
-
-	if err := pusher.Push(); err != nil {
-		log.Printf("Failed to push metrics: %v", err)
-	}
 }

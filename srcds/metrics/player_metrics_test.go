@@ -1,4 +1,4 @@
-package srcds
+package metrics
 
 import (
 	"reflect"
@@ -105,7 +105,7 @@ func TestParseStatusRow_InvalidRow(t *testing.T) {
 
 func expectParsedPlayers(t *testing.T, raw string, want []PlayerMetric) {
 
-	got := ParseStatusResponse(raw)
+	got := parseStatusResponse(raw)
 
 	if len(got) != len(want) {
 		t.Fatalf("expected %d players, got %d", len(want), len(got))

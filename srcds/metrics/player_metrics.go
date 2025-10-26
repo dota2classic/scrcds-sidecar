@@ -1,9 +1,13 @@
-package srcds
+package metrics
 
 import (
+	"log"
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/gorcon/rcon"
+	"github.com/prometheus/client_golang/prometheus"
 )
 
 // PlayerMetric represents a player entry from `status` command output.
@@ -17,6 +21,47 @@ type PlayerMetric struct {
 	State     string
 	Rate      int
 	Adr       string
+}
+
+var (
+	PingGauge = prometheus.NewGaugeVec(
+		prometheus.GaugeOpts{
+			Name: "srcds_metrics_ping",
+			Help: "Ping per player",
+		},
+		[]string{"host", "match_id", "server_url", "lobby_type", "steam_id"},
+	)
+
+	LossGauge = prometheus.NewGaugeVec(
+		prometheus.GaugeOpts{
+			Name: "srcds_metrics_loss",
+			Help: "Packet loss per player",
+		},
+		[]string{"host", "match_id", "server_url", "lobby_type", "steam_id"},
+	)
+)
+
+func collectPlayerMetrics(conn *rcon.Conn) {
+	status, err := conn.Execute("status")
+	if err != nil {
+		log.Printf("Failed to execute RCON command: %v", err)
+		return
+	}
+	parseAndRecordSrcdsMetrics(status)
+}
+
+func parseAndRecordPlayerMetrics(statusRaw string) {
+	stats, err := parseRawRconStatsResponse(statusRaw)
+	if err != nil {
+		log.Println("Error parsing status: ", err)
+		return
+	}
+
+	labels := getMetricLabels()
+
+	PingGauge.WithLabelValues(labels...).Set(stats.Out)
+	LossGauge.WithLabelValues(labels...).Set(float64(stats.Players))
+
 }
 
 // parseStatusRow parses a single row of the `status` output.
@@ -66,8 +111,8 @@ func parseStatusRow(row string) *PlayerMetric {
 	}
 }
 
-// ParseStatusResponse parses the full `status` command output.
-func ParseStatusResponse(raw string) []PlayerMetric {
+// parseStatusResponse parses the full `status` command output.
+func parseStatusResponse(raw string) []PlayerMetric {
 	lines := strings.Split(raw, "\n")
 	startIdx := -1
 

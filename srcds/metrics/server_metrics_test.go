@@ -1,4 +1,4 @@
-package srcds
+package metrics
 
 import (
 	"reflect"
@@ -11,7 +11,7 @@ func TestParseStatsResponse(t *testing.T) {
 L 01/06/2025 - 00:03:30: rcon from \"156.253.249.142:55454\": command \"stats\"
 `
 
-	want := &SrcdsServerMetrics{
+	want := &ServerMetrics{
 		CPU:     31.01,
 		FPS:     59.94,
 		Uptime:  3,
@@ -20,25 +20,25 @@ L 01/06/2025 - 00:03:30: rcon from \"156.253.249.142:55454\": command \"stats\"
 		Players: 9,
 	}
 
-	got, err := parseRawStats(raw)
+	got, err := parseRawRconStatsResponse(raw)
 	if err != nil {
-		t.Fatalf("ParseAndRecordSrcdsMetrics returned error: %v", err)
+		t.Fatalf("parseAndRecordSrcdsMetrics returned error: %v", err)
 	}
 
 	if !reflect.DeepEqual(got, want) {
-		t.Errorf("ParseAndRecordSrcdsMetrics = %+v; want %+v", got, want)
+		t.Errorf("parseAndRecordSrcdsMetrics = %+v; want %+v", got, want)
 	}
 }
 
 func TestParseStatsResponse_Invalid(t *testing.T) {
 	// Too few lines
-	_, err := parseRawStats("only one line")
+	_, err := parseRawRconStatsResponse("only one line")
 	if err == nil {
 		t.Errorf("expected error for invalid input, got nil")
 	}
 
 	// Too few fields
-	_, err = parseRawStats(`
+	_, err = parseRawRconStatsResponse(`
 header
 1 2 3
 footer
