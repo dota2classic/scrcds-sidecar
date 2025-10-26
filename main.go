@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"./models"
+	"sidecar/models"
 )
 
 func main() {
