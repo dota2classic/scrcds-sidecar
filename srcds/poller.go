@@ -12,7 +12,7 @@ import (
 // If the server fails more than maxFails times in a row, uploadAndExit() is called.
 func RunHeartbeatPoller() {
 	const (
-		addr     = "localhost:27015"
+		addr     = "127.0.0.1:27015"
 		password = "rconpassword"
 		interval = 1 * time.Second
 		maxFails = 15
@@ -39,7 +39,7 @@ func RunHeartbeatPoller() {
 }
 
 // pollServer attempts to connect and run the RCON status command
-func pollServer(addr, password string) bool {
+func pollServer(addr string, password string) bool {
 	conn, err := rcon.Dial(addr, password)
 	if err != nil {
 		log.Printf("Failed to connect to RCON: %v", err)
