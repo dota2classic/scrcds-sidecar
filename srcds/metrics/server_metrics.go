@@ -111,7 +111,7 @@ func parseRawRconStatsResponse(statsRaw string) (*ServerMetrics, error) {
 
 	if len(fields) < 7 {
 		fmt.Printf("Fields %s", fields)
-		return nil, fmt.Errorf("not enough fields in stats line")
+		return nil, fmt.Errorf("not enough fields in stats line: %d", len(fields))
 	}
 
 	cpu, err := strconv.ParseFloat(fields[0], 64)

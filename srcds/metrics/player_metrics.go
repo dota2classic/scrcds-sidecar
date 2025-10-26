@@ -47,7 +47,7 @@ func collectPlayerMetrics(conn *rcon.Conn) {
 		log.Printf("Failed to execute RCON command: %v", err)
 		return
 	}
-	parseAndRecordSrcdsMetrics(status)
+	parseAndRecordPlayerMetrics(status)
 }
 
 func parseAndRecordPlayerMetrics(statusRaw string) {
