@@ -3,7 +3,6 @@ package metrics
 import (
 	"fmt"
 	"log"
-	"sidecar/state"
 	"strconv"
 	"strings"
 
@@ -89,12 +88,7 @@ func parseAndRecordSrcdsMetrics(statsRaw string) {
 		return
 	}
 
-	labels := []string{
-		state.GlobalMatchInfo.Host,
-		strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10),
-		state.GlobalMatchInfo.ServerAddress,
-		string(rune(state.GlobalMatchInfo.LobbyType)),
-	}
+	labels := getMetricLabels()
 
 	CpuGauge.WithLabelValues(labels...).Set(stats.CPU)
 	FpsGauge.WithLabelValues(labels...).Set(stats.FPS)
