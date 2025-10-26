@@ -20,25 +20,25 @@ L 01/06/2025 - 00:03:30: rcon from \"156.253.249.142:55454\": command \"stats\"
 		Players: 9,
 	}
 
-	got, err := ParseStatsResponse(raw)
+	got, err := parseRawStats(raw)
 	if err != nil {
-		t.Fatalf("ParseStatsResponse returned error: %v", err)
+		t.Fatalf("ParseAndRecordSrcdsMetrics returned error: %v", err)
 	}
 
 	if !reflect.DeepEqual(got, want) {
-		t.Errorf("ParseStatsResponse = %+v; want %+v", got, want)
+		t.Errorf("ParseAndRecordSrcdsMetrics = %+v; want %+v", got, want)
 	}
 }
 
 func TestParseStatsResponse_Invalid(t *testing.T) {
 	// Too few lines
-	_, err := ParseStatsResponse("only one line")
+	_, err := parseRawStats("only one line")
 	if err == nil {
 		t.Errorf("expected error for invalid input, got nil")
 	}
 
 	// Too few fields
-	_, err = ParseStatsResponse(`
+	_, err = parseRawStats(`
 header
 1 2 3
 footer

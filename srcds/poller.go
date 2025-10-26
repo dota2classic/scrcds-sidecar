@@ -53,7 +53,7 @@ func pollMetrics(addr string, password string) bool {
 		return false
 	}
 
-	_, err = ParseStatsResponse(stats)
+	ParseAndRecordSrcdsMetrics(stats)
 
 	return true
 }

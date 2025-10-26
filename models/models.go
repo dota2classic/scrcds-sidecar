@@ -1,5 +1,9 @@
 package models
 
+import (
+	"strconv"
+)
+
 // ========================== ENUMS ==========================
 
 type DotaGameRulesState int
@@ -204,3 +208,13 @@ type SRCDSPlayer struct {
 // ========================== Placeholder for missing enum ==========================
 
 type DotaConnectionState int
+
+func ParseLobbyType(raw string) MatchmakingMode {
+	val, _ := strconv.Atoi(raw)
+	return MatchmakingMode(val)
+}
+
+func ParseGameMode(raw string) DotaGameMode {
+	val, _ := strconv.Atoi(raw)
+	return DotaGameMode(val)
+}

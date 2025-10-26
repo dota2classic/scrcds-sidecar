@@ -7,9 +7,11 @@ import (
 	"net/http"
 	"sidecar/models"
 	"sidecar/srcds"
+	"sidecar/state"
 )
 
 func main() {
+	state.InitGlobalState()
 	go srcds.RunHeartbeatPoller()
 
 	http.HandleFunc("/live_match", handleJSONPost(handleLiveMatch))
