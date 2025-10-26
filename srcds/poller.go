@@ -3,6 +3,7 @@ package srcds
 import (
 	"log"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/gorcon/rcon" // or your actual RCON client package
@@ -59,6 +60,10 @@ func pollServer(addr string, password string) bool {
 // uploadAndExit is your shutdown handler — replace with your logic.
 func uploadAndExit() {
 	log.Println("Uploading files and exiting...")
-	UploadArtifacts()
+	matchId, err := strconv.ParseInt(os.Getenv("MATCH_ID"), 10, 64)
+	if err != nil {
+		log.Fatalf("Failed to parse MATCH_ID: %v", err)
+	}
+	UploadArtifacts(matchId)
 	os.Exit(0)
 }
