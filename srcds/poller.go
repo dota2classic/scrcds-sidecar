@@ -12,11 +12,11 @@ import (
 // RunHeartbeatPoller periodically checks if the game server responds.
 // If the server fails more than maxFails times in a row, uploadAndExit() is called.
 func RunHeartbeatPoller() {
+	rconPassword := os.Getenv("RCON_PASSWORD")
 	const (
 		addr     = "127.0.0.1:27015"
-		password = "rconpassword"
 		interval = 1 * time.Second
-		maxFails = 15
+		maxFails = 30
 	)
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
@@ -24,7 +24,7 @@ func RunHeartbeatPoller() {
 	consecutiveFails := 0
 
 	for range ticker.C {
-		if pollServer(addr, password) {
+		if pollServer(addr, rconPassword) {
 			consecutiveFails = 0 // success
 		} else {
 			consecutiveFails++
