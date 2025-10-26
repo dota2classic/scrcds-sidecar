@@ -9,7 +9,7 @@ import (
 	"github.com/gorcon/rcon" // or your actual RCON client package
 )
 
-// RunHeartbeatPoller periodically checks if the game server responds.
+// RunHeartbeatPoller periodically polls for metrics and checks that server is alive
 // If the server fails more than maxFails times in a row, uploadAndExit() is called.
 func RunHeartbeatPoller() {
 	rconPassword := os.Getenv("RCON_PASSWORD")
@@ -24,23 +24,22 @@ func RunHeartbeatPoller() {
 	consecutiveFails := 0
 
 	for range ticker.C {
-		if pollServer(addr, rconPassword) {
+		if pollMetrics(addr, rconPassword) {
 			consecutiveFails = 0 // success
 		} else {
 			consecutiveFails++
-			log.Printf("Heartbeat failed (%d/%d)", consecutiveFails, maxFails)
 		}
 
 		if consecutiveFails > maxFails {
-			log.Println("Server unresponsive — triggering uploadAndExit()")
+			log.Println("Server is unresponsive — shutting down")
 			uploadAndExit()
 			return
 		}
 	}
 }
 
-// pollServer attempts to connect and run the RCON status command
-func pollServer(addr string, password string) bool {
+// pollMetrics attempts to connect and run the RCON status command
+func pollMetrics(addr string, password string) bool {
 	conn, err := rcon.Dial(addr, password)
 	if err != nil {
 		log.Printf("Failed to connect to RCON: %v", err)
@@ -48,11 +47,13 @@ func pollServer(addr string, password string) bool {
 	}
 	defer conn.Close()
 
-	_, err = conn.Execute("status")
+	stats, err := conn.Execute("stats")
 	if err != nil {
 		log.Printf("Failed to execute RCON command: %v", err)
 		return false
 	}
+
+	_, err = ParseStatsResponse(stats)
 
 	return true
 }
