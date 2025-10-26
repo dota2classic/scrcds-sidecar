@@ -15,7 +15,7 @@ func RunHeartbeatPoller() {
 		addr     = "localhost:27015"
 		password = "rconpassword"
 		interval = 1 * time.Second
-		maxFails = 5
+		maxFails = 15
 	)
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
