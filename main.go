@@ -11,13 +11,8 @@ import (
 	"./models"
 )
 
-type RequestData struct {
-	Name string `json:"name"`
-	Age  int    `json:"age"`
-}
-
 func main() {
-	fileUploaderTask()
+	go fileUploaderTask()
 
 	http.HandleFunc("/live_match", handleLiveMatch)
 
@@ -26,30 +21,11 @@ func main() {
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", port), nil))
 }
 
-func handleLiveMatch(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPost {
-		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-		return
-	}
-
-	var data models.LiveMatchDto
-	err := json.NewDecoder(r.Body).Decode(&data)
-	if err != nil {
-		http.Error(w, fmt.Sprintf("Failed to parse JSON: %v", err), http.StatusBadRequest)
-		return
-	}
-
-	log.Printf("Received POST request: %+v\n", data)
-	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(fmt.Sprintf("Hello %s, age %d", data.MatchID, data.Duration)))
-}
-
 func fileUploaderTask() {
-	dir := "./" // directory to watch
+	dir := "./experiment" // directory to watch
 
 	// Start ticker for periodic file listing
-	ticker := time.NewTicker(5 * time.Second)
-	defer ticker.Stop()
+	ticker := time.NewTicker(1 * time.Second)
 
 	go func() {
 		for range ticker.C {
@@ -71,4 +47,22 @@ func listFiles(dir string) {
 	}
 
 	log.Printf("Files in %s: %v", dir, fileNames)
+}
+
+func handleLiveMatch(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodPost {
+		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+		return
+	}
+
+	var data models.LiveMatchDto
+	err := json.NewDecoder(r.Body).Decode(&data)
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Failed to parse JSON: %v", err), http.StatusBadRequest)
+		return
+	}
+
+	log.Printf("Received POST request: %+v\n", data)
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte(fmt.Sprintf("Hello %s, age %d", data.MatchID, data.Duration)))
 }
