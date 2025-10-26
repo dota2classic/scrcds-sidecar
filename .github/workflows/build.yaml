@@ -1,4 +1,4 @@
-name: Go Sidecar CI
+name: Build
 
 on:
   push:
