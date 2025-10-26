@@ -64,5 +64,5 @@ func handleLiveMatch(w http.ResponseWriter, r *http.Request) {
 
 	log.Printf("Received POST request: %+v\n", data)
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(fmt.Sprintf("Hello %s, age %d", data.MatchID, data.Duration)))
+	w.Write([]byte(fmt.Sprintf("Hello %d, age %d", data.MatchID, data.Duration)))
 }
