@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sidecar/util"
 
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
@@ -81,7 +82,7 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	log.Printf("Uploading %s %s", artifactType, filePath)
 
 	ctx := context.Background()
-	endpoint := os.Getenv("S3_ENDPOINT")
+	endpoint := util.StripProtocol(os.Getenv("S3_ENDPOINT"))
 	accessKeyID := os.Getenv("S3_ACCESS_KEY_ID")
 	secretAccessKey := os.Getenv("S3_ACCESS_KEY_SECRET")
 
