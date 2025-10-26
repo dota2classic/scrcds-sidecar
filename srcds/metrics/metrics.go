@@ -22,7 +22,7 @@ var (
 func CollectMetrics(conn *rcon.Conn) {
 	collectServerMetrics(conn)
 	collectPlayerMetrics(conn)
-	pushMetrics(map[string]string{jobName: "srcds-sidecar"})
+	pushMetrics(map[string]string{"jobName": "srcds-sidecar", "host": state.GlobalMatchInfo.Host})
 }
 
 // PushMetrics Push all metrics to the Pushgateway
