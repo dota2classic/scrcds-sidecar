@@ -100,6 +100,7 @@ func parseAndRecordSrcdsMetrics(statsRaw string) {
 
 func parseRawRconStatsResponse(statsRaw string) (*ServerMetrics, error) {
 	lines := strings.Split(statsRaw, "\n")
+	fmt.Printf("Raw stats response: %s", statsRaw)
 	if len(lines) < 3 {
 		return nil, fmt.Errorf("invalid stats format")
 	}
@@ -109,6 +110,7 @@ func parseRawRconStatsResponse(statsRaw string) (*ServerMetrics, error) {
 	fields := strings.Fields(lines[0])
 
 	if len(fields) < 7 {
+		fmt.Printf("Fields %s", fields)
 		return nil, fmt.Errorf("not enough fields in stats line")
 	}
 
