@@ -29,7 +29,7 @@ var (
 			Name: "srcds_metrics_ping",
 			Help: "Ping per player",
 		},
-		[]string{"host", "match_id", "server_url", "lobby_type", "steam_id"},
+		[]string{"match_id", "server_url", "lobby_type", "steam_id"},
 	)
 
 	LossGauge = prometheus.NewGaugeVec(
@@ -37,7 +37,7 @@ var (
 			Name: "srcds_metrics_loss",
 			Help: "Packet loss per player",
 		},
-		[]string{"host", "match_id", "server_url", "lobby_type", "steam_id"},
+		[]string{"match_id", "server_url", "lobby_type", "steam_id"},
 	)
 )
 

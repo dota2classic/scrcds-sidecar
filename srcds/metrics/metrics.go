@@ -42,7 +42,6 @@ func pushMetrics(groupLabels map[string]string) {
 func getMetricLabels() []string {
 
 	labels := []string{
-		state.GlobalMatchInfo.Host,
 		strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10),
 		state.GlobalMatchInfo.ServerAddress,
 		string(rune(state.GlobalMatchInfo.LobbyType)),
