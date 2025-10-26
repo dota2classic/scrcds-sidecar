@@ -23,19 +23,24 @@ const (
 )
 
 func UploadArtifacts(matchId int64) {
+	log.Printf("Uploading artifacts for matchId %d", matchId)
 	uploadFolder("./dota/logs", ArtifactLog, matchId)
 	uploadFolder("./dota/replays", ArtifactReplay, matchId)
+	log.Printf("Artifacts for matchId %d successfully uploaded", matchId)
 }
 
 func uploadFolder(dir string, artifactType ArtifactType, matchId int64) {
 	files, err := os.ReadDir(dir)
 	if err != nil {
-		log.Printf("Failed to list files in logs: %v", err)
+		log.Printf("Failed to list files in folder: %v", err)
 		return
 	}
 	for _, f := range files {
 		if f.IsDir() {
 			continue // skip subdirectories
+		}
+		if f.Name() == "discarded" {
+			continue // skip discarded replays(failed match)
 		}
 		filePath := filepath.Join(dir, f.Name())
 		uploadFile(filePath, artifactType, matchId)
@@ -93,6 +98,7 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	// If it's a
 	if artifactType == ArtifactReplay {
 		filePath, err = compressFile(filePath)
+		log.Printf("Zipped replay file: %s", filePath)
 		if err != nil {
 			log.Fatalln(err)
 		}
@@ -106,11 +112,13 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 		filename = fmt.Sprintf("%d.log", matchId)
 		contentType = "text/plain"
 		bucket = "logs"
-	} else {
+	} else if artifactType == ArtifactReplay {
 		filename = fmt.Sprintf("%d.dem.zip", matchId)
 		contentType = "application/zip"
 		bucket = "replays"
 	}
+
+	log.Printf("Uploading %s to bucket %s", filename, bucket)
 
 	info, err := minioClient.FPutObject(ctx, bucket, filename, filePath, minio.PutObjectOptions{ContentType: contentType})
 	if err != nil {
@@ -118,5 +126,4 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	}
 
 	log.Printf("Successfully uploaded %s of size %d", filePath, info.Size)
-
 }

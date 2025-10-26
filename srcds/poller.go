@@ -65,5 +65,6 @@ func uploadAndExit() {
 		log.Fatalf("Failed to parse MATCH_ID: %v", err)
 	}
 	UploadArtifacts(matchId)
+
 	os.Exit(0)
 }
