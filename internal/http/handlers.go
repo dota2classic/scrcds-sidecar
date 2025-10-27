@@ -17,7 +17,6 @@ import (
 
 func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		log.Printf("Received request %s %s", r.Method, r.Pattern)
 		if r.Method != http.MethodPost {
 			http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 			return
@@ -35,7 +34,6 @@ func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFun
 }
 
 func HandleLiveMatch(data models.LiveMatchDto, w http.ResponseWriter) {
-	log.Printf("Received live_match: %+v", data)
 	mapped := mapper.MapLiveMatchUpdatedEvent(data)
 	redis.PublishLiveMatch(&mapped)
 	w.WriteHeader(http.StatusOK)
