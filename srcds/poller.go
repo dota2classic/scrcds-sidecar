@@ -43,7 +43,6 @@ func RunHeartbeatPoller() {
 func pollMetrics(addr string, password string) bool {
 	conn, err := rcon.Dial(addr, password)
 	if err != nil {
-		log.Printf("Failed to connect to RCON: %v", err)
 		return false
 	}
 	defer conn.Close()
