@@ -17,6 +17,7 @@ import (
 
 func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
+		log.Printf("Received request %s %s", r.Method, r.Pattern)
 		if r.Method != http.MethodPost {
 			http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 			return
