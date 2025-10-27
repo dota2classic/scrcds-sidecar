@@ -1,4 +1,4 @@
-package srcds
+package s3
 
 import (
 	"archive/zip"
@@ -8,10 +8,8 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"sidecar/util"
 
 	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
 )
 
 // ArtifactType type of uploaded artifact
@@ -82,23 +80,10 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	log.Printf("Uploading %s %s", artifactType, filePath)
 
 	ctx := context.Background()
-	endpoint := util.StripProtocol(os.Getenv("S3_ENDPOINT"))
-	accessKeyID := os.Getenv("S3_ACCESS_KEY_ID")
-	secretAccessKey := os.Getenv("S3_ACCESS_KEY_SECRET")
-
-	// Initialize minio client object.
-	minioClient, err := minio.New(endpoint, &minio.Options{
-		Creds:  credentials.NewStaticV4(accessKeyID, secretAccessKey, ""),
-		Secure: false,
-	})
-
-	if err != nil {
-		log.Fatalln(err)
-	}
 
 	// If it's a
 	if artifactType == ArtifactReplay {
-		filePath, err = compressFile(filePath)
+		filePath, err := compressFile(filePath)
 		log.Printf("Zipped replay file: %s", filePath)
 		if err != nil {
 			log.Fatalln(err)
@@ -121,10 +106,15 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 
 	log.Printf("Uploading %s to bucket %s", filename, bucket)
 
-	info, err := minioClient.FPutObject(ctx, bucket, filename, filePath, minio.PutObjectOptions{ContentType: contentType})
+	info, err := MinioClient.FPutObject(ctx, bucket, filename, filePath, minio.PutObjectOptions{ContentType: contentType})
 	if err != nil {
 		log.Fatalln(err)
 	}
 
 	log.Printf("Successfully uploaded %s of size %d", filePath, info.Size)
+
+	err = os.Remove(filePath)
+	if err != nil {
+		log.Printf("Failed to remove file: %v", err)
+	}
 }

@@ -3,7 +3,7 @@ package state
 import (
 	"fmt"
 	"os"
-	"sidecar/models"
+	"sidecar/internal/models"
 	"strconv"
 )
 
@@ -32,5 +32,5 @@ func InitGlobalState() {
 	GlobalMatchInfo.Host = host
 	GlobalMatchInfo.ServerAddress = serverAddress
 
-	fmt.Println("GlobalMatchInfo", GlobalMatchInfo)
+	fmt.Println("Initialized global state: ", GlobalMatchInfo)
 }

@@ -3,7 +3,7 @@ package metrics
 import (
 	"log"
 	"os"
-	"sidecar/state"
+	"sidecar/internal/state"
 	"strconv"
 	"sync"
 

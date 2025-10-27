@@ -3,7 +3,8 @@ package srcds
 import (
 	"log"
 	"os"
-	"sidecar/srcds/metrics"
+	"sidecar/internal/s3"
+	"sidecar/internal/srcds/metrics"
 	"strconv"
 	"time"
 
@@ -59,7 +60,7 @@ func uploadAndExit() {
 	if err != nil {
 		log.Fatalf("Failed to parse MATCH_ID: %v", err)
 	}
-	UploadArtifacts(matchId)
+	s3.UploadArtifacts(matchId)
 
 	os.Exit(0)
 }

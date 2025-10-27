@@ -1,0 +1,101 @@
+package models
+
+// ========================== ENUMS ==========================
+
+type DotaGameRulesState int
+
+const (
+	INIT DotaGameRulesState = iota
+	WAIT_FOR_PLAYERS_TO_LOAD
+	HERO_SELECTION
+	STRATEGY_TIME
+	PRE_GAME
+	GAME_IN_PROGRESS
+	POST_GAME
+	DISCONNECT
+	TEAM_SHOWCASE
+	CUSTOM_GAME_SETUP
+	WAIT_FOR_MAP_TO_LOAD
+	SCENARIO_SETUP
+	LAST
+)
+
+type DotaGameMode int
+
+const (
+	ALLPICK DotaGameMode = 1 + iota
+	CAPTAINS_MODE
+	RANDOM_DRAFT
+	SINGLE_DRAFT
+	ALL_RANDOM
+	INTRO
+	DIRETIDE
+	REVERSE_CAPTAINS_MODE
+	GREEVILING
+	TUTORIAL
+	MID_ONLY
+	LEAST_PLAYED
+	LIMITED_HEROES
+	_
+	_
+	_
+	BALANCED_DRAFT = 17
+	ABILITY_DRAFT  = 18
+	_
+	ALL_RANDOM_DEATH_MATCH = 20
+	SOLOMID                = 21
+	RANKED_AP              = 22
+)
+
+type MatchmakingMode int
+
+const (
+	RANKED MatchmakingMode = iota
+	UNRANKED
+	SOLOMID_MM
+	DIRETIDE_MM
+	GREEVILING_MM
+	ABILITY_DRAFT_MM
+	TOURNAMENT
+	BOTS
+	HIGHROOM
+	TOURNAMENT_SOLOMID
+	CAPTAINS_MODE_MM
+	LOBBY
+	BOTS_2X2
+	TURBO
+)
+
+type DotaPatch string
+
+const (
+	DOTA_684       DotaPatch = "DOTA_684"
+	DOTA_684_TURBO DotaPatch = "DOTA_684_TURBO"
+)
+
+type Region string
+
+const (
+	RU_MOSCOW      Region = "ru_moscow"
+	RU_NOVOSIBIRSK Region = "ru_novosibirsk"
+	EU_CZECH       Region = "eu_czech"
+)
+
+type DotaTeam int
+
+const (
+	RADIANT DotaTeam = iota
+	DIRE
+)
+
+type DotaConnectionState int
+
+const (
+	DOTA_CONNECTION_STATE_UNKNOWN DotaConnectionState = iota
+	DOTA_CONNECTION_STATE_NOT_YET_CONNECTED
+	DOTA_CONNECTION_STATE_CONNECTED
+	DOTA_CONNECTION_STATE_DISCONNECTED
+	DOTA_CONNECTION_STATE_ABANDONED
+	DOTA_CONNECTION_STATE_LOADING
+	DOTA_CONNECTION_STATE_FAILED
+)
