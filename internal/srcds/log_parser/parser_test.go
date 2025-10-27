@@ -24,10 +24,10 @@ func TestParseLogFile_1x1(t *testing.T) {
 
 	id1 := parsed.Teams[0].Players[0].SteamID
 	id2 := parsed.Teams[1].Players[0].SteamID
-	if id1 != "76561199568305300" {
+	if id1 != 76561199568305300 {
 		t.Errorf("expected team[0].player[0].steam_id = 76561199568305300, got %v", id1)
 	}
-	if id2 != "76561199100213123" {
+	if id2 != 76561199100213123 {
 		t.Errorf("expected team[1].player[0].steam_id = 76561199100213123, got %v", id2)
 	}
 }
@@ -201,6 +201,6 @@ func TestParseLogFile_Bots(t *testing.T) {
 	_, err := ParseLog(string(data))
 
 	if err != nil {
-		t.Errorf("ParseLog() returned nil")
+		t.Errorf("ParseLog() returned nil: %v", err)
 	}
 }

@@ -37,7 +37,7 @@ type team struct {
 }
 
 type player struct {
-	SteamID                  string                    `json:"steam_id"`
+	SteamID                  int64                     `json:"steam_id"`
 	HeroID                   int64                     `json:"hero_id"`
 	Items                    []int64                   `json:"items"`
 	Gold                     int64                     `json:"gold"`

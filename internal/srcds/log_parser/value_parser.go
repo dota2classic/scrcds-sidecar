@@ -26,12 +26,6 @@ func parseValue(token string) any {
 			intPart = token[:dotIdx]
 		}
 		intPart = strings.TrimLeft(intPart, "+-")
-		const BigNumberThreshold = 15
-
-		if len(intPart) > BigNumberThreshold {
-			// Too big to safely convert: keep as string
-			return token
-		}
 
 		// Try int64 first if no decimal
 		if !strings.Contains(token, ".") {
