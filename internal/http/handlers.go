@@ -25,6 +25,7 @@ func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFun
 
 		var data T
 		if err := json.NewDecoder(r.Body).Decode(&data); err != nil {
+			log.Printf("Error decoding body: %s", err)
 			http.Error(w, fmt.Sprintf("Failed to parse JSON: %v", err), http.StatusBadRequest)
 			return
 		}
