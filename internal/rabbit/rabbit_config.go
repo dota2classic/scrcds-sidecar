@@ -44,6 +44,22 @@ func InitRabbitPublisher() {
 		log.Fatal(err)
 	}
 
+	// Declare our exchange
+	err = ch.ExchangeDeclare(
+		exchange,
+		"topic",
+		true,
+		false,
+		false,
+		false,
+		nil,
+	)
+	if err != nil {
+		ch.Close()
+		conn.Close()
+		log.Fatal(err)
+	}
+
 	client = &Publisher{
 		conn:     conn,
 		channel:  ch,
