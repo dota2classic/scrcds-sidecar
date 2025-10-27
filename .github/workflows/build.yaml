@@ -24,7 +24,7 @@ jobs:
       # Build the Go binary
       - name: Build Go binary
         run: |
-          go build -o sidecar main.go
+          go build -o sidecar cmd/server/main.go
 
       # Run tests if any
       - name: Run tests
