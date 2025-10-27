@@ -44,7 +44,7 @@ func getMetricLabels() []string {
 	labels := []string{
 		strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10),
 		state.GlobalMatchInfo.ServerAddress,
-		string(rune(state.GlobalMatchInfo.LobbyType)),
+		strconv.Itoa(int(state.GlobalMatchInfo.LobbyType)),
 	}
 	return labels
 }
