@@ -21,7 +21,7 @@ type HeroData struct {
 
 type SlotInfoDto struct {
 	Team       int                 `json:"team"`
-	SteamID    string              `json:"steam_id"`
+	SteamID    int                 `json:"steam_id"`
 	Connection DotaConnectionState `json:"connection"`
 	HeroData   *HeroData           `json:"hero_data,omitempty"`
 }

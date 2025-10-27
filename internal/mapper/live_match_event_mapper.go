@@ -3,6 +3,7 @@ package mapper
 import (
 	"sidecar/internal/models"
 	"sidecar/internal/util/dotamaps"
+	"strconv"
 )
 
 func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) models.LiveMatchUpdateEvent {
@@ -22,7 +23,7 @@ func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) models.LiveMatchUpdateEve
 		slot.Team = h.Team
 
 		// SteamID might be number or string in JSON
-		slot.SteamID = h.SteamID
+		slot.SteamID = strconv.Itoa(h.SteamID)
 
 		slot.Connection = h.Connection
 
