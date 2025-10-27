@@ -68,7 +68,7 @@ func InitRabbitPublisher() {
 	log.Println("RabbitMQ publisher initialized")
 }
 
-func publishWithRetry[T any](event T, retries int) error {
+func publishWithRetry[T any](event T, routingKey string, retries int) error {
 	var err error
 
 	message, err := json.Marshal(event)
@@ -79,9 +79,9 @@ func publishWithRetry[T any](event T, retries int) error {
 	for attempt := 1; attempt <= retries; attempt++ {
 		err = client.channel.Publish(
 			client.exchange, // exchange
-			"",              // routing key (empty for fanout)
-			false,           // mandatory
-			false,           // immediate
+			routingKey,
+			false, // mandatory
+			false, // immediate
 			amqp.Publishing{
 				ContentType: "application/json",
 				Body:        message,

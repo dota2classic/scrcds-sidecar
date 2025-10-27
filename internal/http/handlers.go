@@ -9,6 +9,7 @@ import (
 	"sidecar/internal/models"
 	"sidecar/internal/rabbit"
 	"sidecar/internal/redis"
+	"strconv"
 )
 
 func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFunc {
@@ -76,6 +77,13 @@ partyLoop:
 
 func HandlePlayerNotLoaded(data models.PlayerNotLoadedOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received player_not_loaded: %+v", data)
+	event := models.MatchFailedEvent{
+		MatchID:       data.MatchID,
+		Server:        data.Server,
+		FailedPlayers: []string{strconv.FormatInt(data.SteamID, 10)},
+		GoodParties:   []string{},
+	}
+	rabbit.PublishMatchFailedEvent(event)
 	w.WriteHeader(http.StatusOK)
 }
 
