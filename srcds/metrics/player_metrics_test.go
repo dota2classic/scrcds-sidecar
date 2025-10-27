@@ -105,7 +105,7 @@ func TestParseStatusRow_InvalidRow(t *testing.T) {
 
 func expectParsedPlayers(t *testing.T, raw string, want []PlayerMetric) {
 
-	got := parseStatusResponse(raw)
+	got, _ := parseRawRconStatusResponse(raw)
 
 	if len(got) != len(want) {
 		t.Fatalf("expected %d players, got %d", len(want), len(got))

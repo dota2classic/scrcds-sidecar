@@ -1,6 +1,7 @@
 package metrics
 
 import (
+	"fmt"
 	"log"
 	"regexp"
 	"strconv"
@@ -51,7 +52,7 @@ func collectPlayerMetrics(conn *rcon.Conn) {
 }
 
 func parseAndRecordPlayerMetrics(statusRaw string) {
-	stats, err := parseRawRconStatsResponse(statusRaw)
+	stats, err := parseRawRconStatusResponse(statusRaw)
 	if err != nil {
 		log.Println("Error parsing status: ", err)
 		return
@@ -59,8 +60,11 @@ func parseAndRecordPlayerMetrics(statusRaw string) {
 
 	labels := getMetricLabels()
 
-	PingGauge.WithLabelValues(labels...).Set(stats.Out)
-	LossGauge.WithLabelValues(labels...).Set(float64(stats.Players))
+	for _, stat := range stats {
+		combinedLabels := append(labels, stat.SteamID)
+		LossGauge.WithLabelValues(combinedLabels...).Set(float64(stat.Loss))
+		PingGauge.WithLabelValues(combinedLabels...).Set(float64(stat.Ping))
+	}
 
 }
 
@@ -111,8 +115,8 @@ func parseStatusRow(row string) *PlayerMetric {
 	}
 }
 
-// parseStatusResponse parses the full `status` command output.
-func parseStatusResponse(raw string) []PlayerMetric {
+// parseRawRconStatusResponse parses the full `status` command output.
+func parseRawRconStatusResponse(raw string) ([]PlayerMetric, error) {
 	lines := strings.Split(raw, "\n")
 	startIdx := -1
 
@@ -123,7 +127,7 @@ func parseStatusResponse(raw string) []PlayerMetric {
 		}
 	}
 	if startIdx == -1 {
-		return nil
+		return nil, fmt.Errorf("invalid stats format")
 	}
 
 	var results []PlayerMetric
@@ -135,5 +139,5 @@ func parseStatusResponse(raw string) []PlayerMetric {
 			results = append(results, *metric)
 		}
 	}
-	return results
+	return results, nil
 }

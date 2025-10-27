@@ -53,14 +53,20 @@ func getMetricLabels() []string {
 func initMetrics() {
 	registerOnce.Do(func() {
 		registry.MustRegister(
-			LoadingTime,
+
+			// Server metrics
 			CpuGauge,
 			FpsGauge,
 			InGauge,
 			OutGauge,
+			PlayerCountGauge,
+
+			// Player metrics
 			PingGauge,
 			LossGauge,
-			PlayerCountGauge,
+
+			// Other metrics
+			LoadingTime,
 		)
 	})
 }
