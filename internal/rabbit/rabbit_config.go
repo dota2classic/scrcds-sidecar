@@ -11,7 +11,6 @@ import (
 	"time"
 
 	amqp "github.com/rabbitmq/amqp091-go"
-	"github.com/redis/go-redis/v9"
 )
 
 type Publisher struct {
@@ -65,6 +64,8 @@ func InitRabbitPublisher() {
 		channel:  ch,
 		exchange: exchange,
 	}
+
+	log.Println("RabbitMQ publisher initialized")
 }
 
 func publishWithRetry[T any](event T, retries int) error {
@@ -93,17 +94,17 @@ func publishWithRetry[T any](event T, retries int) error {
 		}
 
 		// Check if it's a transient error (network, closed conn, etc.)
-		if errors.Is(err, redis.ErrClosed) || errors.Is(err, context.DeadlineExceeded) {
-			fmt.Printf("⚠️  Redis publish failed (attempt %d/%d): %v — retrying...\n", attempt, retries, err)
+		if errors.Is(err, context.DeadlineExceeded) {
+			fmt.Printf("rabbitmq publish failed (attempt %d/%d): %v — retrying...\n", attempt, retries, err)
 			time.Sleep(time.Duration(attempt) * 200 * time.Millisecond)
 			continue
 		}
 
 		// Non-retryable error
-		return fmt.Errorf("redis publish failed: %w", err)
+		return fmt.Errorf("rabbitmq publish failed: %w", err)
 	}
 
-	return fmt.Errorf("redis publish failed after %d retries: %w", retries, err)
+	return fmt.Errorf("rabbitmq publish failed after %d retries: %w", retries, err)
 }
 
 // Close the connection and channel
