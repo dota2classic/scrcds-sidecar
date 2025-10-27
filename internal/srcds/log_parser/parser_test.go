@@ -119,3 +119,77 @@ func TestParseLogFile_5x5(t *testing.T) {
 		t.Errorf("expected team[1] to have 5 players, got %d", len(parsed.Teams[1].Players))
 	}
 }
+
+func TestParseLogFile_IncompleteGame(t *testing.T) {
+	// Given
+	data, err := os.ReadFile("testdata/4x5.log")
+	if err != nil {
+		t.Fatalf("failed to read test file: %v", err)
+	}
+
+	// When
+	parsed, err := ParseLog(string(data))
+	if err != nil {
+		t.Fatalf("failed to parse log: %v", err)
+	}
+
+	// Tower status
+	expectedTowerStatus := []int64{2047, 260}
+	for i, v := range expectedTowerStatus {
+		if parsed.TowerStatus[i] != v {
+			t.Errorf("expected tower_status[%d] = %v, got %v", i, v, parsed.TowerStatus[i])
+		}
+	}
+
+	// Barracks status
+	expectedBarracksStatus := []int64{63, 51}
+	for i, v := range expectedBarracksStatus {
+		if parsed.BarracksStatus[i] != v {
+			t.Errorf("expected barracks_status[%d] = %v, got %v", i, v, parsed.BarracksStatus[i])
+		}
+	}
+
+	// Team players length
+	if len(parsed.Teams[0].Players) != 5 {
+		t.Errorf("expected team[0].players length = 5, got %d", len(parsed.Teams[0].Players))
+	}
+	if len(parsed.Teams[1].Players) != 5 {
+		t.Errorf("expected team[1].players length = 5, got %d", len(parsed.Teams[1].Players))
+	}
+}
+
+func TestParseLogFile_Druid(t *testing.T) {
+	// Given
+	data, err := os.ReadFile("testdata/druid.log")
+	if err != nil {
+		t.Fatalf("failed to read test file: %v", err)
+	}
+
+	// When
+	parsed, err := ParseLog(string(data))
+	if err != nil {
+		t.Fatalf("failed to parse log: %v", err)
+	}
+
+	inv := parsed.Teams[0].Players[1].AdditionalUnitsInventory
+
+	if inv.UnitName != "spirit_bear" {
+		t.Errorf("parsed.Teams[0].Players[1].AdditionalUnitsInventory.UnitName to be spirit bear, got %s", inv.UnitName)
+	}
+
+	expectedInventory := []int64{
+		50,
+		182,
+		172,
+		143,
+		0,
+		0,
+	}
+
+	for i := range expectedInventory {
+		if expectedInventory[i] != inv.Items[i] {
+			t.Errorf("Inventory item mismatch at index %d: expected %d got %d", i, expectedInventory[i], inv.Items[i])
+		}
+	}
+
+}
