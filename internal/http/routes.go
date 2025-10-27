@@ -14,5 +14,5 @@ func initRoutes() {
 
 	http.HandleFunc("/player_connect", HandleJSONPost(HandlePlayerConnect))
 
-	http.HandleFunc("/match_results", HandleJSONPost(HandleMatchFinished))
+	http.HandleFunc("/match_results", HandleJSONPost(HandleMatchResults))
 }

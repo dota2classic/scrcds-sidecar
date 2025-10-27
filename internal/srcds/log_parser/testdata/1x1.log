@@ -1,0 +1,1728 @@
+---- Host_NewGame ----
+Unknown command "plugin_load"
+Missing map material: TOOLS/TOOLSSKYBOX
+Missing map material: BLENDS/RIVER001
+Missing map material: BLENDS/RIVER002
+Missing map material: DEV/MAP_EDGE_RADIANT
+Missing map material: BLENDS/ROCKWALLS_RADIANT_DRY
+Missing map material: BLENDS/STONE_PATH012
+Missing map material: BLENDS/GOODBAD_PATH001
+Missing map material: BLENDS/PINE_BASE001
+Missing map material: BLENDS/ROCKWALLS_RADIANT
+Missing map material: BLENDS/MID_BOTTOM_RADIANT001
+Missing map material: BLENDS/STONE_PATH001_HORIZONTAL
+Missing map material: BLENDS/STONE_PATH001_VERTICAL
+Missing map material: BLENDS/STONE_PATH001
+Missing map material: BLENDS/ROCKWALLS_RADIANT
+Missing map material: DEV/BLACK
+Missing map material: EFFECTS/RADIANT_BACKLIGHTING
+Missing map material: TOOLS/TOOLSNODRAW
+Missing map material: DEV/MAP_EDGE_RADIANT
+Missing map material: BLENDS/RIVER001
+Missing map material: WATER/WATER_DOTA
+Missing map material: TOOLS/TOOLSSKIP
+Missing map material: TOOLS/TOOLSCLIP
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: TOOLS/TOOLSTRIGGER
+Missing map material: DEV/MAP_EDGE_DIRE
+Missing map material: BLENDS/STONE_PATH003
+Missing map material: BLENDS/STONE_PATH009
+Missing map material: BLENDS/STONE_PATH010
+Missing map material: BLENDS/STONE_PATH008
+Missing map material: BLENDS/GOODBAD_PATH002
+Missing map material: BLENDS/DIRE_BASE
+Missing map material: BLENDS/STONE_PATH011
+Missing map material: BLENDS/DIRE_LAVA
+Missing map material: BLENDS/DIRE_LAVA
+Missing map material: DEV/BLACK
+Missing map material: BLENDS/DIRE_LAVA
+Missing map material: overlays/camp_fire_pit001
+Missing map material: overlays/good_base_stone001
+Missing map material: overlays/wagon_path003a
+Missing map material: overlays/wagon_path003b
+Missing map material: overlays/path_border001
+Missing map material: overlays/path_border002
+Missing map material: overlays/blood001
+Missing map material: overlays/blood002
+Missing map material: overlays/path_border004b
+Missing map material: overlays/leaves_white000
+Missing map material: overlays/petals_pink000
+Missing map material: overlays/wagon_path001b
+Missing map material: overlays/camp_marking002
+Missing map material: overlays/petals_blueyellow000
+Missing map material: overlays/bad_stone_inlay001
+Missing map material: overlays/drift_sand001
+Missing map material: overlays/wagon_path001
+Missing map material: overlays/path_border004
+Missing map material: overlays/path_border003
+Missing map material: overlays/path_border003b
+Missing map material: overlays/camp_marking003
+Missing map material: overlays/stone_stain001
+Missing map material: overlays/bad_base_stone001
+Missing map material: overlays/bad_puddle_lava_00
+Missing map material: overlays/petals_redblossom_00
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall001.mdl
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall002.mdl
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall003.mdl
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall004.mdl
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall005.mdl
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall006.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001n.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001i.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp002a.mdl
+MDLCache: Failed load of .VVD data for props_debris/camp_fire002.mdl
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall008.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rocks_small001.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_wall001.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rocks_small002.mdl
+MDLCache: Failed load of .VVD data for effects/fountain_radiant_00.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rock009a.mdl
+MDLCache: Failed load of .VVD data for props_structures/Good_Shop001.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall006.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall005.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall004.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_sidewall001c.mdl
+MDLCache: Failed load of .VVD data for props_nature/petals_00.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_wall003.mdl
+MDLCache: Failed load of .VVD data for props_structures/stair_urn002.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_wall002.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_sidewall001d.mdl
+MDLCache: Failed load of .VVD data for props_stone/stoneblock003a.mdl
+MDLCache: Failed load of .VVD data for props_stone/stoneblock001a.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rocks_small003.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rocks_small005.mdl
+MDLCache: Failed load of .VVD data for props_debris/wood_fence001c.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rock010a.mdl
+MDLCache: Failed load of .VVD data for props_nature/grass_clump_00b.mdl
+MDLCache: Failed load of .VVD data for props_nature/grass_clump_00e.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rock005a.mdl
+MDLCache: Failed load of .VVD data for props_structures/waterfall_bridge001.mdl
+MDLCache: Failed load of .VVD data for props_rock/riveredge_rock006a.mdl
+MDLCache: Failed load of .VVD data for props_debris/cooking_pot001.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001m.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001a.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001l.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001o.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_384b.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_256b.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_384.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_256.mdl
+MDLCache: Failed load of .VVD data for props_bones/badside_bones001.mdl
+MDLCache: Failed load of .VVD data for props_bones/badside_bones002.mdl
+MDLCache: Failed load of .VVD data for props_bones/badside_bones004.mdl
+MDLCache: Failed load of .VVD data for props_bones/badside_bones003.mdl
+MDLCache: Failed load of .VVD data for props_bones/badside_bones005.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001c.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_640.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_128.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_896.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_barracks_pool002.mdl
+MDLCache: Failed load of .VVD data for props_structures/wood_wall002.mdl
+MDLCache: Failed load of .VVD data for props_structures/wood_wall004.mdl
+MDLCache: Failed load of .VVD data for props_structures/wood_wall001.mdl
+MDLCache: Failed load of .VVD data for props_structures/stair_blocks001.mdl
+MDLCache: Failed load of .VVD data for props_debris/wood_fence001e.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall002.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall001b.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall001.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall003.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall002d.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_base_wall002c.mdl
+MDLCache: Failed load of .VVD data for props_garden/good_stonewall008b.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_sidewall001a.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_sidewall001b.mdl
+MDLCache: Failed load of .VVD data for props_structures/stair_blocks002.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks_stones006.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_512b.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_768.mdl
+MDLCache: Failed load of .VVD data for props_debris/wood_fence001d.mdl
+MDLCache: Failed load of .VVD data for props_debris/wood_fence001b.mdl
+MDLCache: Failed load of .VVD data for props_garden/building_garden001.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_pinestatic_02.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_pinestatic_03b.mdl
+MDLCache: Failed load of .VVD data for props_rock/badside_rocks005.mdl
+MDLCache: Failed load of .VVD data for props_rock/badside_rocks001.mdl
+MDLCache: Failed load of .VVD data for props_rock/badside_rocks006.mdl
+MDLCache: Failed load of .VVD data for props_structures/waterfall_bridge_statue003.mdl
+MDLCache: Failed load of .VVD data for props_magic/bad_crystals001.mdl
+MDLCache: Failed load of .VVD data for props_magic/bad_crystals002.mdl
+MDLCache: Failed load of .VVD data for props_structures/Vines_sidewall001f.mdl
+MDLCache: Failed load of .VVD data for props_magic/bad_crystals003.mdl
+MDLCache: Failed load of .VVD data for effects/wardspot_00.mdl
+MDLCache: Failed load of .VVD data for props_structures/waterfall_bridge_statue002.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_oakstatic_01.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_oakstatic_02.mdl
+MDLCache: Failed load of .VVD data for props_nature/petals_01.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_00.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_03.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_01.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_02.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_02b.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_03b.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_00b.mdl
+MDLCache: Failed load of .VVD data for effects/water_edges_01b.mdl
+MDLCache: Failed load of .VVD data for effects/lily_pads_edge_00.mdl
+MDLCache: Failed load of .VVD data for effects/waterfall_00.mdl
+MDLCache: Failed load of .VVD data for effects/northriver_ramp_water_00.mdl
+MDLCache: Failed load of .VVD data for effects/southriver_exit_water_00.mdl
+MDLCache: Failed load of .VVD data for effects/southriver_ramp_water_00.mdl
+MDLCache: Failed load of .VVD data for effects/southriver_ramp_water_01.mdl
+MDLCache: Failed load of .VVD data for props_magic/vapors_white_002.mdl
+MDLCache: Failed load of .VVD data for effects/glow_00.mdl
+MDLCache: Failed load of .VVD data for effects/dust_01.mdl
+MDLCache: Failed load of .VVD data for effects/radiant_lightrays.mdl
+MDLCache: Failed load of .VVD data for props_magic/vapors_white_001.mdl
+MDLCache: Failed load of .VVD data for effects/glow_01.mdl
+MDLCache: Failed load of .VVD data for props_nature/bush_01.mdl
+MDLCache: Failed load of .VVD data for props_nature/grass_clump_00a.mdl
+MDLCache: Failed load of .VVD data for props_nature/grass_clump_00d.mdl
+MDLCache: Failed load of .VVD data for props_nature/bush_00.mdl
+MDLCache: Failed load of .VVD data for props_nature/fern001.mdl
+MDLCache: Failed load of .VVD data for props_nature/grass_clump_00f.mdl
+MDLCache: Failed load of .VVD data for props_nature/grass_clump_00c.mdl
+MDLCache: Failed load of .VVD data for props_nature/flowers001.mdl
+MDLCache: Failed load of .VVD data for props_nature/flowers002.mdl
+MDLCache: Failed load of .VVD data for props_nature/fern003.mdl
+MDLCache: Failed load of .VVD data for props_nature/log001.mdl
+MDLCache: Failed load of .VVD data for props_nature/fern002.mdl
+MDLCache: Failed load of .VVD data for props_nature/mushroom_wild_00.mdl
+MDLCache: Failed load of .VVD data for props_nature/mushroom_wild_02.mdl
+MDLCache: Failed load of .VVD data for props_debris/candles001.mdl
+MDLCache: Failed load of .VVD data for props_debris/candles003.mdl
+MDLCache: Failed load of .VVD data for props_debris/candles004.mdl
+MDLCache: Failed load of .VVD data for props_debris/candles005.mdl
+MDLCache: Failed load of .VVD data for props_debris/candles002.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_wallstatue002a.mdl
+MDLCache: Failed load of .VVD data for props_debris/bad_chains002.mdl
+MDLCache: Failed load of .VVD data for props_garden/bad_stonewall003c.mdl
+MDLCache: Failed load of .VVD data for props_garden/bad_stonewall003.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks_stones005.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks_stones004.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks_stones007.mdl
+MDLCache: Failed load of .VVD data for props_debris/bad_sticks004.mdl
+MDLCache: Failed load of .VVD data for props_garden/bad_stonewall003b.mdl
+MDLCache: Failed load of .VVD data for props_structures/torch001.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks_stones002.mdl
+MDLCache: Failed load of .VVD data for props_structures/Bad_Shop001.mdl
+MDLCache: Failed load of .VVD data for effects/fountain_dire_00.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_statue003.mdl
+MDLCache: Failed load of .VVD data for effects/liquid_pour_00.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks_stones003.mdl
+MDLCache: Failed load of .VVD data for props_debris/bad_sticks002.mdl
+MDLCache: Failed load of .VVD data for props_debris/bad_sticks003.mdl
+MDLCache: Failed load of .VVD data for effects/web_dire_00.mdl
+MDLCache: Failed load of .VVD data for effects/web_dire_01.mdl
+MDLCache: Failed load of .VVD data for effects/web_dire_02.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp002c.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_512.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_896b.mdl
+MDLCache: Failed load of .VVD data for props_structures/Crop_Circle004.mdl
+MDLCache: Failed load of .VVD data for props_structures/Crop_Circle001.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks_stones001.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp002b.mdl
+MDLCache: Failed load of .VVD data for props_structures/stair_urn001.mdl
+MDLCache: Failed load of .VVD data for props_structures/Crop_Circle003.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_256c.mdl
+MDLCache: Failed load of .VVD data for props_structures/Ramp_192.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_wallstatue003a.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_buildingwall001.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_buildingwall002.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_buildingwall003.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_buildingwall004.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_buildingwall005.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_buildingwall006.mdl
+MDLCache: Failed load of .VVD data for props_debris/bad_sticks001.mdl
+MDLCache: Failed load of .VVD data for props_debris/bad_chains001.mdl
+MDLCache: Failed load of .VVD data for props_structures/SecretShop_Dire001.mdl
+MDLCache: Failed load of .VVD data for effects/dire_eyes_00.mdl
+MDLCache: Failed load of .VVD data for effects/dire_eyes_01.mdl
+Host_NewGame on map dota
+L 07/09/2025 - 17:35:43: -------- Mapchange to dota --------
+L 07/09/2025 - 17:35:43: Error log file session closed.
+L 07/09/2025 - 17:35:43: [SDKTOOLS] Invalid detour address passed - Disabling detour to prevent crashes
+Anti-Pausing from retarted coder :fire: :fire: :fire:
+Start abandon plugin
+Hook called
+false simple?
+PLUGIN LOADED 24263
+Read from match_cfg/40209.json
+{"matchId": 40209, "lobbyType": 2, "gameMode": 21, "roomId": "3cd3e373-7849-4562-85f9-c48fdf01bb8c", "serverUrl": "46.174.49.35:24263", "fillBots": false, "enableCheats": false, "strictPause": true, "players": [{"steamId": "1139947395", "subscriber": false, "name": "LoWgeMer", "muted": false, "ignore": false, "partyId": "3054fd1f-53c1-4bb2-8571-90eae8743abb", "team": 3}, {"steamId": "1608039572", "subscriber": false, "name": "I'm too strong for you", "muted": false, "ignore": false, "partyId": "4c448f19-c60c-4938-b8ca-c113a2be2241", "team": 2}]}
+Match ID: 40209
+Mode: 2
+Running on server: 46.174.49.35:24263
+Master server: http://operator:7777
+LogFile logs/match_40209.log
+Executing dedicated server config file
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_INIT'
+L 07/09/2025 - 17:35:44: [SM] Exception reported: Gamerules lookup failed.
+L 07/09/2025 - 17:35:44: [SM] Blaming plugin: matchrecorder_new.smx
+L 07/09/2025 - 17:35:44: [SM] Call stack trace:
+L 07/09/2025 - 17:35:44: [SM]   [0] GameRules_GetProp
+L 07/09/2025 - 17:35:44: [SM]   [1] Line 538, E:\torrent\d2server\Dota6.84\dota\addons\sourcemod\scripting\matchrecorder_new.sp::OnGameRulesStateChange()
+ILocalize::AddFile() failed to load file "resource/dota_english.txt".
+MDLCache: Failed load of .VVD data for props_gameplay/tpscroll01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/tombstoneB01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/tombstoneA01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/tango.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/stout_shield.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/status_track_scroll.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/status_silence01_storm_spirit.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/status_silence01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/status_shield_frozen.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/status_shield_broken.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/status_shield.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/status_disarm.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/smoke.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/sithil/sithil.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/shopkeeper_fountain/shopkeeper_fountain_sword.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/shopkeeper_fountain/shopkeeper_fountain_3k.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/shopkeeper_fountain/shopkeeper_fountain.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/shopkeeper_fountain/keeper_fountain.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/shopkeeper_dire/secretshopkeeper_dire.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/sheep01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/sentry_ward_bundle.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/salve_red.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/salve_blue.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/salve.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/rune_regeneration01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/rune_invisibility01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/rune_illusion01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/rune_haste01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/rune_goldxp.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/rune_doubledamage01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/roquelaire/roquelaire.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/roquelaire/roq_mesh.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/red_box.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/recipe.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/quirt/quirt.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/quelling_blade.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/pumpkin_rune.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/pumpkin_bucket.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/pig_sfm_low.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/pig.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/observer_ward_bundle.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/mango.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/magic_wand.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/halloween_candy.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/gold_bag.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/gem01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/frog.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/dust.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/dota_AR_frame/dota_AR_frame.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/donkey_wings.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/donkey_dire_wings.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/donkey_dire.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/donkey.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/divine_rapier.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/disarm_oracle.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/disarm_customhero.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/disarm.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/default_ward.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/crystal_ring01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/clarity.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/chicken.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/cheese.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/branch.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/bottle_blue.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/boots_of_speed.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/anvil/anvil_00.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/antler_trap_02.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/antler_trap_01.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/antler_trap.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/alacrity.mdl
+MDLCache: Failed load of .VVD data for props_gameplay/aegis.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/pedestal_spotlight.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/pedestal_effigy_jade.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/pedestal_2_ground_dire.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/pedestal_2_ground.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/pedestal_1_small.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/pedestal_1_large.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/pedestal_1.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_ti5.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_ti5_lv2_dire.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_ti5_lv2.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_ti5_dire.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_ti5.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_radiant.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_frosty_dire.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_frost_radiant.mdl
+MDLCache: Failed load of .VVD data for heroes/pedestal/effigy_pedestal_dire.mdl
+MDLCache: Failed load of .VVD data for props_teams/pennant_radiant_00.mdl
+MDLCache: Failed load of .VVD data for props_teams/pennant_dire_00.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_good_siege/creep_good_siege.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_radiant_ranged/radiant_ranged.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_radiant_melee/radiant_melee.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_bad_siege/creep_bad_siege.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_bad_ranged/lane_dire_ranged.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_bad_melee/creep_bad_melee.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_radiant_ranged/radiant_ranged_mega.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_radiant_melee/radiant_melee_mega.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_bad_ranged/lane_dire_ranged_mega.mdl
+MDLCache: Failed load of .VVD data for creeps/lane_creeps/creep_bad_melee/creep_bad_melee_mega.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_kobold/kobold_c/n_creep_kobold_c.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_kobold/kobold_b/n_creep_kobold_b.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_kobold/kobold_a/n_creep_kobold_a.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_gnoll/n_creep_gnoll.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_berserker.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_ghost_b/n_creep_ghost_b.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_harpy_a/n_creep_harpy_a.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_harpy_b/n_creep_harpy_b.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_ogre_med/n_creep_ogre_med.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_ogre_lrg/n_creep_ogre_lrg.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_worg_small/n_creep_worg_small.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_worg_large/n_creep_worg_large.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_golem_b/n_creep_golem_b.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_satyr_b/n_creep_satyr_b.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_satyr_c/n_creep_satyr_c.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_troll_dark_a/n_creep_troll_dark_a.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_troll_dark_b/n_creep_troll_dark_b.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_beast/n_creep_beast.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_furbolg/n_creep_furbolg_disrupter.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_satyr_a/n_creep_satyr_a.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_vulture_b/n_creep_vulture_b.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_vulture_a/n_creep_vulture_a.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_black_drake/n_creep_black_drake.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_golem_a/neutral_creep_golem_a.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.mdl
+MDLCache: Failed load of .VVD data for creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_big.mdl
+MDLCache: Failed load of .VVD data for development/invisiblebox.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001b.mdl
+MDLCache: Failed load of .VVD data for props_teams/logo_radiant_large.mdl
+MDLCache: Failed load of .VVD data for creeps/roshan/aegis.mdl
+MDLCache: Failed load of .VVD data for props_teams/banner_radiant.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_birdsmall004.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_birdsmall003.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_birdsmall005.mdl
+MDLCache: Failed load of .VVD data for heroes/shopkeeper/shopkeeper.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001h.mdl
+MDLCache: Failed load of .VVD data for props_structures/SideShop_Radiant001.mdl
+MDLCache: Failed load of .VVD data for props_structures/SecretShop_Radiant002.mdl
+MDLCache: Failed load of .VVD data for props_teams/logo_radiant_small.mdl
+MDLCache: Failed load of .VVD data for props_teams/logo_radiant_medium.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/crow001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_caterpillar001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_ladybug001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_hercules_beetle001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_turtle001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_varmint001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_varmint002.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_birdlarge002.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_frog003.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_frog001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_fish003.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_fish004.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_fish001.mdl
+MDLCache: Failed load of .VVD data for props_tree/Dire_Tree004.mdl
+MDLCache: Failed load of .VVD data for props_tree/Dire_Tree007.mdl
+MDLCache: Failed load of .VVD data for props_tree/Dire_Tree008.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_oak_01.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_pine_01.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_pine_03b.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_pine_02.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_oak_01b.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_bamboo_03.mdl
+MDLCache: Failed load of .VVD data for props_tree/dire_tree004b.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_bamboo_02.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_bamboo_01.mdl
+MDLCache: Failed load of .VVD data for props_tree/tree_oak_02.mdl
+MDLCache: Failed load of .VVD data for props_nature/cattails001.mdl
+MDLCache: Failed load of .VVD data for props_nature/lily_pads001.mdl
+MDLCache: Failed load of .VVD data for props_debris/creep_camp001e.mdl
+MDLCache: Failed load of .VVD data for props_teams/banner_dire_small.mdl
+MDLCache: Failed load of .VVD data for props_teams/banner_dire.mdl
+MDLCache: Failed load of .VVD data for props_teams/logo_dire_medium.mdl
+MDLCache: Failed load of .VVD data for props_teams/logo_dire_small.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_millipede001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_snake001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_spider001.mdl
+MDLCache: Failed load of .VVD data for props_wildlife/wildlife_rat001.mdl
+MDLCache: Failed load of .VVD data for heroes/shopkeeper_dire/shopkeeper_dire.mdl
+MDLCache: Failed load of .VVD data for props_structures/tower_good.mdl
+MDLCache: Failed load of .VVD data for props_structures/tower_good3_dest_lvl1.mdl
+MDLCache: Failed load of .VVD data for props_structures/tower_good3_dest_lvl2.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_barracks_ranged001.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_barracks_ranged002_lvl1.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_barracks_ranged002_lvl2.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_barracks_melee001.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_barracks_melee002_lvl1.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_barracks_melee002_lvl2.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_statue008.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_statue010.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_ancient001.mdl
+MDLCache: Failed load of .VVD data for props_structures/good_fountain001.mdl
+MDLCache: Failed load of .VVD data for props_structures/radiant_endcam.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_statue001.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks001_ranged.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barrack001_ranged_destruction_lev1.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barrack001_ranged_destruction_lev2.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barracks001_melee.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barrack001_melee_destruction_lev1.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_barrack001_melee_destruction_lev2.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_statue002.mdl
+MDLCache: Failed load of .VVD data for props_structures/tower_bad.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_tower_destruction_lev1.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_tower_destruction_lev2.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_column001.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_column001_destruction_lev1.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_column001_destruction_lev2.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_fountain001.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_ancient002.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_ancient_destruction_pit.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_ancient_destruction_camera.mdl
+MDLCache: Failed load of .VVD data for props_structures/bad_ancient_particle_parent.mdl
+GameMopde: 21
+Map start called
+StartRecording called
+Server command executed: tv_record replays/40209.dem
+Server command executed(wait for load count)
+lobby type is: 2
+L 07/09/2025 - 17:35:45: [matchrecorder_new.smx] Reserve slot for LoWgeMer at team 3
+Reserve slot for LoWgeMer at team 3
+L 07/09/2025 - 17:35:45: [matchrecorder_new.smx] Reserve slot for I'm too strong for you at team 2
+Reserve slot for I'm too strong for you at team 2
+steam32 1608039572
+steam32 1139947395
+Opened server(24263) (threaded)
+Server logging enabled.
+07/09/2025 - 17:35:48: Unknown command "sm_tidychat_on"
+07/09/2025 - 17:35:48: Unknown command "sm_tidychat_cvar"
+07/09/2025 - 17:35:48: Recording SourceTV demo to replays/40209.dem...
+07/09/2025 - 17:35:48: Unknown command "sm_flood_time"
+07/09/2025 - 17:35:48: Unknown command "sm_reserve_type"
+07/09/2025 - 17:35:48: Unknown command "sm_reserved_slots"
+07/09/2025 - 17:35:48: Unknown command "sm_hide_slots"
+07/09/2025 - 17:35:48: Unknown command "sm_chat_mode"
+07/09/2025 - 17:35:48: Unknown command "sm_timeleft_interval"
+07/09/2025 - 17:35:48: Unknown command "sm_trigger_show"
+07/09/2025 - 17:35:48: S:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD'
+07/09/2025 - 17:35:48: GameRules change to: 1
+07/09/2025 - 17:35:48: Disabled pause while waiting for players to connect
+07/09/2025 - 17:35:48: GameRules change to: 1
+07/09/2025 - 17:35:48: GameRules change to: 1
+07/09/2025 - 17:35:48: Opened hltv(24268) (threaded)
+07/09/2025 - 17:35:48: SourceTV broadcast active.
+07/09/2025 - 17:35:49: L 07/09/2025 - 17:35:49: "I'm too strong for you<3><[U:1:1608039572]><>" connected, address "5.3.236.106:59486"
+07/09/2025 - 17:35:49: Client "I'm too strong for you" connected (5.3.236.106:59486).
+07/09/2025 - 17:35:51: L 07/09/2025 - 17:35:51: "LoWgeMer<4><[U:1:1139947395]><>" connected, address "95.25.61.64:34314"
+07/09/2025 - 17:35:51: Client "LoWgeMer" connected (95.25.61.64:34314).
+07/09/2025 - 17:35:56: [OnClientPutInServer] SteamID = 0! Trying to reconnect
+07/09/2025 - 17:35:56: On disconnect 0 0
+07/09/2025 - 17:35:56: Forcing client reconnect (6)
+07/09/2025 - 17:35:56: CEventLog::PrintPlayerEvent: Failed to find player (userid: 4, event: player_activate)
+07/09/2025 - 17:35:57: [OnClientPutInServer] SteamID = 0! Trying to reconnect
+07/09/2025 - 17:35:57: On disconnect 0 0
+07/09/2025 - 17:35:57: Forcing client reconnect (6)
+07/09/2025 - 17:35:57: CEventLog::PrintPlayerEvent: Failed to find player (userid: 3, event: player_activate)
+07/09/2025 - 17:36:00: [OnClientPutInServer] SteamID = 0! Trying to reconnect
+07/09/2025 - 17:36:00: On disconnect 0 0
+07/09/2025 - 17:36:00: Forcing client reconnect (6)
+07/09/2025 - 17:36:00: CEventLog::PrintPlayerEvent: Failed to find player (userid: 4, event: player_activate)
+07/09/2025 - 17:36:01: [OnClientPutInServer] SteamID = 0! Trying to reconnect
+07/09/2025 - 17:36:01: On disconnect 0 0
+07/09/2025 - 17:36:01: Forcing client reconnect (6)
+07/09/2025 - 17:36:01: CEventLog::PrintPlayerEvent: Failed to find player (userid: 3, event: player_activate)
+07/09/2025 - 17:36:04: Connection to Steam servers successful, Game Server SteamID [A:1:3416397855:46278] (90270758460332063).
+07/09/2025 - 17:36:04: CDOTAGCServerSystem - adding listener
+07/09/2025 - 17:36:04:    VAC secure mode is activated.
+07/09/2025 - 17:36:04: Received server welcome from GC.
+07/09/2025 - 17:36:04: GC Connection established for server version 0
+07/09/2025 - 17:36:04: [OnClientPutInServer] SteamID = 0! Trying to reconnect
+07/09/2025 - 17:36:04: On disconnect 0 0
+07/09/2025 - 17:36:04: Forcing client reconnect (6)
+07/09/2025 - 17:36:04: CEventLog::PrintPlayerEvent: Failed to find player (userid: 4, event: player_activate)
+07/09/2025 - 17:36:06: [OnClientPutInServer] SteamID = 0! Trying to reconnect
+07/09/2025 - 17:36:06: On disconnect 0 0
+07/09/2025 - 17:36:06: Forcing client reconnect (6)
+07/09/2025 - 17:36:06: CEventLog::PrintPlayerEvent: Failed to find player (userid: 3, event: player_activate)
+07/09/2025 - 17:36:06: "I'm too strong for you<3><[U:1:1608039572]><>" STEAM USERID validated
+07/09/2025 - 17:36:06: L 07/09/2025 - 17:36:06: "I'm too strong for you<3><[U:1:1608039572]><>" STEAM USERID validated
+07/09/2025 - 17:36:06: "LoWgeMer<4><[U:1:1139947395]><>" STEAM USERID validated
+07/09/2025 - 17:36:06: L 07/09/2025 - 17:36:06: "LoWgeMer<4><[U:1:1139947395]><>" STEAM USERID validated
+07/09/2025 - 17:36:06: OnClientAuthorized 1139947395
+07/09/2025 - 17:36:06: OnClientAuthorized 1608039572
+07/09/2025 - 17:36:06: Unable to create object of type 2017
+07/09/2025 - 17:36:06: Unable to create object of type 2017
+07/09/2025 - 17:36:08: L 07/09/2025 - 17:36:08: "LoWgeMer<4><[U:1:1139947395]><Unassigned>" joined team "#DOTA_BadGuys"
+07/09/2025 - 17:36:08: I send request that player 1139947395 did connect first time? 1
+07/09/2025 - 17:36:08: Loading time: 20.700000
+07/09/2025 - 17:36:08: L 07/09/2025 - 17:36:08: "LoWgeMer<4><[U:1:1139947395]><>" entered the game
+07/09/2025 - 17:36:08: PR:SetConnectionState 5:[U:1:1139947395] DOTA_CONNECTION_STATE_LOADING NETWORK_DISCONNECT_INVALID
+07/09/2025 - 17:36:08: Sending full update to Client LoWgeMer (LoWgeMer can't find frame from tick -1)
+07/09/2025 - 17:36:09: Voice: Listener LoWgeMer(5) to Talker LoWgeMer(5) change from kPVLS_None to kPVLS_AllowSameTeam
+07/09/2025 - 17:36:09: Engine:Voice: Client LoWgeMer(2) does listen to client LoWgeMer(2)
+07/09/2025 - 17:36:10: L 07/09/2025 - 17:36:10: "I'm too strong for you<3><[U:1:1608039572]><Unassigned>" joined team "#DOTA_GoodGuys"
+07/09/2025 - 17:36:10: I send request that player 1608039572 did connect first time? 1
+07/09/2025 - 17:36:10: Loading time: 22.666667
+07/09/2025 - 17:36:10: L 07/09/2025 - 17:36:10: "I'm too strong for you<3><[U:1:1608039572]><>" entered the game
+07/09/2025 - 17:36:10: PR:SetConnectionState 0:[U:1:1608039572] DOTA_CONNECTION_STATE_LOADING NETWORK_DISCONNECT_INVALID
+07/09/2025 - 17:36:10: Sending full update to Client I'm too strong for you (I'm too strong for you can't find frame from tick -1)
+07/09/2025 - 17:36:10: Voice: Listener LoWgeMer(5) to Talker I'm too strong for you(0) change from kPVLS_None to kPVLS_AllowSameTeam
+07/09/2025 - 17:36:10: Engine:Voice: Client LoWgeMer(2) does listen to client I'm too strong for you(1)
+07/09/2025 - 17:36:11: Voice: Listener I'm too strong for you(0) to Talker I'm too strong for you(0) change from kPVLS_None to kPVLS_AllowSameTeam
+07/09/2025 - 17:36:11: Voice: Listener I'm too strong for you(0) to Talker LoWgeMer(5) change from kPVLS_None to kPVLS_AllowSameTeam
+07/09/2025 - 17:36:11: Engine:Voice: Client I'm too strong for you(1) does listen to client I'm too strong for you(1)
+07/09/2025 - 17:36:11: Engine:Voice: Client I'm too strong for you(1) does listen to client LoWgeMer(2)
+07/09/2025 - 17:36:11: PR:SetFullyJoinedServer 5:[U:1:1139947395] true
+07/09/2025 - 17:36:11: PR:SetLeaverStatus 5:[U:1:1139947395] DOTA_LEAVER_NONE
+07/09/2025 - 17:36:11: PR:SetConnectionState 5:[U:1:1139947395] DOTA_CONNECTION_STATE_CONNECTED NETWORK_DISCONNECT_INVALID
+07/09/2025 - 17:36:17: PR:SetFullyJoinedServer 0:[U:1:1608039572] true
+07/09/2025 - 17:36:17: PR:SetLeaverStatus 0:[U:1:1608039572] DOTA_LEAVER_NONE
+07/09/2025 - 17:36:17: PR:SetConnectionState 0:[U:1:1608039572] DOTA_CONNECTION_STATE_CONNECTED NETWORK_DISCONNECT_INVALID
+07/09/2025 - 17:36:22: S:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
+07/09/2025 - 17:36:22: GameRules change to: 2
+07/09/2025 - 17:36:22: GameRules change to: 2
+07/09/2025 - 17:36:22: GameRules change to: 2
+07/09/2025 - 17:36:23: PR:SetPossibleHeroSelection 5:[U:1:1139947395] npc_dota_hero_tidehunter(29)
+07/09/2025 - 17:36:23: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_abaddon(102)
+07/09/2025 - 17:36:25: PR:SetPossibleHeroSelection 5:[U:1:1139947395] npc_dota_hero_shredder(98)
+07/09/2025 - 17:36:25: PR:SetPossibleHeroSelection 5:[U:1:1139947395] npc_dota_hero_tinker(34)
+07/09/2025 - 17:36:26: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_chaos_knight(81)
+07/09/2025 - 17:36:27: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_doom_bringer(69)
+07/09/2025 - 17:36:28: PR:SetPlayerReservedState 5:[U:1:1139947395] true
+07/09/2025 - 17:36:28: PR:SetSelectedHero 5:[U:1:1139947395] npc_dota_hero_tinker(34)
+07/09/2025 - 17:36:28: PR:SetPlayerReservedState 5:[U:1:1139947395] false
+07/09/2025 - 17:36:28: MDLCache: Failed load of .VVD data for heroes/tinker/tinker.mdl
+07/09/2025 - 17:36:28: MDLCache: Failed load of .VVD data for heroes/tinker/tinker_right_arm.mdl
+07/09/2025 - 17:36:28: MDLCache: Failed load of .VVD data for heroes/tinker/tinker_left_arm.mdl
+07/09/2025 - 17:36:28: MDLCache: Failed load of .VVD data for heroes/tinker/tinker_body_head.mdl
+07/09/2025 - 17:36:28: MDLCache: Failed load of .VVD data for heroes/tinker/tinker_helmet.mdl
+07/09/2025 - 17:36:28: MDLCache: Failed load of .VVD data for heroes/tinker/tinker_cape.mdl
+07/09/2025 - 17:36:28: MDLCache: Failed load of .VVD data for heroes/tinker/tinker_shoulders.mdl
+07/09/2025 - 17:36:28: PR:SetPlayerReservedState 5:[U:1:1139947395] false
+07/09/2025 - 17:36:28: PR:SetSelectedHero 5:[U:1:1139947395] npc_dota_hero_tinker(34)
+07/09/2025 - 17:36:37: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_enigma(33)
+07/09/2025 - 17:36:39: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_keeper_of_the_light(90)
+07/09/2025 - 17:36:40: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_kunkka(23)
+07/09/2025 - 17:36:43: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_naga_siren(89)
+07/09/2025 - 17:36:44: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_sand_king(16)
+07/09/2025 - 17:36:46: PR:SetPossibleHeroSelection 0:[U:1:1608039572] npc_dota_hero_nevermore(11)
+07/09/2025 - 17:36:47: PR:SetPlayerReservedState 0:[U:1:1608039572] true
+07/09/2025 - 17:36:47: PR:SetSelectedHero 0:[U:1:1608039572] npc_dota_hero_nevermore(11)
+07/09/2025 - 17:36:49: PR:SetPlayerReservedState 0:[U:1:1608039572] false
+07/09/2025 - 17:36:49: MDLCache: Failed load of .VVD data for heroes/shadow_fiend/shadow_fiend.mdl
+07/09/2025 - 17:36:49: MDLCache: Failed load of .VVD data for heroes/shadow_fiend/shadow_fiend_shoulders.mdl
+07/09/2025 - 17:36:49: MDLCache: Failed load of .VVD data for heroes/shadow_fiend/shadow_fiend_arms.mdl
+07/09/2025 - 17:36:49: MDLCache: Failed load of .VVD data for heroes/shadow_fiend/head_arcana.mdl
+07/09/2025 - 17:36:49: MDLCache: Failed load of .VVD data for heroes/shadow_fiend/shadow_fiend_arcana.mdl
+07/09/2025 - 17:36:49: PR:SetPlayerReservedState 0:[U:1:1608039572] false
+07/09/2025 - 17:36:49: PR:SetSelectedHero 0:[U:1:1608039572] npc_dota_hero_nevermore(11)
+07/09/2025 - 17:36:49: S:Gamerules: entering state 'DOTA_GAMERULES_STATE_STRATEGY_TIME'
+07/09/2025 - 17:36:49: GameRules change to: 3
+07/09/2025 - 17:36:49: GameRules change to: 3
+07/09/2025 - 17:36:49: GameRules change to: 3
+07/09/2025 - 17:36:49: S:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
+07/09/2025 - 17:36:49: m_flPreGameStartTime set to 62.23
+07/09/2025 - 17:36:49: m_flStateTransitionTime set to 152.23
+07/09/2025 - 17:36:49: GameRules change to: 4
+07/09/2025 - 17:36:49: Enabling pause back: game started
+07/09/2025 - 17:36:49: GameRules change to: 4
+07/09/2025 - 17:36:49: GameRules change to: 4
+07/09/2025 - 17:36:49: MDLCache: Failed load of .VVD data for creeps/roshan/roshan.mdl
+07/09/2025 - 17:36:55: I'm too strong for you: -teleport
+07/09/2025 - 17:36:55: L 07/09/2025 - 17:36:55: "I'm too strong for you<3><[U:1:1608039572]><#DOTA_GoodGuys>" say "-teleport"
+07/09/2025 - 17:36:59: Ignore mute for commands
+07/09/2025 - 17:36:59: I'm too strong for you: /roll
+07/09/2025 - 17:36:59: L 07/09/2025 - 17:36:59: "I'm too strong for you<3><[U:1:1608039572]><#DOTA_GoodGuys>" say "/roll"
+07/09/2025 - 17:38:19: S:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
+07/09/2025 - 17:38:19: GameRules change to: 5
+07/09/2025 - 17:38:19: GameRules change to: 5
+07/09/2025 - 17:38:19: GameRules change to: 5
+07/09/2025 - 17:40:25: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:40:53: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:40:53: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:40:59: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:41:22: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:42:15: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:42:34: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:42:34: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:43:04: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:43:17: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:44:09: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:44:09: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:44:09: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:44:13: Game code tried to execute invalid order (26). Target can't be seen by the unit's team.
+07/09/2025 - 17:45:14: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:45:17: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:45:40: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:46:06: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:46:06: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:46:06: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:46:15: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:46:15: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:46:38: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:48:35: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:50:25: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:50:25: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:50:25: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:50:27: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:50:27: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:51:07: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:51:07: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:53:35: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:53:35: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:53:35: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:53:47: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:54:00: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:54:28: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:54:37: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:54:37: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:54:45: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:54:45: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:54:56: Client tried to execute invalid order (45). Target position is off the map.
+07/09/2025 - 17:55:37: Client tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:56:06: Game code tried to execute invalid order (19). Target NPC is dead.
+07/09/2025 - 17:56:16: 	No client, finding a random bot to use for the player ID instead.
+07/09/2025 - 17:56:16: S:Gamerules: entering state 'DOTA_GAMERULES_STATE_POST_GAME'
+07/09/2025 - 17:56:16: PIM [0] processed, ok: 1
+07/09/2025 - 17:56:16: PIM [1] processed, ok: 0
+07/09/2025 - 17:56:16: PIM [2] processed, ok: 0
+07/09/2025 - 17:56:16: PIM [3] processed, ok: 0
+07/09/2025 - 17:56:16: PIM [4] processed, ok: 0
+07/09/2025 - 17:56:16: PIM [5] processed, ok: 1
+07/09/2025 - 17:56:16: PIM [6] processed, ok: 0
+07/09/2025 - 17:56:16: PIM [7] processed, ok: 0
+07/09/2025 - 17:56:16: PIM [8] processed, ok: 0
+07/09/2025 - 17:56:16: PIM [9] processed, ok: 0
+07/09/2025 - 17:56:16: {"matchId": 40209, "winner": 2, "duration": 1077, "type": 2, "gameMode": 21, "timestamp": 1752083776, "server": "46.174.49.35:24263", "players": [{"hero": "npc_dota_hero_nevermore", "party_id": "4c448f19-c60c-4938-b8ca-c113a2be2241", "steam_id": 1608039572, "team": 2, "level": 11, "kills": 0, "deaths": 0, "assists": 0, "gpm": 279, "xpm": 372, "last_hits": 86, "denies": 9, "tower_kills": 0, "roshan_kills": 0.0, "networth": 4435, "connection": 2, "items": ["item_tango", "item_power_treads", "item_ring_of_aquila", "item_branches", "item_branches", "item_ogre_axe"]}, {"hero": "npc_dota_hero_tinker", "party_id": "3054fd1f-53c1-4bb2-8571-90eae8743abb", "steam_id": 1139947395, "team": 3, "level": 11, "kills": 0, "deaths": 0, "assists": 0, "gpm": 201, "xpm": 357, "last_hits": 54, "denies": 24, "tower_kills": 0, "roshan_kills": 0.0, "networth": 3995, "connection": 2, "items": ["item_bracer", "item_mantle", "item_travel_boots", "item_bottle", "item_branches", "item_empty"]}]}
+07/09/2025 - 17:56:16: CDOTAUserMsg_PlayerMMR check: lobbyType=-1, GameEndReason=0
+07/09/2025 - 17:56:16: GameRules change to: 6
+07/09/2025 - 17:56:16: GameRules change to: 6
+07/09/2025 - 17:56:16: GameRules change to: 6
+07/09/2025 - 17:56:16: CDOTAGCServerSystem::MatchSignOut gathering sign out stats. Duration in minutes = 17.944745
+07/09/2025 - 17:56:16:    Player 76561199568305300 Account 1608039572 TotalGold = 5580.000000 TotalXP = 7454.000000 nGoldPerMinute = 310 nXPPerMinute = 415
+07/09/2025 - 17:56:16:    Player 76561199100213123 Account 1139947395 TotalGold = 4030.000000 TotalXP = 7151.000000 nGoldPerMinute = 224 nXPPerMinute = 398
+07/09/2025 - 17:56:16: Match signout:  duration = 1076 (1076.684616) good guys win = 1
+07/09/2025 - 17:56:16:   Match start date: Wed Jul  9 17:36:49 2025
+07/09/2025 - 17:56:16:   Num players on teams:  Good: 1  Bad: 1
+07/09/2025 - 17:56:16: Team 0 Player 0 m_unAccountID = 76561199568305300  Items: 44, 63, 212, 16, 16, 21
+07/09/2025 - 17:56:16:   LastHit = 86  Deny = 9  ClaimedMiss = 24  ClaimedDeny = 6  Miss = 10
+07/09/2025 - 17:56:16:   Level: 11 Gold: 800  KDA: 0 / 0 / 0
+07/09/2025 - 17:56:16:   Scaled Player Damage: 3215 Scaled Building Damage: 62 Scaled Healing: 0
+07/09/2025 - 17:56:16:   XP per min: 310  Gold per min: 415  Claimed Farm: 5039  Support Gold 75
+07/09/2025 - 17:56:16: Team 1 Player 0 m_unAccountID = 76561199100213123  Items: 73, 15, 48, 41, 16, 0
+07/09/2025 - 17:56:16:   LastHit = 54  Deny = 24  ClaimedMiss = 22  ClaimedDeny = 0  Miss = 44
+07/09/2025 - 17:56:16:   Level: 11 Gold: 120  KDA: 0 / 0 / 0
+07/09/2025 - 17:56:16:   Scaled Player Damage: 4673 Scaled Building Damage: 0 Scaled Healing: 0
+07/09/2025 - 17:56:16:   XP per min: 224  Gold per min: 398  Claimed Farm: 4968  Support Gold 0
+07/09/2025 - 17:56:16: KILLEATER: Signing out with 0 adjustments
+07/09/2025 - 17:56:16: KILLEATER: Message has 0 player blocks
+07/09/2025 - 17:56:16: SIGNOUT: Job created, Protobuf:
+07/09/2025 - 17:56:16: duration: 1076
+07/09/2025 - 17:56:16: good_guys_win: true
+07/09/2025 - 17:56:16: date: 1752082609
+07/09/2025 - 17:56:16: num_players: 1
+07/09/2025 - 17:56:16: num_players: 1
+07/09/2025 - 17:56:16: teams {
+07/09/2025 - 17:56:16:   players {
+07/09/2025 - 17:56:16:     steam_id: 76561199568305300
+07/09/2025 - 17:56:16:     hero_id: 11
+07/09/2025 - 17:56:16:     items: 44
+07/09/2025 - 17:56:16:     items: 63
+07/09/2025 - 17:56:16:     items: 212
+07/09/2025 - 17:56:16:     items: 16
+07/09/2025 - 17:56:16:     items: 16
+07/09/2025 - 17:56:16:     items: 21
+07/09/2025 - 17:56:16:     gold: 800
+07/09/2025 - 17:56:16:     kills: 0
+07/09/2025 - 17:56:16:     deaths: 0
+07/09/2025 - 17:56:16:     assists: 0
+07/09/2025 - 17:56:16:     leaver_status: 0
+07/09/2025 - 17:56:16:     last_hits: 86
+07/09/2025 - 17:56:16:     denies: 9
+07/09/2025 - 17:56:16:     gold_per_min: 310
+07/09/2025 - 17:56:16:     xp_per_minute: 415
+07/09/2025 - 17:56:16:     gold_spent: 5555
+07/09/2025 - 17:56:16:     level: 11
+07/09/2025 - 17:56:16:     hero_damage: 3215
+07/09/2025 - 17:56:16:     tower_damage: 62
+07/09/2025 - 17:56:16:     hero_healing: 0
+07/09/2025 - 17:56:16:     time_last_seen: 0
+07/09/2025 - 17:56:16:     support_ability_value: 900
+07/09/2025 - 17:56:16:     party_id: 0
+07/09/2025 - 17:56:16:     scaled_kills: 0
+07/09/2025 - 17:56:16:     scaled_deaths: 0
+07/09/2025 - 17:56:16:     scaled_assists: 0
+07/09/2025 - 17:56:16:     claimed_farm_gold: 5039
+07/09/2025 - 17:56:16:     support_gold: 75
+07/09/2025 - 17:56:16:     claimed_denies: 6
+07/09/2025 - 17:56:16:     claimed_misses: 24
+07/09/2025 - 17:56:16:     misses: 10
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5060
+07/09/2025 - 17:56:16:       time: 64
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5062
+07/09/2025 - 17:56:16:       time: 210
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5060
+07/09/2025 - 17:56:16:       time: 258
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5062
+07/09/2025 - 17:56:16:       time: 319
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5062
+07/09/2025 - 17:56:16:       time: 377
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5060
+07/09/2025 - 17:56:16:       time: 459
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5060
+07/09/2025 - 17:56:16:       time: 579
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5062
+07/09/2025 - 17:56:16:       time: 658
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5063
+07/09/2025 - 17:56:16:       time: 810
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5063
+07/09/2025 - 17:56:16:       time: 966
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5063
+07/09/2025 - 17:56:16:       time: 1072
+07/09/2025 - 17:56:16:     }
+08/24/2025 - 21:14:15:     additional_units_inventory {
+08/24/2025 - 21:14:15:       unit_name: "spirit_bear"
+08/24/2025 - 21:14:15:       items: 50
+08/24/2025 - 21:14:15:       items: 182
+08/24/2025 - 21:14:15:       items: 172
+08/24/2025 - 21:14:15:       items: 143
+08/24/2025 - 21:14:15:       items: 0
+08/24/2025 - 21:14:15:       items: 0
+08/24/2025 - 21:14:15:     }
+07/09/2025 - 17:56:16:     net_worth: 4435
+07/09/2025 - 17:56:16:   }
+07/09/2025 - 17:56:16: }
+07/09/2025 - 17:56:16: teams {
+07/09/2025 - 17:56:16:   players {
+07/09/2025 - 17:56:16:     steam_id: 76561199100213123
+07/09/2025 - 17:56:16:     hero_id: 34
+07/09/2025 - 17:56:16:     items: 73
+07/09/2025 - 17:56:16:     items: 15
+07/09/2025 - 17:56:16:     items: 48
+07/09/2025 - 17:56:16:     items: 41
+07/09/2025 - 17:56:16:     items: 16
+07/09/2025 - 17:56:16:     items: 0
+07/09/2025 - 17:56:16:     gold: 120
+07/09/2025 - 17:56:16:     kills: 0
+07/09/2025 - 17:56:16:     deaths: 0
+07/09/2025 - 17:56:16:     assists: 0
+07/09/2025 - 17:56:16:     leaver_status: 0
+07/09/2025 - 17:56:16:     last_hits: 54
+07/09/2025 - 17:56:16:     denies: 24
+07/09/2025 - 17:56:16:     gold_per_min: 224
+07/09/2025 - 17:56:16:     xp_per_minute: 398
+07/09/2025 - 17:56:16:     gold_spent: 4560
+07/09/2025 - 17:56:16:     level: 11
+07/09/2025 - 17:56:16:     hero_damage: 4673
+07/09/2025 - 17:56:16:     tower_damage: 0
+07/09/2025 - 17:56:16:     hero_healing: 0
+07/09/2025 - 17:56:16:     time_last_seen: 0
+07/09/2025 - 17:56:16:     support_ability_value: 186
+07/09/2025 - 17:56:16:     party_id: 0
+07/09/2025 - 17:56:16:     scaled_kills: 0
+07/09/2025 - 17:56:16:     scaled_deaths: 0
+07/09/2025 - 17:56:16:     scaled_assists: 0
+07/09/2025 - 17:56:16:     claimed_farm_gold: 4968
+07/09/2025 - 17:56:16:     support_gold: 0
+07/09/2025 - 17:56:16:     claimed_denies: 0
+07/09/2025 - 17:56:16:     claimed_misses: 22
+07/09/2025 - 17:56:16:     misses: 44
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5150
+07/09/2025 - 17:56:16:       time: 66
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5151
+07/09/2025 - 17:56:16:       time: 218
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5151
+07/09/2025 - 17:56:16:       time: 247
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5150
+07/09/2025 - 17:56:16:       time: 296
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5151
+07/09/2025 - 17:56:16:       time: 369
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5153
+07/09/2025 - 17:56:16:       time: 454
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5151
+07/09/2025 - 17:56:16:       time: 571
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5150
+07/09/2025 - 17:56:16:       time: 641
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5150
+07/09/2025 - 17:56:16:       time: 841
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5152
+07/09/2025 - 17:56:16:       time: 983
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     ability_upgrades {
+07/09/2025 - 17:56:16:       ability: 5153
+07/09/2025 - 17:56:16:       time: 1080
+07/09/2025 - 17:56:16:     }
+07/09/2025 - 17:56:16:     net_worth: 3995
+07/09/2025 - 17:56:16:   }
+07/09/2025 - 17:56:16: }
+07/09/2025 - 17:56:16: tower_status: 2047
+07/09/2025 - 17:56:16: tower_status: 2039
+07/09/2025 - 17:56:16: barracks_status: 63
+07/09/2025 - 17:56:16: barracks_status: 63
+07/09/2025 - 17:56:16: cluster: 0
+07/09/2025 - 17:56:16: server_addr: "46.174.49.35:24263"
+07/09/2025 - 17:56:16: first_blood_time: 0
+07/09/2025 - 17:56:16: game_balance: 0.0012040471
+07/09/2025 - 17:56:16: automatic_surrender: false
+07/09/2025 - 17:56:16: server_version: 0
+07/09/2025 - 17:56:16: additional_msgs {
+07/09/2025 - 17:56:16:   id: 7545
+07/09/2025 - 17:56:16:   contents: "\n \010\224\371\342\376\005\020\000\030\000 \000(\0000\0008\002@\002H\000P\000X\000`\000h\000p\000\n \010\203\357\310\237\004\020\000\030\000 \000(\0000\0008\000@\000H\000P\000X\000`\000h\000p\000"
+07/09/2025 - 17:56:16: }
+07/09/2025 - 17:56:16: average_networth_delta: 107
+07/09/2025 - 17:56:16: networth_delta_min10: 416
+07/09/2025 - 17:56:16: maximum_losing_networth_lead: 60
+07/09/2025 - 17:56:16: average_experience_delta: -5
+07/09/2025 - 17:56:16: experience_delta_min10: 26
+07/09/2025 - 17:56:16: bonus_gold_winner_min10: 0
+07/09/2025 - 17:56:16: bonus_gold_winner_total: 0
+07/09/2025 - 17:56:16: bonus_gold_loser_min10: 0
+07/09/2025 - 17:56:16: bonus_gold_loser_total: 0
+07/09/2025 - 17:56:16: match_id: 0
+07/09/2025 - 17:56:16: region_id: 255
+07/09/2025 - 17:56:16: players {
+07/09/2025 - 17:56:16:   account_id: 1608039572
+07/09/2025 - 17:56:16:   ip: 84143210
+07/09/2025 - 17:56:16:   avg_ping_ms: 100
+07/09/2025 - 17:56:16:   packet_loss: 0.00061312079
+07/09/2025 - 17:56:16:   ping_deviation: 4.9203067
+07/09/2025 - 17:56:16:   full_resends: 1
+07/09/2025 - 17:56:16: }
+07/09/2025 - 17:56:16: players {
+07/09/2025 - 17:56:16:   account_id: 1139947395
+07/09/2025 - 17:56:16:   ip: 1595489600
+07/09/2025 - 17:56:16:   avg_ping_ms: 79
+07/09/2025 - 17:56:16:   packet_loss: 0
+07/09/2025 - 17:56:16:   ping_deviation: 16.309706
+07/09/2025 - 17:56:16:   full_resends: 1
+07/09/2025 - 17:56:16: }
+07/09/2025 - 17:56:16: cluster_id: 0
+07/09/2025 - 17:56:16: SIGNOUT: Told to wait by GC for 292 seconds
+07/09/2025 - 17:56:36: L 07/09/2025 - 17:56:36: "LoWgeMer<4><[U:1:1139947395]><#DOTA_BadGuys>" disconnected (reason "2")
+07/09/2025 - 17:56:36: On disconnect 0 0
+07/09/2025 - 17:56:36: Voice: Listener LoWgeMer(5) state cleared due to Disconnected
+07/09/2025 - 17:56:36: PR:SetConnectionState 5:[U:1:1139947395] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_DISCONNECT_BY_USER
+07/09/2025 - 17:56:36: Setting player LoWgeMer to DOTA_LEAVER_DISCONNECTED
+07/09/2025 - 17:56:36: PR:SetLeaverStatus 5:[U:1:1139947395] DOTA_LEAVER_DISCONNECTED
+07/09/2025 - 17:56:36: 0: npc_dota_hero_tinker
+07/09/2025 - 17:56:36: 1: npc_dota_courier
+07/09/2025 - 17:56:36: Dropped LoWgeMer from server(2): NETWORK_DISCONNECT_DISCONNECT_BY_USER
+07/09/2025 - 17:56:36: Unable to create object of type 2017
+07/09/2025 - 17:56:47: L 07/09/2025 - 17:56:47: "I'm too strong for you<3><[U:1:1608039572]><#DOTA_GoodGuys>" disconnected (reason "2")
+07/09/2025 - 17:56:47: On disconnect 0 0
+07/09/2025 - 17:56:47: Voice: Listener I'm too strong for you(0) state cleared due to Disconnected
+07/09/2025 - 17:56:47: PR:SetConnectionState 0:[U:1:1608039572] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_DISCONNECT_BY_USER
+07/09/2025 - 17:56:47: Setting player I'm too strong for you to DOTA_LEAVER_DISCONNECTED
+07/09/2025 - 17:56:47: PR:SetLeaverStatus 0:[U:1:1608039572] DOTA_LEAVER_DISCONNECTED
+07/09/2025 - 17:56:47: 1: npc_dota_hero_nevermore
+07/09/2025 - 17:56:47: 4: npc_dota_courier
+07/09/2025 - 17:56:47: Dropped I'm too strong for you from server(2): NETWORK_DISCONNECT_DISCONNECT_BY_USER
+07/09/2025 - 17:56:47: S:Gamerules: entering state 'DOTA_GAMERULES_STATE_DISCONNECT'
+07/09/2025 - 17:56:47: GameRules change to: 7
+07/09/2025 - 17:56:47: Players failed to load
+07/09/2025 - 17:56:47: GameRules change to: 7
+07/09/2025 - 17:56:47: GameRules change to: 7
+07/09/2025 - 17:56:47: On disconnect 0 1
+07/09/2025 - 17:56:47: Steamworks Stats: CDOTASteamWorksGameStatsServer Ending CLIENT session id: 8923969661453
+07/09/2025 - 17:56:47: Steamworks Stats: CDOTASteamWorksGameStatsServer Ending SERVER session id: 8923969661453
+07/09/2025 - 17:56:47: CWorld::~CWorld deleting game rules
+07/09/2025 - 17:56:47: CDOTAGamerules::~CDOTAGamerules, calling shutdown
+07/09/2025 - 17:56:47: CSoundEmitterSystem:  Registered 1431 sounds
+07/09/2025 - 17:56:47: L 07/09/2025 - 17:56:47: [META] Loaded 0 plugins (2 already loaded)
+07/09/2025 - 17:56:47: L 07/09/2025 - 17:56:47: "SourceTV<2><BOT><>" disconnected (reason "1")
+07/09/2025 - 17:56:47: Completed SourceTV demo "replays/40209.dem", recording time 1259.3
+07/09/2025 - 17:56:47: Closed hltv(24268) (threaded)
+07/09/2025 - 17:56:48: L 07/09/2025 - 17:56:48: server_message: "quit"
+07/09/2025 - 17:56:48: Closed server(24263) (threaded)
+07/09/2025 - 17:56:48: L 07/09/2025 - 17:56:48: server_message: "restart"
+07/09/2025 - 17:56:48: L 07/09/2025 - 17:56:48: Log file closed.
+07/09/2025 - 17:56:48: L 07/09/2025 - 17:56:48: Error log file session closed.

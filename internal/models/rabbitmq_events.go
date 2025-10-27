@@ -1,7 +1,7 @@
 package models
 
 type PlayerIdType struct {
-	value string
+	Value string `json:"value"`
 }
 
 type PlayerConnectedEvent struct {
@@ -16,4 +16,12 @@ type MatchFailedEvent struct {
 	Server        string
 	FailedPlayers []string
 	GoodParties   []string
+}
+
+type PlayerAbandonedEvent struct {
+	PlayerId     PlayerIdType       `json:"playerId"`
+	MatchId      int64              `json:"matchId"`
+	AbandonIndex int                `json:"abandonIndex"`
+	Mode         MatchmakingMode    `json:"mode"`
+	GameState    DotaGameRulesState `json:"gameState"`
 }

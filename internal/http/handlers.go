@@ -10,6 +10,7 @@ import (
 	"sidecar/internal/rabbit"
 	"sidecar/internal/redis"
 	"strconv"
+	"time"
 )
 
 func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFunc {
@@ -89,15 +90,33 @@ func HandlePlayerNotLoaded(data models.PlayerNotLoadedOnSRCDS, w http.ResponseWr
 
 func HandlePlayerAbandon(data models.PlayerAbandonOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received player_abandon: %+v", data)
+	event := models.PlayerAbandonedEvent{
+		PlayerId:     models.PlayerIdType{Value: strconv.FormatInt(data.SteamID, 10)},
+		MatchId:      data.MatchID,
+		AbandonIndex: data.AbandonIndex,
+		Mode:         data.Mode,
+		GameState:    data.GameState,
+	}
+	rabbit.PublishPlayerAbandonEvent(event)
 	w.WriteHeader(http.StatusOK)
 }
 
 func HandlePlayerConnect(data models.PlayerConnectedOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received player_connected: %+v", data)
+	event := models.PlayerConnectedEvent{
+		PlayerId:  models.PlayerIdType{Value: strconv.FormatInt(data.SteamID, 10)},
+		MatchId:   data.MatchID,
+		ServerUrl: data.Server,
+		Ip:        data.IP,
+	}
+	redis.PublishPlayerConnected(event)
 	w.WriteHeader(http.StatusOK)
 }
 
-func HandleMatchFinished(data models.MatchFinishedOnSRCDS, w http.ResponseWriter) {
-	log.Printf("Received player_connected: %+v", data)
+func HandleMatchResults(data models.MatchFinishedOnSRCDS, w http.ResponseWriter) {
+	log.Printf("Received match_results: %+v", data)
+	time.Sleep(5 * time.Second)
+	//rabbit.PublishMatchFinished
+
 	w.WriteHeader(http.StatusOK)
 }
