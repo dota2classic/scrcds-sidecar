@@ -2,7 +2,7 @@ package http
 
 import "net/http"
 
-func InitHttpServer() {
+func initRoutes() {
 
 	http.HandleFunc("/live_match", HandleJSONPost(HandleLiveMatch))
 
