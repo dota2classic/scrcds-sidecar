@@ -100,7 +100,6 @@ func parseAndRecordSrcdsMetrics(statsRaw string) {
 
 func parseRawRconStatsResponse(statsRaw string) (*ServerMetrics, error) {
 	lines := strings.Split(statsRaw, "\n")
-	fmt.Printf("Raw stats response: %s", statsRaw)
 	if len(lines) < 3 {
 		return nil, fmt.Errorf("invalid stats format")
 	}

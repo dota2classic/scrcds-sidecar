@@ -31,4 +31,9 @@ func InitGlobalState() {
 	GlobalMatchInfo.GameMode = models.ParseGameMode(os.Getenv("GAME_MODE"))
 	GlobalMatchInfo.Host = host
 	GlobalMatchInfo.ServerAddress = serverAddress
+
+	fmt.Printf("LobbyType %s %d", os.Getenv("LOBBY_TYPE"), GlobalMatchInfo.LobbyType)
+	fmt.Printf("GameMode %s %d", os.Getenv("GAME_MODE"), GlobalMatchInfo.GameMode)
+
+	fmt.Println("GlobalMatchInfo", GlobalMatchInfo)
 }
