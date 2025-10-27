@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sidecar/internal/util"
 
 	"github.com/minio/minio-go/v7"
 )
@@ -23,8 +24,8 @@ const (
 
 func UploadArtifacts(matchId int64) {
 	log.Printf("Uploading artifacts for matchId %d", matchId)
-	uploadFolder("./dota/logs", ArtifactLog, matchId)
-	uploadFolder("./dota/replays", ArtifactReplay, matchId)
+	uploadFolder(util.LOG_FOLDER, ArtifactLog, matchId)
+	uploadFolder(util.REPLAY_FOLDER, ArtifactReplay, matchId)
 	log.Printf("Artifacts for matchId %d successfully uploaded", matchId)
 }
 

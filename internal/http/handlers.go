@@ -9,6 +9,8 @@ import (
 	"sidecar/internal/models"
 	"sidecar/internal/rabbit"
 	"sidecar/internal/redis"
+	"sidecar/internal/srcds/log_parser"
+	"sidecar/internal/util"
 	"strconv"
 	"time"
 )
@@ -33,7 +35,7 @@ func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFun
 func HandleLiveMatch(data models.LiveMatchDto, w http.ResponseWriter) {
 	log.Printf("Received live_match: %+v", data)
 	mapped := mapper.MapLiveMatchUpdatedEvent(data)
-	redis.PublishLiveMatch(mapped)
+	redis.PublishLiveMatch(&mapped)
 	w.WriteHeader(http.StatusOK)
 }
 
@@ -71,7 +73,7 @@ partyLoop:
 			FailedPlayers: failedIDs,
 			GoodParties:   goodParties,
 		}
-		rabbit.PublishMatchFailedEvent(event)
+		rabbit.PublishMatchFailedEvent(&event)
 	}
 	w.WriteHeader(http.StatusOK)
 }
@@ -84,7 +86,7 @@ func HandlePlayerNotLoaded(data models.PlayerNotLoadedOnSRCDS, w http.ResponseWr
 		FailedPlayers: []string{strconv.FormatInt(data.SteamID, 10)},
 		GoodParties:   []string{},
 	}
-	rabbit.PublishMatchFailedEvent(event)
+	rabbit.PublishMatchFailedEvent(&event)
 	w.WriteHeader(http.StatusOK)
 }
 
@@ -97,7 +99,7 @@ func HandlePlayerAbandon(data models.PlayerAbandonOnSRCDS, w http.ResponseWriter
 		Mode:         data.Mode,
 		GameState:    data.GameState,
 	}
-	rabbit.PublishPlayerAbandonEvent(event)
+	rabbit.PublishPlayerAbandonEvent(&event)
 	w.WriteHeader(http.StatusOK)
 }
 
@@ -109,14 +111,21 @@ func HandlePlayerConnect(data models.PlayerConnectedOnSRCDS, w http.ResponseWrit
 		ServerUrl: data.Server,
 		Ip:        data.IP,
 	}
-	redis.PublishPlayerConnected(event)
+	redis.PublishPlayerConnectedEvent(&event)
 	w.WriteHeader(http.StatusOK)
 }
 
 func HandleMatchResults(data models.MatchFinishedOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received match_results: %+v", data)
 	time.Sleep(5 * time.Second)
-	//rabbit.PublishMatchFinished
+
+	event := mapper.MapGameResults(data)
+	err := log_parser.FillAdditionalDataFromLog(&event, util.GetLogFilePath())
+	if err != nil {
+		log.Printf("Failed to fill additional data: %v", err)
+	}
+
+	rabbit.PublishGameResultsEvent(&event)
 
 	w.WriteHeader(http.StatusOK)
 }

@@ -68,7 +68,7 @@ func InitRabbitPublisher() {
 	log.Println("RabbitMQ publisher initialized")
 }
 
-func publishWithRetry[T any](event T, routingKey string, retries int) error {
+func publishWithRetry[T any](event *T, routingKey string, retries int) error {
 	var err error
 
 	message, err := json.Marshal(event)

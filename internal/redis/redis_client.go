@@ -11,14 +11,14 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
-func PublishLiveMatch(evt models.LiveMatchUpdateEvent) {
+func PublishLiveMatch(evt *models.LiveMatchUpdateEvent) {
 	err := publishWithRetry("LiveMatchUpdateEvent", evt, 3)
 	if err != nil {
 		fmt.Printf("There was an issue publishing event: %s\n", err)
 	}
 }
 
-func PublishPlayerConnected(evt models.PlayerConnectedEvent) {
+func PublishPlayerConnectedEvent(evt *models.PlayerConnectedEvent) {
 	err := publishWithRetry("PlayerConnectedEvent", evt, 3)
 	if err != nil {
 		fmt.Printf("There was an issue publishing event: %s\n", err)
@@ -26,7 +26,7 @@ func PublishPlayerConnected(evt models.PlayerConnectedEvent) {
 }
 
 // publishWithRetry publishes a message with automatic retry logic.
-func publishWithRetry[T any](channel string, event T, retries int) error {
+func publishWithRetry[T any](channel string, event *T, retries int) error {
 	var err error
 
 	message, err := json.Marshal(event)
