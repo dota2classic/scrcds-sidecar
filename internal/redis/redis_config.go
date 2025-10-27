@@ -2,7 +2,10 @@ package redis
 
 import (
 	"context"
+	"fmt"
 	"log"
+	"os"
+	"sidecar/internal/util"
 	"time"
 
 	"github.com/redis/go-redis/v9"
@@ -13,13 +16,18 @@ var ctx = context.Background()
 var client *redis.Client
 
 func InitRedisClient() {
+	host := os.Getenv("REDIS_HOST")
+	port := util.GetEnvInt("REDIS_PORT", 6379)
+
+	password := os.Getenv("REDIS_PASSWORD")
+
 	// Create client
 	client = redis.NewClient(&redis.Options{
-		Addr:         "localhost:6379", // or your Redis service in k8s
-		Password:     "",               // set if required
+		Addr:         fmt.Sprintf("%s:%d", host, port),
+		Password:     password,
 		DB:           0,
-		PoolSize:     10, // adjust for concurrency
-		MinIdleConns: 2,  // keep a few warm
+		PoolSize:     2,
+		MinIdleConns: 1,
 		ReadTimeout:  3 * time.Second,
 		WriteTimeout: 3 * time.Second,
 	})
