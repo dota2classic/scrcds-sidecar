@@ -2,7 +2,7 @@ package mapper
 
 import (
 	"sidecar/internal/models"
-	"sidecar/internal/util/items"
+	"sidecar/internal/util/dotamaps"
 )
 
 func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) models.LiveMatchUpdateEvent {
