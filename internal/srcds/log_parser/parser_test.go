@@ -191,5 +191,16 @@ func TestParseLogFile_Druid(t *testing.T) {
 			t.Errorf("Inventory item mismatch at index %d: expected %d got %d", i, expectedInventory[i], inv.Items[i])
 		}
 	}
+}
 
+func TestParseLogFile_Bots(t *testing.T) {
+	// Given
+	data, _ := os.ReadFile("testdata/bots.log")
+
+	// When
+	_, err := ParseLog(string(data))
+
+	if err != nil {
+		t.Errorf("ParseLog() returned nil")
+	}
 }
