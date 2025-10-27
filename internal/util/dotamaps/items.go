@@ -1,11 +1,11 @@
-package items
+package dotamaps
 
-type Item struct {
+type item struct {
 	ID   int
 	Name string
 }
 
-var ItemIDs = []Item{
+var itemIds = []item{
 	{0, "empty"},
 	{1, "blink"},
 	{2, "blades_of_attack"},
@@ -274,8 +274,8 @@ var ItemIDs = []Item{
 
 // ItemIDByName provides O(1) lookup by name.
 var itemIDByName = func() map[string]int {
-	m := make(map[string]int, len(ItemIDs))
-	for _, item := range ItemIDs {
+	m := make(map[string]int, len(itemIds))
+	for _, item := range itemIds {
 		m[item.Name] = item.ID
 	}
 	return m

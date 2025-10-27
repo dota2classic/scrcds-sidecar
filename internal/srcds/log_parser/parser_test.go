@@ -56,7 +56,7 @@ func TestParseLogFile_5x5(t *testing.T) {
 	players := flattenPlayers(parsed.Teams)
 
 	// GPM
-	expectedGPM := []int64{223, 432, 170, 374, 473, 359, 615, 278, 426, 592}
+	expectedGPM := []int{223, 432, 170, 374, 473, 359, 615, 278, 426, 592}
 	for i, p := range players {
 		if p.GoldPerMin != expectedGPM[i] {
 			t.Errorf("expected player %d GPM = %v, got %v", i, expectedGPM[i], p.GoldPerMin)
@@ -64,7 +64,7 @@ func TestParseLogFile_5x5(t *testing.T) {
 	}
 
 	// XPM
-	expectedXPM := []int64{229, 547, 179, 471, 549, 328, 610, 357, 487, 610}
+	expectedXPM := []int{229, 547, 179, 471, 549, 328, 610, 357, 487, 610}
 	for i, p := range players {
 		if p.XpPerMinute != expectedXPM[i] {
 			t.Errorf("expected player %d XPM = %v, got %v", i, expectedXPM[i], p.XpPerMinute)
@@ -72,7 +72,7 @@ func TestParseLogFile_5x5(t *testing.T) {
 	}
 
 	// HeroDamage
-	expectedHeroDamage := []int64{6243, 32146, 4324, 9731, 13355, 21939, 32220, 4320, 11411, 14658}
+	expectedHeroDamage := []int{6243, 32146, 4324, 9731, 13355, 21939, 32220, 4320, 11411, 14658}
 	for i, p := range players {
 		if p.HeroDamage != expectedHeroDamage[i] {
 			t.Errorf("expected player %d HeroDamage = %v, got %v", i, expectedHeroDamage[i], p.HeroDamage)
@@ -80,7 +80,7 @@ func TestParseLogFile_5x5(t *testing.T) {
 	}
 
 	// TowerDamage
-	expectedTowerDamage := []int64{376, 0, 103, 242, 1079, 218, 4586, 355, 2240, 2023}
+	expectedTowerDamage := []int{376, 0, 103, 242, 1079, 218, 4586, 355, 2240, 2023}
 	for i, p := range players {
 		if p.TowerDamage != expectedTowerDamage[i] {
 			t.Errorf("expected player %d TowerDamage = %v, got %v", i, expectedTowerDamage[i], p.TowerDamage)
@@ -88,7 +88,7 @@ func TestParseLogFile_5x5(t *testing.T) {
 	}
 
 	// HeroHealing
-	expectedHeroHealing := []int64{1371, 0, 0, 0, 0, 0, 0, 8377, 1624, 0}
+	expectedHeroHealing := []int{1371, 0, 0, 0, 0, 0, 0, 8377, 1624, 0}
 	for i, p := range players {
 		if p.HeroHealing != expectedHeroHealing[i] {
 			t.Errorf("expected player %d HeroHealing = %v, got %v", i, expectedHeroHealing[i], p.HeroHealing)
@@ -96,7 +96,7 @@ func TestParseLogFile_5x5(t *testing.T) {
 	}
 
 	// Misses
-	expectedMisses := []int64{14, 16, 16, 8, 10, 11, 22, 17, 18, 16}
+	expectedMisses := []int{14, 16, 16, 8, 10, 11, 22, 17, 18, 16}
 	for i, p := range players {
 		if p.Misses != expectedMisses[i] {
 			t.Errorf("expected player %d Misses = %v, got %v", i, expectedMisses[i], p.Misses)
@@ -104,7 +104,7 @@ func TestParseLogFile_5x5(t *testing.T) {
 	}
 
 	// NetWorth
-	expectedNetWorth := []int64{4562, 21169, 2409, 16635, 20675, 14937, 31282, 12210, 20559, 26524}
+	expectedNetWorth := []int{4562, 21169, 2409, 16635, 20675, 14937, 31282, 12210, 20559, 26524}
 	for i, p := range players {
 		if p.NetWorth != expectedNetWorth[i] {
 			t.Errorf("expected player %d NetWorth = %v, got %v", i, expectedNetWorth[i], p.NetWorth)
@@ -134,7 +134,7 @@ func TestParseLogFile_IncompleteGame(t *testing.T) {
 	}
 
 	// Tower status
-	expectedTowerStatus := []int64{2047, 260}
+	expectedTowerStatus := []int{2047, 260}
 	for i, v := range expectedTowerStatus {
 		if parsed.TowerStatus[i] != v {
 			t.Errorf("expected tower_status[%d] = %v, got %v", i, v, parsed.TowerStatus[i])
@@ -142,7 +142,7 @@ func TestParseLogFile_IncompleteGame(t *testing.T) {
 	}
 
 	// Barracks status
-	expectedBarracksStatus := []int64{63, 51}
+	expectedBarracksStatus := []int{63, 51}
 	for i, v := range expectedBarracksStatus {
 		if parsed.BarracksStatus[i] != v {
 			t.Errorf("expected barracks_status[%d] = %v, got %v", i, v, parsed.BarracksStatus[i])
@@ -177,7 +177,7 @@ func TestParseLogFile_Druid(t *testing.T) {
 		t.Errorf("parsed.Teams[0].Players[1].AdditionalUnitsInventory.UnitName to be spirit bear, got %s", inv.UnitName)
 	}
 
-	expectedInventory := []int64{
+	expectedInventory := []int{
 		50,
 		182,
 		172,

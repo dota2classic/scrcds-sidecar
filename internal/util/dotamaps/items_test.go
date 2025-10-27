@@ -1,4 +1,4 @@
-package items
+package dotamaps
 
 import "testing"
 

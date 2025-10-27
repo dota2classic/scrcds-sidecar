@@ -4,10 +4,10 @@ type ParsedProtobufMessage struct {
 	Duration                  float64                `json:"duration"`
 	GoodGuysWin               bool                   `json:"good_guys_win"`
 	Date                      int64                  `json:"date"`
-	NumPlayers                []int64                `json:"num_players"`
+	NumPlayers                []int                  `json:"num_players"`
 	Teams                     []team                 `json:"teams"`
-	TowerStatus               []int64                `json:"tower_status"`
-	BarracksStatus            []int64                `json:"barracks_status"`
+	TowerStatus               []int                  `json:"tower_status"`
+	BarracksStatus            []int                  `json:"barracks_status"`
 	Cluster                   int64                  `json:"cluster"`
 	ServerAddr                string                 `json:"server_addr"`
 	FirstBloodTime            float64                `json:"first_blood_time"`
@@ -38,7 +38,7 @@ type team struct {
 
 type player struct {
 	SteamID                  int64                     `json:"steam_id"`
-	HeroID                   int64                     `json:"hero_id"`
+	HeroID                   int                       `json:"hero_id"`
 	Items                    []int64                   `json:"items"`
 	Gold                     int64                     `json:"gold"`
 	Kills                    int64                     `json:"kills"`
@@ -47,26 +47,26 @@ type player struct {
 	LeaverStatus             int64                     `json:"leaver_status"`
 	LastHits                 int64                     `json:"last_hits"`
 	Denies                   int64                     `json:"denies"`
-	GoldPerMin               int64                     `json:"gold_per_min"`
-	XpPerMinute              int64                     `json:"xp_per_minute"`
-	GoldSpent                int64                     `json:"gold_spent"`
-	Level                    int64                     `json:"level"`
-	HeroDamage               int64                     `json:"hero_damage"`
-	TowerDamage              int64                     `json:"tower_damage"`
-	HeroHealing              int64                     `json:"hero_healing"`
+	GoldPerMin               int                       `json:"gold_per_min"`
+	XpPerMinute              int                       `json:"xp_per_minute"`
+	GoldSpent                int                       `json:"gold_spent"`
+	Level                    int                       `json:"level"`
+	HeroDamage               int                       `json:"hero_damage"`
+	TowerDamage              int                       `json:"tower_damage"`
+	HeroHealing              int                       `json:"hero_healing"`
 	TimeLastSeen             int64                     `json:"time_last_seen"`
-	SupportAbilityValue      int64                     `json:"support_ability_value"`
+	SupportAbilityValue      int                       `json:"support_ability_value"`
 	PartyID                  int64                     `json:"party_id"`
 	ScaledKills              float64                   `json:"scaled_kills"`
 	ScaledDeaths             float64                   `json:"scaled_deaths"`
 	ScaledAssists            float64                   `json:"scaled_assists"`
 	ClaimedFarmGold          int64                     `json:"claimed_farm_gold"`
-	SupportGold              int64                     `json:"support_gold"`
-	ClaimedDenies            int64                     `json:"claimed_denies"`
-	ClaimedMisses            int64                     `json:"claimed_misses"`
-	Misses                   int64                     `json:"misses"`
+	SupportGold              int                       `json:"support_gold"`
+	ClaimedDenies            int                       `json:"claimed_denies"`
+	ClaimedMisses            int                       `json:"claimed_misses"`
+	Misses                   int                       `json:"misses"`
 	AbilityUpgrades          []abilityUpgrade          `json:"ability_upgrades"`
-	NetWorth                 int64                     `json:"net_worth"`
+	NetWorth                 int                       `json:"net_worth"`
 	AdditionalUnitsInventory *additionalUnitsInventory `json:"additional_units_inventory,omitempty"`
 }
 
@@ -76,8 +76,8 @@ type abilityUpgrade struct {
 }
 
 type additionalUnitsInventory struct {
-	UnitName string  `json:"unit_name"`
-	Items    []int64 `json:"items"`
+	UnitName string `json:"unit_name"`
+	Items    []int  `json:"items"`
 }
 
 type playerConnectionInfo struct {
