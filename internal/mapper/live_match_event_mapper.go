@@ -4,10 +4,12 @@ import (
 	"sidecar/internal/models"
 	"sidecar/internal/util/dotamaps"
 	"strconv"
+
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 )
 
-func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) models.LiveMatchUpdateEvent {
-	var mapped models.LiveMatchUpdateEvent
+func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) d2cmodels.LiveMatchUpdateEvent {
+	var mapped d2cmodels.LiveMatchUpdateEvent
 	mapped.MatchID = dto.MatchID
 	mapped.Server = dto.Server
 	mapped.MatchmakingMode = dto.MatchmakingMode
@@ -19,7 +21,7 @@ func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) models.LiveMatchUpdateEve
 	mapped.Timestamp = dto.Timestamp
 
 	for _, h := range dto.Heroes {
-		var slot models.SlotInfo
+		var slot d2cmodels.SlotInfo
 		slot.Team = h.Team
 
 		// SteamID might be number or string in JSON
@@ -29,7 +31,7 @@ func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) models.LiveMatchUpdateEve
 
 		if h.HeroData != nil {
 			hd := h.HeroData
-			player := &models.PlayerInfo{
+			player := &d2cmodels.PlayerInfo{
 				Level:       hd.Level,
 				Hero:        hd.Hero,
 				Bot:         hd.Bot,

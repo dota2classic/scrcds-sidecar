@@ -5,20 +5,20 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"sidecar/internal/models"
 	"time"
 
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 	"github.com/redis/go-redis/v9"
 )
 
-func PublishLiveMatch(evt *models.LiveMatchUpdateEvent) {
+func PublishLiveMatch(evt *d2cmodels.LiveMatchUpdateEvent) {
 	err := publishWithRetry("LiveMatchUpdateEvent", evt, 3)
 	if err != nil {
 		fmt.Printf("There was an issue publishing event: %s\n", err)
 	}
 }
 
-func PublishPlayerConnectedEvent(evt *models.PlayerConnectedEvent) {
+func PublishPlayerConnectedEvent(evt *d2cmodels.PlayerConnectedEvent) {
 	err := publishWithRetry("PlayerConnectedEvent", evt, 3)
 	if err != nil {
 		fmt.Printf("There was an issue publishing event: %s\n", err)

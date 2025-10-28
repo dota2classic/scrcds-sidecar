@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"sidecar/internal/util"
 	"time"
 
+	d2cutils "github.com/dota2classic/d2c-go-models/util"
 	"github.com/redis/go-redis/v9"
 )
 
@@ -17,7 +17,7 @@ var client *redis.Client
 
 func InitRedisClient() {
 	host := os.Getenv("REDIS_HOST")
-	port := util.GetEnvInt("REDIS_PORT", 6379)
+	port := d2cutils.GetEnvInt("REDIS_PORT", 6379)
 
 	password := os.Getenv("REDIS_PASSWORD")
 

@@ -3,6 +3,7 @@ package http
 import (
 	"encoding/json"
 	"fmt"
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 	"log"
 	"net/http"
 	"sidecar/internal/mapper"
@@ -43,7 +44,7 @@ func HandleMatchFailed(d models.MatchFailedOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received failed_match: %+v", d)
 	var failedPlayers []models.FailedPlayerInfo
 	for _, p := range d.Players {
-		if p.Connection == models.DOTA_CONNECTION_STATE_FAILED {
+		if p.Connection == d2cmodels.DOTA_CONNECTION_STATE_FAILED {
 			failedPlayers = append(failedPlayers, p)
 		}
 	}
@@ -67,7 +68,7 @@ partyLoop:
 			failedIDs = append(failedIDs, fmt.Sprint(p.SteamID))
 		}
 
-		event := models.MatchFailedEvent{
+		event := d2cmodels.MatchFailedEvent{
 			MatchID:       d.MatchID,
 			Server:        d.Server,
 			FailedPlayers: failedIDs,
@@ -80,7 +81,7 @@ partyLoop:
 
 func HandlePlayerNotLoaded(data models.PlayerNotLoadedOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received player_not_loaded: %+v", data)
-	event := models.MatchFailedEvent{
+	event := d2cmodels.MatchFailedEvent{
 		MatchID:       data.MatchID,
 		Server:        data.Server,
 		FailedPlayers: []string{strconv.FormatInt(data.SteamID, 10)},
@@ -92,8 +93,8 @@ func HandlePlayerNotLoaded(data models.PlayerNotLoadedOnSRCDS, w http.ResponseWr
 
 func HandlePlayerAbandon(data models.PlayerAbandonOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received player_abandon: %+v", data)
-	event := models.PlayerAbandonedEvent{
-		PlayerId:     models.PlayerIdType{Value: strconv.FormatInt(data.SteamID, 10)},
+	event := d2cmodels.PlayerAbandonedEvent{
+		PlayerId:     d2cmodels.PlayerIdType{Value: strconv.FormatInt(data.SteamID, 10)},
 		MatchId:      data.MatchID,
 		AbandonIndex: data.AbandonIndex,
 		Mode:         data.Mode,
@@ -105,8 +106,8 @@ func HandlePlayerAbandon(data models.PlayerAbandonOnSRCDS, w http.ResponseWriter
 
 func HandlePlayerConnect(data models.PlayerConnectedOnSRCDS, w http.ResponseWriter) {
 	log.Printf("Received player_connected: %+v", data)
-	event := models.PlayerConnectedEvent{
-		PlayerId:  models.PlayerIdType{Value: strconv.FormatInt(data.SteamID, 10)},
+	event := d2cmodels.PlayerConnectedEvent{
+		PlayerId:  d2cmodels.PlayerIdType{Value: strconv.FormatInt(data.SteamID, 10)},
 		MatchId:   data.MatchID,
 		ServerUrl: data.Server,
 		Ip:        data.IP,

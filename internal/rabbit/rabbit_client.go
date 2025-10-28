@@ -2,10 +2,11 @@ package rabbit
 
 import (
 	"log"
-	"sidecar/internal/models"
+
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 )
 
-func PublishMatchFailedEvent(event *models.MatchFailedEvent) {
+func PublishMatchFailedEvent(event *d2cmodels.MatchFailedEvent) {
 	err := publishWithRetry(event, "MatchFailedEvent", 3)
 	if err != nil {
 		log.Println("Error publishing event event:", err)
@@ -14,7 +15,7 @@ func PublishMatchFailedEvent(event *models.MatchFailedEvent) {
 	log.Println("Published MatchFailedEvent to rmq")
 }
 
-func PublishPlayerAbandonEvent(event *models.PlayerAbandonedEvent) {
+func PublishPlayerAbandonEvent(event *d2cmodels.PlayerAbandonedEvent) {
 	err := publishWithRetry(event, "PlayerAbandonEvent", 3)
 	if err != nil {
 		log.Println("Error publishing event event:", err)
@@ -23,7 +24,7 @@ func PublishPlayerAbandonEvent(event *models.PlayerAbandonedEvent) {
 	log.Println("Published PlayerAbandonedEvent to rmq")
 }
 
-func PublishGameResultsEvent(event *models.GameResultsEvent) {
+func PublishGameResultsEvent(event *d2cmodels.GameResultsEvent) {
 	err := publishWithRetry(event, "GameResultsEvent", 3)
 	if err != nil {
 		log.Println("Error publishing event event:", err)

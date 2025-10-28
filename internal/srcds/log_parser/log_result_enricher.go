@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"sidecar/internal/models"
 	"sidecar/internal/util/dotamaps"
 	"strconv"
+
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 )
 
 // fillAdditionalDataFromLog enriches a GameResultsEvent using data from a log file.
-func FillAdditionalDataFromLog(evt *models.GameResultsEvent, logFile string) error {
+func FillAdditionalDataFromLog(evt *d2cmodels.GameResultsEvent, logFile string) error {
 	log.Printf("Beginning parsing log file: %s for match %v", logFile, evt.MatchID)
 
 	data, err := os.ReadFile(logFile)
@@ -40,7 +41,7 @@ func FillAdditionalDataFromLog(evt *models.GameResultsEvent, logFile string) err
 			steam32str := strconv.FormatInt(steam32, 10)
 
 			// Try to find player by Steam32
-			var baseData *models.PlayerInMatchDTO
+			var baseData *d2cmodels.PlayerInMatchDTO
 			for i := range evt.Players {
 				if evt.Players[i].SteamID == steam32str {
 					baseData = &evt.Players[i]

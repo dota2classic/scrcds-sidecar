@@ -1,5 +1,7 @@
 package models
 
+import "github.com/dota2classic/d2c-go-models/models"
+
 type HeroData struct {
 	Bot         bool     `json:"bot"`
 	PosX        float64  `json:"pos_x"`
@@ -20,49 +22,49 @@ type HeroData struct {
 }
 
 type SlotInfoDto struct {
-	Team       int                 `json:"team"`
-	SteamID    int                 `json:"steam_id"`
-	Connection DotaConnectionState `json:"connection"`
-	HeroData   *HeroData           `json:"hero_data,omitempty"`
+	Team       int                        `json:"team"`
+	SteamID    int                        `json:"steam_id"`
+	Connection models.DotaConnectionState `json:"connection"`
+	HeroData   *HeroData                  `json:"hero_data,omitempty"`
 }
 
 type FailedPlayerInfo struct {
-	SteamID    int64               `json:"steam_id"`
-	PartyID    string              `json:"party_id,omitempty"`
-	Connection DotaConnectionState `json:"connection"`
+	SteamID    int64                      `json:"steam_id"`
+	PartyID    string                     `json:"party_id,omitempty"`
+	Connection models.DotaConnectionState `json:"connection"`
 }
 
 type SRCDSPlayer struct {
-	Hero        string              `json:"hero"`
-	SteamID     int64               `json:"steam_id"`
-	Team        int                 `json:"team"`
-	Level       int                 `json:"level"`
-	Kills       int                 `json:"kills"`
-	Deaths      int                 `json:"deaths"`
-	Assists     int                 `json:"assists"`
-	Connection  DotaConnectionState `json:"connection"`
-	GPM         int                 `json:"gpm"`
-	XPM         int                 `json:"xpm"`
-	LastHits    int                 `json:"last_hits"`
-	Denies      int                 `json:"denies"`
-	TowerKills  int                 `json:"tower_kills"`
-	Networth    int                 `json:"networth"`
-	RoshanKills int                 `json:"roshan_kills"`
-	Items       []string            `json:"items"`
-	PartyID     string              `json:"party_id"`
+	Hero        string                     `json:"hero"`
+	SteamID     int64                      `json:"steam_id"`
+	Team        int                        `json:"team"`
+	Level       int                        `json:"level"`
+	Kills       int                        `json:"kills"`
+	Deaths      int                        `json:"deaths"`
+	Assists     int                        `json:"assists"`
+	Connection  models.DotaConnectionState `json:"connection"`
+	GPM         int                        `json:"gpm"`
+	XPM         int                        `json:"xpm"`
+	LastHits    int                        `json:"last_hits"`
+	Denies      int                        `json:"denies"`
+	TowerKills  int                        `json:"tower_kills"`
+	Networth    int                        `json:"networth"`
+	RoshanKills int                        `json:"roshan_kills"`
+	Items       []string                   `json:"items"`
+	PartyID     string                     `json:"party_id"`
 }
 
 type LiveMatchDto struct {
-	MatchID         int64              `json:"match_id"`
-	MatchmakingMode MatchmakingMode    `json:"matchmaking_mode"`
-	GameMode        DotaGameMode       `json:"game_mode"`
-	GameState       DotaGameRulesState `json:"game_state"`
-	Timestamp       int64              `json:"timestamp"`
-	Duration        int                `json:"duration"`
-	Server          string             `json:"server"`
-	Towers          [2]int             `json:"towers"`
-	Barracks        [2]int             `json:"barracks"`
-	Heroes          []SlotInfoDto      `json:"heroes"`
+	MatchID         int64                     `json:"match_id"`
+	MatchmakingMode models.MatchmakingMode    `json:"matchmaking_mode"`
+	GameMode        models.DotaGameMode       `json:"game_mode"`
+	GameState       models.DotaGameRulesState `json:"game_state"`
+	Timestamp       int64                     `json:"timestamp"`
+	Duration        int                       `json:"duration"`
+	Server          string                    `json:"server"`
+	Towers          [2]int                    `json:"towers"`
+	Barracks        [2]int                    `json:"barracks"`
+	Heroes          []SlotInfoDto             `json:"heroes"`
 }
 
 type MatchFailedOnSRCDS struct {
@@ -72,41 +74,41 @@ type MatchFailedOnSRCDS struct {
 }
 
 type PlayerAbandonOnSRCDS struct {
-	MatchID      int64              `json:"match_id"`
-	SteamID      int64              `json:"steam_id"`
-	AbandonIndex int                `json:"abandon_index"`
-	Mode         MatchmakingMode    `json:"mode"`
-	Server       string             `json:"server"`
-	GameState    DotaGameRulesState `json:"game_state"`
+	MatchID      int64                     `json:"match_id"`
+	SteamID      int64                     `json:"steam_id"`
+	AbandonIndex int                       `json:"abandon_index"`
+	Mode         models.MatchmakingMode    `json:"mode"`
+	Server       string                    `json:"server"`
+	GameState    models.DotaGameRulesState `json:"game_state"`
 }
 
 type PlayerNotLoadedOnSRCDS struct {
-	MatchID int64           `json:"match_id"`
-	SteamID int64           `json:"steam_id"`
-	Mode    MatchmakingMode `json:"mode"`
-	Server  string          `json:"server"`
+	MatchID int64                  `json:"match_id"`
+	SteamID int64                  `json:"steam_id"`
+	Mode    models.MatchmakingMode `json:"mode"`
+	Server  string                 `json:"server"`
 }
 
 type PlayerConnectedOnSRCDS struct {
-	MatchID      int64              `json:"match_id"`
-	SteamID      int64              `json:"steam_id"`
-	LobbyType    MatchmakingMode    `json:"lobby_type"`
-	Server       string             `json:"server"`
-	IP           string             `json:"ip"`
-	GameState    DotaGameRulesState `json:"gameState"`
-	FirstConnect bool               `json:"firstConnect"`
-	Duration     int                `json:"duration"`
+	MatchID      int64                     `json:"match_id"`
+	SteamID      int64                     `json:"steam_id"`
+	LobbyType    models.MatchmakingMode    `json:"lobby_type"`
+	Server       string                    `json:"server"`
+	IP           string                    `json:"ip"`
+	GameState    models.DotaGameRulesState `json:"gameState"`
+	FirstConnect bool                      `json:"firstConnect"`
+	Duration     int                       `json:"duration"`
 }
 
 type MatchFinishedOnSRCDS struct {
-	MatchID   int64           `json:"MatchId"`
-	Winner    DotaTeam        `json:"winner"`
-	Duration  int             `json:"duration"`
-	Type      MatchmakingMode `json:"type"`
-	GameMode  DotaGameMode    `json:"gameMode"`
-	Timestamp int64           `json:"timestamp"`
-	Server    string          `json:"server"`
-	Region    Region          `json:"region"`
-	Patch     DotaPatch       `json:"patch"`
-	Players   []SRCDSPlayer   `json:"players"`
+	MatchID   int64                  `json:"MatchId"`
+	Winner    models.DotaTeam        `json:"winner"`
+	Duration  int                    `json:"duration"`
+	Type      models.MatchmakingMode `json:"type"`
+	GameMode  models.DotaGameMode    `json:"gameMode"`
+	Timestamp int64                  `json:"timestamp"`
+	Server    string                 `json:"server"`
+	Region    models.Region          `json:"region"`
+	Patch     models.DotaPatch       `json:"patch"`
+	Players   []SRCDSPlayer          `json:"players"`
 }

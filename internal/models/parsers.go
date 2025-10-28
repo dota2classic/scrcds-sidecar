@@ -1,13 +1,17 @@
 package models
 
-import "strconv"
+import (
+	"strconv"
 
-func ParseLobbyType(raw string) MatchmakingMode {
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
+)
+
+func ParseLobbyType(raw string) d2cmodels.MatchmakingMode {
 	val, _ := strconv.Atoi(raw)
-	return MatchmakingMode(val)
+	return d2cmodels.MatchmakingMode(val)
 }
 
-func ParseGameMode(raw string) DotaGameMode {
+func ParseGameMode(raw string) d2cmodels.DotaGameMode {
 	val, _ := strconv.Atoi(raw)
-	return DotaGameMode(val)
+	return d2cmodels.DotaGameMode(val)
 }

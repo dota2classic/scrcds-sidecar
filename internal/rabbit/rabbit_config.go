@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"sidecar/internal/util"
 	"time"
 
+	d2cutils "github.com/dota2classic/d2c-go-models/util"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
@@ -23,7 +23,7 @@ var client *Publisher
 
 func InitRabbitPublisher() {
 	host := os.Getenv("RABBITMQ_HOST")
-	port := util.GetEnvInt("RABBITMQ_PORT", 5672)
+	port := d2cutils.GetEnvInt("RABBITMQ_PORT", 5672)
 
 	username := os.Getenv("RABBITMQ_USER")
 	password := os.Getenv("RABBITMQ_PASSWORD")

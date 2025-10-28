@@ -5,12 +5,14 @@ import (
 	"os"
 	"sidecar/internal/models"
 	"strconv"
+
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 )
 
 type MatchInfo struct {
 	MatchID       int64
-	LobbyType     models.MatchmakingMode
-	GameMode      models.DotaGameMode
+	LobbyType     d2cmodels.MatchmakingMode
+	GameMode      d2cmodels.DotaGameMode
 	Host          string
 	ServerAddress string
 }
