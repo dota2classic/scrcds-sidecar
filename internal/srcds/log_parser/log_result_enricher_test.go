@@ -2,9 +2,10 @@ package log_parser
 
 import (
 	"os"
-	"sidecar/internal/models"
 	"testing"
 	"time"
+
+	"github.com/dota2classic/d2c-go-models/models"
 )
 
 func TestFillAdditionalDataFromLog_1x1(t *testing.T) {
