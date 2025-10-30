@@ -2,6 +2,7 @@ package mapper
 
 import (
 	"sidecar/internal/models"
+	"sidecar/internal/state"
 	"sidecar/internal/util/dotamaps"
 	"strconv"
 
@@ -61,7 +62,7 @@ func MapGameResults(d models.MatchFinishedOnSRCDS) d2cmodels.GameResultsEvent {
 		GameMode:       d.GameMode,
 		Type:           d.Type,
 		Timestamp:      d.Timestamp,
-		Server:         d.Server,
+		Server:         state.GlobalMatchInfo.ServerAddress,
 		Patch:          d.Patch,
 		Region:         d.Region,
 		Players:        players,
