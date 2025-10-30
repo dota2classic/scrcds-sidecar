@@ -6,11 +6,9 @@ import (
 	"os"
 	"sidecar/internal/s3"
 	"sidecar/internal/srcds/metrics"
-	"sidecar/internal/state"
+	rcon2 "sidecar/internal/srcds/rcon"
 	"strconv"
 	"time"
-
-	"github.com/gorcon/rcon" // or your actual RCON client package
 )
 
 var hadSuccessfulHeartbeat bool = false
@@ -35,21 +33,20 @@ func AwaitHeartbeat(maxWait time.Duration) error {
 // RunHeartbeatPoller periodically polls for metrics and checks that server is alive
 // If the server fails more than maxFails times in a row, uploadAndExit() is called.
 func RunHeartbeatPoller() {
-	rconPassword := os.Getenv("RCON_PASSWORD")
 	const (
 		interval = 1 * time.Second
 		maxFails = 30
 	)
 
 	//addr := fmt.Sprintf("127.0.0.1:%d", state.GlobalMatchInfo.GameServerPort)
-	addr := state.GlobalMatchInfo.ServerAddress
+
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
 
 	consecutiveFails := 0
 
 	for range ticker.C {
-		if pollMetrics(addr, rconPassword) {
+		if pollMetrics() {
 			consecutiveFails = 0 // success
 			hadSuccessfulHeartbeat = true
 		} else {
@@ -65,8 +62,8 @@ func RunHeartbeatPoller() {
 }
 
 // pollMetrics attempts to connect and run the RCON status command
-func pollMetrics(addr string, password string) bool {
-	conn, err := rcon.Dial(addr, password)
+func pollMetrics() bool {
+	conn, err := rcon2.GetRconConnection()
 	if err != nil {
 		return false
 	}

@@ -38,4 +38,6 @@ func InitRedisClient() {
 	}
 
 	log.Println("Redis client initialized")
+
+	Subscribe(context.Background(), client, "RunRconCommand", handleRunRcon)
 }

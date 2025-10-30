@@ -3,10 +3,11 @@ package metrics
 import (
 	"fmt"
 	"log"
+	"sidecar/internal/srcds/rcon"
 	"strconv"
 	"strings"
 
-	"github.com/gorcon/rcon"
+	rcon2 "github.com/gorcon/rcon"
 	"github.com/prometheus/client_golang/prometheus"
 )
 
@@ -62,8 +63,8 @@ type ServerMetrics struct {
 	Players int
 }
 
-func collectServerMetrics(conn *rcon.Conn) {
-	stats, err := conn.Execute("stats")
+func collectServerMetrics(conn *rcon2.Conn) {
+	stats, err := rcon.RunRconCommandOnConnection(conn, "stats")
 	if err != nil {
 		log.Printf("Failed to execute RCON command: %v", err)
 		return
