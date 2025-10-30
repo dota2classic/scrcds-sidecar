@@ -42,8 +42,7 @@ func RunHeartbeatPoller() {
 		maxFails = 30
 	)
 
-	state.GlobalMatchInfo.LobbyType
-	addr := fmt.Sprintf("127.0.0.1:%d", os.Getenv("PORT"))
+	addr := fmt.Sprintf("127.0.0.1:%d", state.GlobalMatchInfo.GameServerPort)
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
 
