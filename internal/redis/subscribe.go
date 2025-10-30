@@ -69,6 +69,7 @@ func Subscribe[T any](
 								log.Printf("[RedisBus] Panic in handler: %v", r)
 							}
 						}()
+						log.Printf("Handling message in channel %s", channel)
 						handler(payload)
 					}()
 
