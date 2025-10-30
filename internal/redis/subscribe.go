@@ -56,11 +56,15 @@ func Subscribe[T any](
 						break
 					}
 
+					log.Printf("[RedisBus] Channel %s received: %s", channel, msg.Payload)
+
 					var payload T
 					if err := json.Unmarshal([]byte(msg.Payload), &payload); err != nil {
 						log.Printf("[RedisBus] Invalid message on %s: %v", channel, err)
 						continue
 					}
+
+					log.Printf("[RedisBus] Channel %s unmarshalled %v", channel, payload)
 
 					// Safely call handler
 					func() {

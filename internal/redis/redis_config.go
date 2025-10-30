@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"sidecar/internal/models"
 	"time"
 
 	d2cutils "github.com/dota2classic/d2c-go-models/util"
@@ -39,5 +40,5 @@ func InitRedisClient() {
 
 	log.Println("Redis client initialized")
 
-	Subscribe(context.Background(), client, "RunRconCommand", handleRunRcon)
+	Subscribe[models.RunRconCommand](context.Background(), client, "RunRconCommand", handleRunRcon)
 }
