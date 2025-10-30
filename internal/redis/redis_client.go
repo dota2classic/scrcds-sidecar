@@ -30,6 +30,7 @@ func PublishPlayerConnectedEvent(evt *d2cmodels.PlayerConnectedEvent) {
 func ServerHeartbeat() {
 	server := map[string]any{
 		"timestamp": time.Now().Unix(),
+		"url":       state.GlobalMatchInfo.ServerAddress,
 		"matchId":   state.GlobalMatchInfo.MatchID,
 	}
 
