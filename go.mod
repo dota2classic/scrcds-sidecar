@@ -22,7 +22,7 @@ require (
 )
 
 require (
-	github.com/dota2classic/d2c-go-models v0.0.0-20251028072143-7fc30337c72a
+	github.com/dota2classic/d2c-go-models v0.0.0-20251029224927-d6495715598b
 	github.com/minio/minio-go/v7 v7.0.95
 	github.com/prometheus/client_golang v1.23.2
 	github.com/rabbitmq/amqp091-go v1.10.0

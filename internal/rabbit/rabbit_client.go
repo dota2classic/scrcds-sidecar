@@ -32,3 +32,12 @@ func PublishGameResultsEvent(event *d2cmodels.GameResultsEvent) {
 	}
 	log.Println("Published GameResultsEvent to rmq")
 }
+
+func PublishSrcdsServerStartedEvent(event *d2cmodels.SrcdsServerStartedEvent) {
+	err := publishWithRetry(event, "SrcdsServerStartedEvent", 3)
+	if err != nil {
+		log.Println("Error publishing event event:", err)
+		return
+	}
+	log.Println("Published SrcdsServerStartedEvent to rmq")
+}

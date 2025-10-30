@@ -1,6 +1,7 @@
 package srcds
 
 import (
+	"errors"
 	"log"
 	"os"
 	"sidecar/internal/s3"
@@ -10,6 +11,25 @@ import (
 
 	"github.com/gorcon/rcon" // or your actual RCON client package
 )
+
+var hadSuccessfulHeartbeat bool = false
+
+// AwaitHeartbeat awaits for first successful heartbeat
+func AwaitHeartbeat(maxWait time.Duration) error {
+	ticker := time.NewTicker(1 * time.Second)
+	start := time.Now()
+	for range ticker.C {
+		if time.Since(start) > maxWait {
+			return errors.New("timed out waiting for heartbeat")
+		}
+		if !hadSuccessfulHeartbeat {
+			return nil
+		}
+		continue
+	}
+	defer ticker.Stop()
+	return nil
+}
 
 // RunHeartbeatPoller periodically polls for metrics and checks that server is alive
 // If the server fails more than maxFails times in a row, uploadAndExit() is called.
@@ -28,6 +48,7 @@ func RunHeartbeatPoller() {
 	for range ticker.C {
 		if pollMetrics(addr, rconPassword) {
 			consecutiveFails = 0 // success
+			hadSuccessfulHeartbeat = true
 		} else {
 			consecutiveFails++
 		}
