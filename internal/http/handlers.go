@@ -3,7 +3,6 @@ package http
 import (
 	"encoding/json"
 	"fmt"
-	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 	"log"
 	"net/http"
 	"sidecar/internal/mapper"
@@ -11,9 +10,12 @@ import (
 	"sidecar/internal/rabbit"
 	"sidecar/internal/redis"
 	"sidecar/internal/srcds/log_parser"
+	"sidecar/internal/state"
 	"sidecar/internal/util"
 	"strconv"
 	"time"
+
+	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 )
 
 func HandleJSONPost[T any](handler func(T, http.ResponseWriter)) http.HandlerFunc {
@@ -65,12 +67,12 @@ partyLoop:
 	if len(failedPlayers) > 0 {
 		var failedIDs []string
 		for _, p := range failedPlayers {
-			failedIDs = append(failedIDs, fmt.Sprint(p.SteamID))
+			failedIDs = append(failedIDs, strconv.FormatInt(p.SteamID, 10))
 		}
 
 		event := d2cmodels.MatchFailedEvent{
 			MatchID:       d.MatchID,
-			Server:        d.Server,
+			Server:        state.GlobalMatchInfo.ServerAddress,
 			FailedPlayers: failedIDs,
 			GoodParties:   goodParties,
 		}
