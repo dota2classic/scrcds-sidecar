@@ -52,13 +52,13 @@ func Subscribe[T any](
 						log.Printf("[RedisBus] Channel %s closed, reconnecting...", channel)
 						pubsub.Close()
 						time.Sleep(backoff)
-						backoff = min(backoff*2, 30*time.Second)
+						backoff = min(backoff*2, 5*time.Second)
 						break
 					}
 
 					log.Printf("[RedisBus] Channel %s received: %s", channel, msg.Payload)
 
-					var payload T
+					var payload ChannelEvent[T]
 					if err := json.Unmarshal([]byte(msg.Payload), &payload); err != nil {
 						log.Printf("[RedisBus] Invalid message on %s: %v", channel, err)
 						continue
@@ -74,7 +74,7 @@ func Subscribe[T any](
 							}
 						}()
 						log.Printf("Handling message in channel %s", channel)
-						handler(payload)
+						handler(payload.Data)
 					}()
 
 				case <-ctx.Done():
