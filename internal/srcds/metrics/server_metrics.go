@@ -11,15 +11,6 @@ import (
 )
 
 var (
-	LoadingTime = prometheus.NewHistogramVec(
-		prometheus.HistogramOpts{
-			Name:    "d2c_game_server_loading_time",
-			Help:    "Loading time into game",
-			Buckets: prometheus.LinearBuckets(15, 15, 10), // 15, 30, ... 150 seconds
-		},
-		[]string{"lobby_type"},
-	)
-
 	CpuGauge = prometheus.NewGaugeVec(
 		prometheus.GaugeOpts{
 			Name: "srcds_metrics_cpu",

@@ -97,7 +97,7 @@ type PlayerConnectedOnSRCDS struct {
 	IP           string                    `json:"ip"`
 	GameState    models.DotaGameRulesState `json:"gameState"`
 	FirstConnect bool                      `json:"firstConnect"`
-	Duration     int                       `json:"duration"`
+	Duration     float64                   `json:"duration"`
 }
 
 type MatchFinishedOnSRCDS struct {

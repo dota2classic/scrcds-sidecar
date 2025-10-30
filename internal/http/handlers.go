@@ -10,6 +10,7 @@ import (
 	"sidecar/internal/rabbit"
 	"sidecar/internal/redis"
 	"sidecar/internal/srcds/log_parser"
+	"sidecar/internal/srcds/metrics"
 	"sidecar/internal/state"
 	"sidecar/internal/util"
 	"strconv"
@@ -115,6 +116,7 @@ func HandlePlayerConnect(data models.PlayerConnectedOnSRCDS, w http.ResponseWrit
 		Ip:        data.IP,
 	}
 	redis.PublishPlayerConnectedEvent(&event)
+	metrics.ObserveLoadingTime(data.LobbyType, data.Duration)
 	w.WriteHeader(http.StatusOK)
 }
 
