@@ -8,13 +8,16 @@ import (
 )
 
 func handleRunRcon(evt models.RunRconCommand) {
+	log.Printf("Received RunRconCommand: %+v", evt)
+	log.Printf("%s = %s", state.GlobalMatchInfo.ServerAddress, evt.ServerUrl)
 	if state.GlobalMatchInfo.ServerAddress != evt.ServerUrl {
 		return
 	}
 
 	// Try execute rcon
-	_, err := rcon.RunRconCommand(evt.Command)
+	response, err := rcon.RunRconCommand(evt.Command)
 	if err != nil {
 		log.Printf("Error running rcon command: %v", err)
 	}
+	log.Printf("Rcon command result %s", response)
 }
