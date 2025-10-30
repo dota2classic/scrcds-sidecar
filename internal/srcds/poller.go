@@ -2,10 +2,12 @@ package srcds
 
 import (
 	"errors"
+	"fmt"
 	"log"
 	"os"
 	"sidecar/internal/s3"
 	"sidecar/internal/srcds/metrics"
+	"sidecar/internal/state"
 	"strconv"
 	"time"
 
@@ -36,10 +38,12 @@ func AwaitHeartbeat(maxWait time.Duration) error {
 func RunHeartbeatPoller() {
 	rconPassword := os.Getenv("RCON_PASSWORD")
 	const (
-		addr     = "127.0.0.1:27015"
 		interval = 1 * time.Second
 		maxFails = 30
 	)
+
+	state.GlobalMatchInfo.LobbyType
+	addr := fmt.Sprintf("127.0.0.1:%d", os.Getenv("PORT"))
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
 

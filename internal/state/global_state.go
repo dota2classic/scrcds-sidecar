@@ -10,11 +10,13 @@ import (
 )
 
 type MatchInfo struct {
-	MatchID       int64
-	LobbyType     d2cmodels.MatchmakingMode
-	GameMode      d2cmodels.DotaGameMode
-	Host          string
-	ServerAddress string
+	MatchID        int64
+	LobbyType      d2cmodels.MatchmakingMode
+	GameMode       d2cmodels.DotaGameMode
+	Host           string
+	GameServerPort int
+	SourceTvPort   int
+	ServerAddress  string
 }
 
 var GlobalMatchInfo = &MatchInfo{}
@@ -22,9 +24,10 @@ var GlobalMatchInfo = &MatchInfo{}
 func InitGlobalState() {
 
 	host := os.Getenv("NODE_IP")
-	hostPort, _ := strconv.Atoi(os.Getenv("HOST_PORT"))
+	gamePort, _ := strconv.Atoi(os.Getenv("HOST_PORT"))
+	tvPort, _ := strconv.Atoi(os.Getenv("HOST_TV_PORT"))
 
-	serverAddress := fmt.Sprintf("%s:%d", host, hostPort)
+	serverAddress := fmt.Sprintf("%s:%d", host, gamePort)
 
 	matchId, _ := strconv.ParseInt(os.Getenv("MATCH_ID"), 10, 64)
 
@@ -32,6 +35,8 @@ func InitGlobalState() {
 	GlobalMatchInfo.LobbyType = models.ParseLobbyType(os.Getenv("LOBBY_TYPE"))
 	GlobalMatchInfo.GameMode = models.ParseGameMode(os.Getenv("GAME_MODE"))
 	GlobalMatchInfo.Host = host
+	GlobalMatchInfo.GameServerPort = gamePort
+	GlobalMatchInfo.SourceTvPort = tvPort
 	GlobalMatchInfo.ServerAddress = serverAddress
 
 	fmt.Println("Initialized global state: ", GlobalMatchInfo)
