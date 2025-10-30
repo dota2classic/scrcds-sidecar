@@ -2,7 +2,6 @@ package srcds
 
 import (
 	"errors"
-	"fmt"
 	"log"
 	"os"
 	"sidecar/internal/s3"
@@ -42,7 +41,8 @@ func RunHeartbeatPoller() {
 		maxFails = 30
 	)
 
-	addr := fmt.Sprintf("127.0.0.1:%d", state.GlobalMatchInfo.GameServerPort)
+	//addr := fmt.Sprintf("127.0.0.1:%d", state.GlobalMatchInfo.GameServerPort)
+	addr := state.GlobalMatchInfo.ServerAddress
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
 
