@@ -9,16 +9,16 @@ type HeroData struct {
 	Angle       float64  `json:"angle"`
 	Hero        string   `json:"hero"`
 	Level       int      `json:"level"`
-	Health      int      `json:"health"`
-	MaxHealth   int      `json:"max_health"`
-	Mana        int      `json:"mana"`
-	MaxMana     int      `json:"max_mana"`
-	RespawnTime int      `json:"respawn_time"`
-	RDuration   int      `json:"r_duration"`
+	Health      float64  `json:"health"`
+	MaxHealth   float64  `json:"max_health"`
+	Mana        float64  `json:"mana"`
+	MaxMana     float64  `json:"max_mana"`
+	RespawnTime float64  `json:"respawn_time"`
+	RDuration   float64  `json:"r_duration"`
 	Items       []string `json:"items"`
-	Kills       int      `json:"kills"`
-	Deaths      int      `json:"deaths"`
-	Assists     int      `json:"assists"`
+	Kills       float64  `json:"kills"`
+	Deaths      float64  `json:"deaths"`
+	Assists     float64  `json:"assists"`
 }
 
 type SlotInfoDto struct {
@@ -60,7 +60,7 @@ type LiveMatchDto struct {
 	GameMode        models.DotaGameMode       `json:"game_mode"`
 	GameState       models.DotaGameRulesState `json:"game_state"`
 	Timestamp       int64                     `json:"timestamp"`
-	Duration        int                       `json:"duration"`
+	Duration        float64                   `json:"duration"`
 	Server          string                    `json:"server"`
 	Towers          [2]int                    `json:"towers"`
 	Barracks        [2]int                    `json:"barracks"`
