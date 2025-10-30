@@ -43,13 +43,13 @@ type SRCDSPlayer struct {
 	Deaths      int                        `json:"deaths"`
 	Assists     int                        `json:"assists"`
 	Connection  models.DotaConnectionState `json:"connection"`
-	GPM         int                        `json:"gpm"`
-	XPM         int                        `json:"xpm"`
-	LastHits    int                        `json:"last_hits"`
-	Denies      int                        `json:"denies"`
-	TowerKills  int                        `json:"tower_kills"`
-	Networth    int                        `json:"networth"`
-	RoshanKills int                        `json:"roshan_kills"`
+	GPM         float64                    `json:"gpm"`
+	XPM         float64                    `json:"xpm"`
+	LastHits    float64                    `json:"last_hits"`
+	Denies      float64                    `json:"denies"`
+	TowerKills  float64                    `json:"tower_kills"`
+	Networth    float64                    `json:"networth"`
+	RoshanKills float64                    `json:"roshan_kills"`
 	Items       []string                   `json:"items"`
 	PartyID     string                     `json:"party_id"`
 }

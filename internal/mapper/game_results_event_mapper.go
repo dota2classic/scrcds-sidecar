@@ -33,12 +33,12 @@ func MapGameResults(d models.MatchFinishedOnSRCDS) d2cmodels.GameResultsEvent {
 			Item4: itemIDByName(p.Items, 4),
 			Item5: itemIDByName(p.Items, 5),
 
-			GPM:       p.GPM,
-			XPM:       p.GPM, // note: matches your TS code (probably should be p.XPM)
-			LastHits:  p.LastHits,
-			Denies:    p.Denies,
+			GPM:       int(p.GPM),
+			XPM:       int(p.XPM),
+			LastHits:  int(p.LastHits),
+			Denies:    int(p.Denies),
 			Abandoned: p.Connection == d2cmodels.DOTA_CONNECTION_STATE_ABANDONED || p.Connection == d2cmodels.DOTA_CONNECTION_STATE_FAILED,
-			Networth:  p.Networth,
+			Networth:  int(p.Networth),
 
 			HeroDamage:  0,
 			HeroHealing: 0,
