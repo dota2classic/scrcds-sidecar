@@ -1,5 +1,7 @@
 package dotamaps
 
+import "strings"
+
 type item struct {
 	ID   int
 	Name string
@@ -282,6 +284,7 @@ var itemIDByName = func() map[string]int {
 }()
 
 func ItemID(name string) int {
+	name = strings.TrimPrefix(name, "item_")
 	id, _ := itemIDByName[name]
 	return id
 }
