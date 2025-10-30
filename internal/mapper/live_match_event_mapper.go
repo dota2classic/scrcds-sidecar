@@ -2,6 +2,7 @@ package mapper
 
 import (
 	"sidecar/internal/models"
+	"sidecar/internal/state"
 	"sidecar/internal/util/dotamaps"
 	"strconv"
 
@@ -11,7 +12,7 @@ import (
 func MapLiveMatchUpdatedEvent(dto models.LiveMatchDto) d2cmodels.LiveMatchUpdateEvent {
 	var mapped d2cmodels.LiveMatchUpdateEvent
 	mapped.MatchID = dto.MatchID
-	mapped.Server = dto.Server
+	mapped.Server = state.GlobalMatchInfo.ServerAddress
 	mapped.MatchmakingMode = dto.MatchmakingMode
 	mapped.GameMode = dto.GameMode
 	mapped.GameState = dto.GameState
