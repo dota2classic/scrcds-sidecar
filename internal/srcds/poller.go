@@ -22,7 +22,7 @@ func AwaitHeartbeat(maxWait time.Duration) error {
 		if time.Since(start) > maxWait {
 			return errors.New("timed out waiting for heartbeat")
 		}
-		if !hadSuccessfulHeartbeat {
+		if hadSuccessfulHeartbeat {
 			return nil
 		}
 		continue
