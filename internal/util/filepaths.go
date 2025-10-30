@@ -12,5 +12,5 @@ const (
 )
 
 func GetLogFilePath() string {
-	return path.Join(LOG_FOLDER, strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10), ".log")
+	return path.Join(LOG_FOLDER, strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10)+".log")
 }

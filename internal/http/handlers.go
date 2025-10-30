@@ -131,6 +131,7 @@ func HandleMatchResults(data models.MatchFinishedOnSRCDS, w http.ResponseWriter)
 	}
 
 	rabbit.PublishGameResultsEvent(&event)
+	redis.ServerStatus(false)
 
 	w.WriteHeader(http.StatusOK)
 }
