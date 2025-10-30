@@ -4,6 +4,7 @@ import (
 	"errors"
 	"log"
 	"os"
+	"sidecar/internal/redis"
 	"sidecar/internal/s3"
 	"sidecar/internal/srcds/metrics"
 	rcon2 "sidecar/internal/srcds/rcon"
@@ -38,8 +39,6 @@ func RunHeartbeatPoller() {
 		maxFails = 30
 	)
 
-	//addr := fmt.Sprintf("127.0.0.1:%d", state.GlobalMatchInfo.GameServerPort)
-
 	ticker := time.NewTicker(interval)
 	defer ticker.Stop()
 
@@ -71,6 +70,8 @@ func pollMetrics() bool {
 
 	metrics.CollectMetrics(conn)
 
+	redis.ServerHeartbeat()
+
 	return true
 }
 
@@ -82,6 +83,8 @@ func uploadAndExit() {
 		log.Fatalf("Failed to parse MATCH_ID: %v", err)
 	}
 	s3.UploadArtifacts(matchId)
+
+	redis.ServerStatus(false)
 
 	os.Exit(0)
 }

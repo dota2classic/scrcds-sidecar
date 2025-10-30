@@ -30,6 +30,8 @@ func main() {
 		log.Fatalf("Server never started: %v", err)
 	}
 
+	redis.ServerStatus(true)
+
 	// emit rmq
 	rabbit.PublishSrcdsServerStartedEvent(&d2cmodels.SrcdsServerStartedEvent{
 		MatchId: state.GlobalMatchInfo.MatchID,

@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"log"
+	"sidecar/internal/state"
 	"time"
 
 	d2cmodels "github.com/dota2classic/d2c-go-models/models"
@@ -22,6 +24,32 @@ func PublishPlayerConnectedEvent(evt *d2cmodels.PlayerConnectedEvent) {
 	err := publishWithRetry("PlayerConnectedEvent", evt, 3)
 	if err != nil {
 		fmt.Printf("There was an issue publishing event: %s\n", err)
+	}
+}
+
+func ServerHeartbeat() {
+	server := map[string]any{
+		"timestamp": time.Now().Unix(),
+		"matchId":   state.GlobalMatchInfo.MatchID,
+	}
+
+	redisKey := fmt.Sprintf("server:%s", state.GlobalMatchInfo.ServerAddress)
+
+	data, err := json.Marshal(server)
+	if err != nil {
+		fmt.Printf("There was an issue marshalling server: %s\n", err)
+		return
+	}
+	client.Set(ctx, redisKey, data, 0)
+}
+
+func ServerStatus(alive bool) {
+	err := publishWithRetry("ServerStatusEvent", &d2cmodels.ServerStatusEvent{
+		Url:       state.GlobalMatchInfo.ServerAddress,
+		IsRunning: alive,
+	}, 1)
+	if err != nil {
+		log.Printf("There was an issue publishing event: %v\n", err)
 	}
 }
 
