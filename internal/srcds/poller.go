@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-var hadSuccessfulHeartbeat bool = false
+var hadSuccessfulHeartbeat = false
 
 // AwaitHeartbeat awaits for first successful heartbeat
 func AwaitHeartbeat(maxWait time.Duration) error {
@@ -32,11 +32,11 @@ func AwaitHeartbeat(maxWait time.Duration) error {
 }
 
 // RunHeartbeatPoller periodically polls for metrics and checks that server is alive
-// If the server fails more than maxFails times in a row, uploadAndExit() is called.
+// If the server fails more than maxFails times in a row, UploadAndExit() is called.
 func RunHeartbeatPoller() {
 	const (
 		interval = 1 * time.Second
-		maxFails = 30
+		maxFails = 5
 	)
 
 	ticker := time.NewTicker(interval)
@@ -52,9 +52,9 @@ func RunHeartbeatPoller() {
 			consecutiveFails++
 		}
 
-		if consecutiveFails > maxFails {
-			log.Println("Server is unresponsive — shutting down")
-			uploadAndExit()
+		if hadSuccessfulHeartbeat && consecutiveFails > maxFails {
+			log.Println("Server became unresponsive — shutting down")
+			UploadAndExit()
 			return
 		}
 	}
@@ -75,8 +75,8 @@ func pollMetrics() bool {
 	return true
 }
 
-// uploadAndExit is your shutdown handler — replace with your logic.
-func uploadAndExit() {
+// UploadAndExit is your shutdown handler — replace with your logic.
+func UploadAndExit() {
 	log.Println("Uploading files and exiting...")
 	matchId, err := strconv.ParseInt(os.Getenv("MATCH_ID"), 10, 64)
 	if err != nil {
