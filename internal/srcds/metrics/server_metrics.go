@@ -17,7 +17,7 @@ var (
 			Name: "srcds_metrics_cpu",
 			Help: "CPU usage of SRCDS process",
 		},
-		[]string{"match_id", "server_url", "lobby_type"},
+		[]string{"pod_name", "match_id", "server_url", "lobby_type"},
 	)
 
 	FpsGauge = prometheus.NewGaugeVec(
@@ -25,7 +25,7 @@ var (
 			Name: "srcds_metrics_fps",
 			Help: "Frames per second of SRCDS process",
 		},
-		[]string{"match_id", "server_url", "lobby_type"},
+		[]string{"pod_name", "match_id", "server_url", "lobby_type"},
 	)
 
 	InGauge = prometheus.NewGaugeVec(
@@ -33,7 +33,7 @@ var (
 			Name: "srcds_metrics_net_in",
 			Help: "Inbound network usage (bytes/sec)",
 		},
-		[]string{"match_id", "server_url", "lobby_type"},
+		[]string{"pod_name", "match_id", "server_url", "lobby_type"},
 	)
 
 	OutGauge = prometheus.NewGaugeVec(
@@ -41,14 +41,14 @@ var (
 			Name: "srcds_metrics_net_out",
 			Help: "Outbound network usage (bytes/sec)",
 		},
-		[]string{"match_id", "server_url", "lobby_type"},
+		[]string{"pod_name", "match_id", "server_url", "lobby_type"},
 	)
 	PlayerCountGauge = prometheus.NewGaugeVec(
 		prometheus.GaugeOpts{
 			Name: "srcds_player_count",
 			Help: "Number of active players on the server",
 		},
-		[]string{"match_id", "server_url", "lobby_type"},
+		[]string{"pod_name", "match_id", "server_url", "lobby_type"},
 	)
 )
 
