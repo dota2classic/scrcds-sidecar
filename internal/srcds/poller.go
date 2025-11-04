@@ -86,5 +86,6 @@ func UploadAndExit() {
 
 	redis.ServerStatus(false)
 
+	metrics.Delete()
 	os.Exit(0)
 }

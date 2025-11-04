@@ -22,7 +22,23 @@ var (
 func CollectMetrics(conn *rcon.Conn) {
 	collectServerMetrics(conn)
 	collectPlayerMetrics(conn)
-	pushMetrics(map[string]string{"jobName": "srcds-sidecar", "host": state.GlobalMatchInfo.Host})
+	pushMetrics(getGroupLabels())
+}
+
+// Delete will delete all pushed metrics so that they don't continue indefinitely
+func Delete() {
+	pusher := push.New(pushgateway, jobName).Gatherer(nil) // nil because we’re deleting
+	for k, v := range getGroupLabels() {
+		pusher = pusher.Grouping(k, v)
+	}
+
+	if err := pusher.Delete(); err != nil {
+		log.Printf("Failed to delete metrics: %v", err)
+	}
+}
+
+func getGroupLabels() map[string]string {
+	return map[string]string{"jobName": "srcds-sidecar", "host": state.GlobalMatchInfo.Host}
 }
 
 // PushMetrics Push all metrics to the Pushgateway
