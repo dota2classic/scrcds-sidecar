@@ -8,7 +8,7 @@ import (
 
 const (
 	LOG_FOLDER    = "./dota/logs"
-	REPLAY_FOLDER = "./dota/logs"
+	REPLAY_FOLDER = "./dota/replays"
 )
 
 func GetLogFilePath() string {

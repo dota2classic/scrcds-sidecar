@@ -107,7 +107,13 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 
 	log.Printf("Uploading %s to bucket %s", filename, bucket)
 
-	info, err := MinioClient.FPutObject(ctx, bucket, filename, filePath, minio.PutObjectOptions{ContentType: contentType})
+	info, err := MinioClient.FPutObject(
+		ctx,
+		bucket,
+		filename,
+		filePath,
+		minio.PutObjectOptions{ContentType: contentType},
+	)
 	if err != nil {
 		log.Fatalln(err)
 	}
