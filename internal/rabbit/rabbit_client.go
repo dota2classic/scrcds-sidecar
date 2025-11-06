@@ -16,7 +16,7 @@ func PublishMatchFailedEvent(event *d2cmodels.MatchFailedEvent) {
 }
 
 func PublishPlayerAbandonEvent(event *d2cmodels.PlayerAbandonedEvent) {
-	err := publishWithRetry(event, "PlayerAbandonEvent", 3)
+	err := publishWithRetry(event, "PlayerAbandonedEvent", 3)
 	if err != nil {
 		log.Println("Error publishing event event:", err)
 		return
