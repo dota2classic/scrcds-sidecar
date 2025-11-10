@@ -1,10 +1,8 @@
 package s3
 
 import (
-	"archive/zip"
 	"context"
 	"fmt"
-	"io"
 	"log"
 	"os"
 	"path/filepath"
@@ -47,36 +45,6 @@ func uploadFolder(dir string, artifactType ArtifactType, matchId int64) {
 	}
 }
 
-func compressFile(filePath string) (string, error) {
-	zipPath := filePath + ".zip"
-
-	outFile, err := os.Create(zipPath)
-	if err != nil {
-		return "", fmt.Errorf("failed to create zip file: %w", err)
-	}
-	defer outFile.Close()
-
-	zipWriter := zip.NewWriter(outFile)
-	defer zipWriter.Close()
-
-	fileToZip, err := os.Open(filePath)
-	if err != nil {
-		return "", fmt.Errorf("failed to open source file: %w", err)
-	}
-	defer fileToZip.Close()
-
-	w, err := zipWriter.Create(filepath.Base(filePath))
-	if err != nil {
-		return "", fmt.Errorf("failed to create zip entry: %w", err)
-	}
-
-	if _, err := io.Copy(w, fileToZip); err != nil {
-		return "", fmt.Errorf("failed to write zip content: %w", err)
-	}
-
-	return zipPath, nil
-}
-
 func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	log.Printf("Uploading %s %s", artifactType, filePath)
 
@@ -84,11 +52,13 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 
 	// If it's a
 	if artifactType == ArtifactReplay {
-		filePath, err := compressFile(filePath)
+		outPath := filePath + ".zip"
+		err := util.CompressFile(filePath, outPath)
 		log.Printf("Zipped replay file: %s", filePath)
 		if err != nil {
 			log.Fatalln(err)
 		}
+		filePath = outPath
 	}
 
 	var bucket string
