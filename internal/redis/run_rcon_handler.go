@@ -7,11 +7,10 @@ import (
 	"sidecar/internal/state"
 )
 
-func handleRunRcon(evt models.RunRconCommand) {
+func handleRunRcon(evt *models.RunRconCommand) (*models.RunRconResponse, error) {
 	log.Printf("Received RunRconCommand: %+v", evt)
-	log.Printf("%s = %s", state.GlobalMatchInfo.ServerAddress, evt.ServerUrl)
 	if state.GlobalMatchInfo.ServerAddress != evt.ServerUrl {
-		return
+		return nil, nil
 	}
 
 	// Try execute rcon
@@ -20,4 +19,5 @@ func handleRunRcon(evt models.RunRconCommand) {
 		log.Printf("Error running rcon command: %v", err)
 	}
 	log.Printf("Rcon command result %s", response)
+	return &models.RunRconResponse{Response: response}, nil
 }

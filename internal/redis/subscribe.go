@@ -11,11 +11,11 @@ import (
 
 // Subscribe subscribes to a Redis channel and calls handler for each message.
 // It runs the receive loop in a separate goroutine.
-func Subscribe[T any](
+func Subscribe[In any, Out any](
 	ctx context.Context,
 	client *redis.Client,
 	channel string,
-	handler func(T),
+	handler func(*In) (*Out, error),
 ) {
 	go func() {
 		backoff := time.Second
@@ -58,7 +58,7 @@ func Subscribe[T any](
 
 					log.Printf("[RedisBus] Channel %s received: %s", channel, msg.Payload)
 
-					var payload ChannelEvent[T]
+					var payload ChannelEvent[In]
 					if err := json.Unmarshal([]byte(msg.Payload), &payload); err != nil {
 						log.Printf("[RedisBus] Invalid message on %s: %v", channel, err)
 						continue
@@ -74,7 +74,30 @@ func Subscribe[T any](
 							}
 						}()
 						log.Printf("Handling message in channel %s", channel)
-						handler(payload.Data)
+
+						res, err := handler(&payload.Data)
+						if err != nil {
+							log.Printf("[RedisSubscribe] Handler error: %v", err)
+						}
+
+						if res != nil {
+							//
+							log.Printf("[RedisSubscribe] Handler returned %v", res)
+						}
+
+						replyChannel := channel + ".reply"
+
+						response := ChannelEvent[Out]{
+							Id:      payload.Id,
+							Data:    *res,
+							Pattern: payload.Pattern,
+						}
+
+						bt, err := json.Marshal(response)
+
+						log.Printf("[RedisSubscribe] Publishing message to %s %v", channel, response)
+						client.Publish(ctx, replyChannel, bt)
+
 					}()
 
 				case <-ctx.Done():

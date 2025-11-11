@@ -4,3 +4,7 @@ type RunRconCommand struct {
 	Command   string `json:"command"`
 	ServerUrl string `json:"serverUrl"`
 }
+
+type RunRconResponse struct {
+	Response string `json:"response"`
+}
