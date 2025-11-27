@@ -2,6 +2,7 @@ package rabbit
 
 import (
 	"log"
+	"sidecar/internal/models"
 
 	d2cmodels "github.com/dota2classic/d2c-go-models/models"
 )
@@ -40,4 +41,13 @@ func PublishSrcdsServerStartedEvent(event *d2cmodels.SrcdsServerStartedEvent) {
 		return
 	}
 	log.Println("Published SrcdsServerStartedEvent to rmq")
+}
+
+func PublishArtifactUploadedEvent(event *models.ArtifactUploadedEvent) {
+	err := publishWithRetry(event, "ArtifactUploadedEvent", 3)
+	if err != nil {
+		log.Println("Error publishing event event:", err)
+		return
+	}
+	log.Println("Published ArtifactUploadedEvent to rmq")
 }

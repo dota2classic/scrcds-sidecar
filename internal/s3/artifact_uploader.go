@@ -6,28 +6,22 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sidecar/internal/models"
+	"sidecar/internal/rabbit"
+	"sidecar/internal/state"
 	"sidecar/internal/util"
 
 	"github.com/minio/minio-go/v7"
 )
 
-// ArtifactType type of uploaded artifact
-type ArtifactType string
-
-// Define allowed values
-const (
-	ArtifactReplay ArtifactType = "replay"
-	ArtifactLog    ArtifactType = "log"
-)
-
 func UploadArtifacts(matchId int64) {
 	log.Printf("Uploading artifacts for matchId %d", matchId)
-	uploadFolder(util.LOG_FOLDER, ArtifactLog, matchId)
-	uploadFolder(util.REPLAY_FOLDER, ArtifactReplay, matchId)
+	uploadFolder(util.LOG_FOLDER, models.ARTIFACT_TYPE_LOG, matchId)
+	uploadFolder(util.REPLAY_FOLDER, models.ARTIFACT_TYPE_REPLAY, matchId)
 	log.Printf("Artifacts for matchId %d successfully uploaded", matchId)
 }
 
-func uploadFolder(dir string, artifactType ArtifactType, matchId int64) {
+func uploadFolder(dir string, artifactType models.ArtifactType, matchId int64) {
 	files, err := os.ReadDir(dir)
 	if err != nil {
 		log.Printf("Failed to list files in folder: %v", err)
@@ -45,7 +39,7 @@ func uploadFolder(dir string, artifactType ArtifactType, matchId int64) {
 	}
 }
 
-func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
+func uploadFile(filePath string, artifactType models.ArtifactType, matchId int64) {
 	log.Printf("Uploading %s %s", artifactType, filePath)
 
 	ctx := context.Background()
@@ -65,11 +59,11 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	var filename string
 	var contentType string
 
-	if artifactType == ArtifactLog {
+	if artifactType == models.ARTIFACT_TYPE_LOG {
 		filename = fmt.Sprintf("%d.log", matchId)
 		contentType = "text/plain"
 		bucket = "logs"
-	} else if artifactType == ArtifactReplay {
+	} else if artifactType == models.ARTIFACT_TYPE_REPLAY {
 		filename = fmt.Sprintf("%d.dem", matchId)
 		contentType = "application/octet-stream"
 		bucket = "replays"
@@ -89,6 +83,14 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	}
 
 	log.Printf("Successfully uploaded %s of size %d", filePath, info.Size)
+	evt := models.ArtifactUploadedEvent{
+		MatchID:      matchId,
+		ArtifactType: artifactType,
+		LobbyType:    state.GlobalMatchInfo.LobbyType,
+		Bucket:       bucket,
+		Key:          filename,
+	}
+	rabbit.PublishArtifactUploadedEvent(&evt)
 
 	err = os.Remove(filePath)
 	if err != nil {
