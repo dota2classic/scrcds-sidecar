@@ -51,15 +51,15 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 	ctx := context.Background()
 
 	// If it's a
-	if artifactType == ArtifactReplay {
-		outPath := filePath + ".zip"
-		err := util.CompressFile(filePath, outPath)
-		log.Printf("Zipped replay file: %s", filePath)
-		if err != nil {
-			log.Fatalln(err)
-		}
-		filePath = outPath
-	}
+	//if artifactType == ArtifactReplay {
+	//	outPath := filePath + ".zip"
+	//	err := util.CompressFile(filePath, outPath)
+	//	log.Printf("Zipped replay file: %s", filePath)
+	//	if err != nil {
+	//		log.Fatalln(err)
+	//	}
+	//	filePath = outPath
+	//}
 
 	var bucket string
 	var filename string
@@ -70,8 +70,8 @@ func uploadFile(filePath string, artifactType ArtifactType, matchId int64) {
 		contentType = "text/plain"
 		bucket = "logs"
 	} else if artifactType == ArtifactReplay {
-		filename = fmt.Sprintf("%d.dem.zip", matchId)
-		contentType = "application/zip"
+		filename = fmt.Sprintf("%d.dem", matchId)
+		contentType = "application/octet-stream"
 		bucket = "replays"
 	}
 
