@@ -43,11 +43,11 @@ func PublishSrcdsServerStartedEvent(event *d2cmodels.SrcdsServerStartedEvent) {
 	log.Println("Published SrcdsServerStartedEvent to rmq")
 }
 
-func PublishArtifactUploadedEvent(event *models.ArtifactUploadedEvent) {
-	err := publishWithRetry(event, "ArtifactUploadedEvent", 3)
+func PublishArtifactUploadedEvent(event *models.MatchArtifactUploadedEvent) {
+	err := publishWithRetry(event, "MatchArtifactUploadedEvent", 3)
 	if err != nil {
 		log.Println("Error publishing event event:", err)
 		return
 	}
-	log.Println("Published ArtifactUploadedEvent to rmq")
+	log.Println("Published MatchArtifactUploadedEvent to rmq")
 }

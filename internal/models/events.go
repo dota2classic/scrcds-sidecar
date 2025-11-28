@@ -18,7 +18,7 @@ type RunRconResponse struct {
 	Response string `json:"response"`
 }
 
-type ArtifactUploadedEvent struct {
+type MatchArtifactUploadedEvent struct {
 	MatchID      int64                  `json:"matchId"`
 	LobbyType    models.MatchmakingMode `json:"lobbyType"`
 	ArtifactType ArtifactType           `json:"artifactType"`

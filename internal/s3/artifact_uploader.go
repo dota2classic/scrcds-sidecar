@@ -83,7 +83,7 @@ func uploadFile(filePath string, artifactType models.ArtifactType, matchId int64
 	}
 
 	log.Printf("Successfully uploaded %s of size %d", filePath, info.Size)
-	evt := models.ArtifactUploadedEvent{
+	evt := models.MatchArtifactUploadedEvent{
 		MatchID:      matchId,
 		ArtifactType: artifactType,
 		LobbyType:    state.GlobalMatchInfo.LobbyType,
