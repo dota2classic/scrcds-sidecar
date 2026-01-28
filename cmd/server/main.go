@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"net"
 	"sidecar/internal/http"
 	"sidecar/internal/rabbit"
 	"sidecar/internal/redis"
@@ -15,6 +16,8 @@ import (
 
 func main() {
 	log.Printf("Initializing sidecar...")
+	net.DefaultResolver.PreferGo = true
+	log.Println("IPv4 Forced")
 
 	state.InitGlobalState()
 	s3.InitS3Client()
