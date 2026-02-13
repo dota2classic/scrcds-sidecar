@@ -1,6 +1,7 @@
 package rcon
 
 import (
+	"fmt"
 	"log"
 	"os"
 	"sidecar/internal/state"
@@ -20,7 +21,9 @@ func RunRconCommand(cmd string) (string, error) {
 }
 
 func GetRconConnection() (*rcon.Conn, error) {
-	addr := state.GlobalMatchInfo.ServerAddress
+	// We use localhost to not trigger rcon banning
+	addr := fmt.Sprintf("127.0.0.1:%d", state.GlobalMatchInfo.GameServerPort)
+
 	rconPassword := os.Getenv("RCON_PASSWORD")
 
 	conn, err := rcon.Dial(addr, rconPassword)
