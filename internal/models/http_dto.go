@@ -84,7 +84,7 @@ type PlayerAbandonOnSRCDS struct {
 
 type PlayerNotLoadedOnSRCDS struct {
 	MatchID int64                  `json:"match_id"`
-	SteamID int64                  `json:"steam_id"`
+	SteamID string                 `json:"steam_id"`
 	Mode    models.MatchmakingMode `json:"mode"`
 	Server  string                 `json:"server"`
 }

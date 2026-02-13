@@ -87,7 +87,7 @@ func HandlePlayerNotLoaded(data models.PlayerNotLoadedOnSRCDS, w http.ResponseWr
 	event := d2cmodels.MatchFailedEvent{
 		MatchID:       data.MatchID,
 		Server:        data.Server,
-		FailedPlayers: []string{strconv.FormatInt(data.SteamID, 10)},
+		FailedPlayers: []string{data.SteamID},
 		GoodParties:   []string{},
 	}
 	rabbit.PublishMatchFailedEvent(&event)
