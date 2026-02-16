@@ -17,7 +17,7 @@ RUN go build -o sidecar cmd/server/main.go
 # -----------------------------
 
 # Use a minimal image for running
-FROM alpine:latest
+FROM debian:bullseye-slim
 
 # Set working directory
 WORKDIR /root
