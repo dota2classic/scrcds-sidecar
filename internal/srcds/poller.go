@@ -35,7 +35,7 @@ func AwaitHeartbeat(maxWait time.Duration) error {
 func RunHeartbeatPoller() {
 	const (
 		interval = 1 * time.Second
-		maxFails = 5
+		maxFails = 10
 	)
 
 	ticker := time.NewTicker(interval)
