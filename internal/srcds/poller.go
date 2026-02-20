@@ -61,7 +61,9 @@ func RunHeartbeatPoller() {
 
 // pollMetrics attempts to connect and run the RCON status command
 func pollMetrics() bool {
-	metrics.CollectMetrics()
+	if err := metrics.CollectMetrics(); err != nil {
+		return false
+	}
 
 	redis.ServerHeartbeat()
 

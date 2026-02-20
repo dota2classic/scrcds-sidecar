@@ -62,13 +62,14 @@ type ServerMetrics struct {
 	Players int
 }
 
-func collectServerMetrics() {
+func collectServerMetrics() error {
 	stats, err := rcon.RunRconCommand("stats")
 	if err != nil {
 		log.Printf("Failed to execute RCON command: %v", err)
-		return
+		return err
 	}
 	parseAndRecordSrcdsMetrics(stats)
+	return nil
 }
 
 // parseAndRecordSrcdsMetrics parses the raw stats string into ServerMetrics

@@ -18,10 +18,13 @@ var (
 	registerOnce sync.Once
 )
 
-func CollectMetrics() {
-	collectServerMetrics()
+func CollectMetrics() error {
+	if err := collectServerMetrics(); err != nil {
+		return err
+	}
 	collectPlayerMetrics()
 	pushMetrics(getGroupLabels())
+	return nil
 }
 
 // Delete will delete all pushed metrics so that they don't continue indefinitely
