@@ -7,7 +7,6 @@ import (
 	"sidecar/internal/redis"
 	"sidecar/internal/s3"
 	"sidecar/internal/srcds/metrics"
-	rcon2 "sidecar/internal/srcds/rcon"
 	"strconv"
 	"time"
 )
@@ -62,13 +61,7 @@ func RunHeartbeatPoller() {
 
 // pollMetrics attempts to connect and run the RCON status command
 func pollMetrics() bool {
-	conn, err := rcon2.GetRconConnection()
-	if err != nil {
-		return false
-	}
-	defer conn.Close()
-
-	metrics.CollectMetrics(conn)
+	metrics.CollectMetrics()
 
 	redis.ServerHeartbeat()
 

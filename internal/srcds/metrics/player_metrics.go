@@ -8,7 +8,6 @@ import (
 	"strconv"
 	"strings"
 
-	rcon2 "github.com/gorcon/rcon"
 	"github.com/prometheus/client_golang/prometheus"
 )
 
@@ -43,8 +42,8 @@ var (
 	)
 )
 
-func collectPlayerMetrics(conn *rcon2.Conn) {
-	status, err := rcon.RunRconCommandOnConnection(conn, "status")
+func collectPlayerMetrics() {
+	status, err := rcon.RunRconCommand("status")
 	if err != nil {
 		log.Printf("Failed to execute RCON command: %v", err)
 		return

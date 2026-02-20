@@ -7,7 +7,6 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/gorcon/rcon"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/push"
 )
@@ -19,9 +18,9 @@ var (
 	registerOnce sync.Once
 )
 
-func CollectMetrics(conn *rcon.Conn) {
-	collectServerMetrics(conn)
-	collectPlayerMetrics(conn)
+func CollectMetrics() {
+	collectServerMetrics()
+	collectPlayerMetrics()
 	pushMetrics(getGroupLabels())
 }
 
