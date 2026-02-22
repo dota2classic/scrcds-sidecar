@@ -34,8 +34,8 @@ func AwaitHeartbeat(maxWait time.Duration) error {
 // If the server fails more than maxFails times in a row, UploadAndExit() is called.
 func RunHeartbeatPoller() {
 	const (
-		interval = 1 * time.Second
-		maxFails = 10
+		interval = 2 * time.Second
+		maxFails = 8
 	)
 
 	ticker := time.NewTicker(interval)
