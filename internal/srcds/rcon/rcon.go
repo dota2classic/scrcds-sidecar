@@ -1,6 +1,8 @@
 package rcon
 
 import (
+	"crypto/md5"
+	"encoding/hex"
 	"fmt"
 	"log"
 	"os"
@@ -53,7 +55,14 @@ func getOrDial() (*rcon.Conn, error) {
 	}
 
 	addr := fmt.Sprintf("127.0.0.1:%d", state.GlobalMatchInfo.GameServerPort)
-	conn, err := rcon.Dial(addr, os.Getenv("RCON_PASSWORD"))
+	rconPassword := os.Getenv("RCON_PASSWORD")
+
+	hasher := md5.New()
+	hasher.Write([]byte(rconPassword))
+	passwordHash := hex.EncodeToString(hasher.Sum(nil))
+
+	log.Printf("Connecting RCON to %s with password hash %s", addr, passwordHash)
+	conn, err := rcon.Dial(addr, rconPassword)
 	if err != nil {
 		return nil, err
 	}
