@@ -25,13 +25,11 @@ func main() {
 	redis.InitRedisClient()
 	rabbit.InitRabbitPublisher()
 
-	go srcds.RunHeartbeatPoller()
-
-	dur, _ := time.ParseDuration("1m")
-	err := srcds.AwaitHeartbeat(dur)
-	if err != nil {
+	if err := srcds.AwaitServerReady(1 * time.Minute); err != nil {
 		log.Fatalf("Server never started: %v", err)
 	}
+
+	go srcds.RunHeartbeatPoller()
 
 	redis.ServerStatus(true)
 

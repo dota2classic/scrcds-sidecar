@@ -1,7 +1,6 @@
 package srcds
 
 import (
-	"errors"
 	"log"
 	"os"
 	"sidecar/internal/redis"
@@ -11,26 +10,9 @@ import (
 	"time"
 )
 
-var hadSuccessfulHeartbeat = false
-
-// AwaitHeartbeat awaits for first successful heartbeat
-func AwaitHeartbeat(maxWait time.Duration) error {
-	ticker := time.NewTicker(1 * time.Second)
-	start := time.Now()
-	for range ticker.C {
-		if time.Since(start) > maxWait {
-			return errors.New("timed out waiting for heartbeat")
-		}
-		if hadSuccessfulHeartbeat {
-			return nil
-		}
-		continue
-	}
-	defer ticker.Stop()
-	return nil
-}
-
-// RunHeartbeatPoller periodically polls for metrics and checks that server is alive
+// RunHeartbeatPoller periodically polls for metrics and checks that server is alive.
+// Call this only after AwaitServerReady() has returned — the server is expected to
+// be fully up, so any sustained failure means it has crashed.
 // If the server fails more than maxFails times in a row, UploadAndExit() is called.
 func RunHeartbeatPoller() {
 	const (
@@ -45,13 +27,12 @@ func RunHeartbeatPoller() {
 
 	for range ticker.C {
 		if pollMetrics() {
-			consecutiveFails = 0 // success
-			hadSuccessfulHeartbeat = true
+			consecutiveFails = 0
 		} else {
 			consecutiveFails++
 		}
 
-		if hadSuccessfulHeartbeat && consecutiveFails > maxFails {
+		if consecutiveFails > maxFails {
 			log.Println("Server became unresponsive — shutting down")
 			UploadAndExit()
 			return
