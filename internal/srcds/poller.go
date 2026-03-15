@@ -10,10 +10,11 @@ import (
 	"time"
 )
 
-// RunHeartbeatPoller periodically polls for metrics and checks that server is alive.
-// Call this only after AwaitServerReady() has returned — the server is expected to
-// be fully up, so any sustained failure means it has crashed.
-// If the server fails more than maxFails times in a row, UploadAndExit() is called.
+// RunHeartbeatPoller periodically checks server health via A2S and collects metrics.
+// Call this only after AwaitServerReady() has returned.
+// Health/upness is determined by A2S responses — RCON metric failures are logged
+// but do not count as the server being down.
+// If A2S fails more than maxFails times in a row, UploadAndExit() is called.
 func RunHeartbeatPoller() {
 	const (
 		interval = 2 * time.Second
@@ -26,10 +27,15 @@ func RunHeartbeatPoller() {
 	consecutiveFails := 0
 
 	for range ticker.C {
-		if pollMetrics() {
+		if isServerReady() {
 			consecutiveFails = 0
+			if err := metrics.CollectMetrics(); err != nil {
+				log.Printf("Metrics collection failed (server still up): %v", err)
+			}
+			redis.ServerHeartbeat()
 		} else {
 			consecutiveFails++
+			log.Printf("A2S health check failed (%d/%d)", consecutiveFails, maxFails)
 		}
 
 		if consecutiveFails > maxFails {
@@ -38,17 +44,6 @@ func RunHeartbeatPoller() {
 			return
 		}
 	}
-}
-
-// pollMetrics attempts to connect and run the RCON status command
-func pollMetrics() bool {
-	if err := metrics.CollectMetrics(); err != nil {
-		return false
-	}
-
-	redis.ServerHeartbeat()
-
-	return true
 }
 
 // UploadAndExit is your shutdown handler — replace with your logic.
