@@ -14,8 +14,22 @@ import (
 	"github.com/minio/minio-go/v7"
 )
 
+func findDumpDirs() []string {
+	matches, err := filepath.Glob("/tmp/dumps*")
+	if err != nil || matches == nil {
+		return nil
+	}
+	var dirs []string
+	for _, m := range matches {
+		if info, err := os.Stat(m); err == nil && info.IsDir() {
+			dirs = append(dirs, m)
+		}
+	}
+	return dirs
+}
+
 func logDumpDirs() {
-	for _, dir := range []string{"/tmp/dumps", "/tmp/dumps01"} {
+	for _, dir := range findDumpDirs() {
 		files, err := os.ReadDir(dir)
 		if err != nil {
 			log.Printf("[dumps] %s: %v", dir, err)
@@ -32,8 +46,9 @@ func UploadArtifacts(matchId int64) {
 	log.Printf("Uploading artifacts for matchId %d", matchId)
 	uploadFolder(util.LOG_FOLDER, models.ARTIFACT_TYPE_LOG, matchId)
 	uploadFolder(util.REPLAY_FOLDER, models.ARTIFACT_TYPE_REPLAY, matchId)
-	uploadFolder(util.DUMP_FOLDER, models.ARTIFACT_TYPE_DUMP, matchId)
-	uploadFolder(util.DUMP_FOLDER_01, models.ARTIFACT_TYPE_DUMP, matchId)
+	for _, dir := range findDumpDirs() {
+		uploadFolder(dir, models.ARTIFACT_TYPE_DUMP, matchId)
+	}
 	log.Printf("Artifacts for matchId %d successfully uploaded", matchId)
 }
 
