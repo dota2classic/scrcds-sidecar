@@ -14,11 +14,26 @@ import (
 	"github.com/minio/minio-go/v7"
 )
 
+func logDumpDirs() {
+	for _, dir := range []string{"/tmp/dumps", "/tmp/dumps01"} {
+		files, err := os.ReadDir(dir)
+		if err != nil {
+			log.Printf("[dumps] %s: %v", dir, err)
+			continue
+		}
+		for _, f := range files {
+			log.Printf("[dumps] %s/%s", dir, f.Name())
+		}
+	}
+}
+
 func UploadArtifacts(matchId int64) {
+	logDumpDirs()
 	log.Printf("Uploading artifacts for matchId %d", matchId)
 	uploadFolder(util.LOG_FOLDER, models.ARTIFACT_TYPE_LOG, matchId)
 	uploadFolder(util.REPLAY_FOLDER, models.ARTIFACT_TYPE_REPLAY, matchId)
 	uploadFolder(util.DUMP_FOLDER, models.ARTIFACT_TYPE_DUMP, matchId)
+	uploadFolder(util.DUMP_FOLDER_01, models.ARTIFACT_TYPE_DUMP, matchId)
 	log.Printf("Artifacts for matchId %d successfully uploaded", matchId)
 }
 
@@ -72,6 +87,11 @@ func uploadFile(filePath string, artifactType models.ArtifactType, matchId int64
 		filename = fmt.Sprintf("%d_%s", matchId, filepath.Base(filePath))
 		contentType = "application/octet-stream"
 		bucket = "dumps"
+	}
+
+	if bucket == "" || filename == "" {
+		log.Printf("Unknown artifact type %s, skipping %s", artifactType, filePath)
+		return
 	}
 
 	log.Printf("Uploading %s to bucket %s", filename, bucket)
