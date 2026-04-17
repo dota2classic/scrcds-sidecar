@@ -18,6 +18,7 @@ func UploadArtifacts(matchId int64) {
 	log.Printf("Uploading artifacts for matchId %d", matchId)
 	uploadFolder(util.LOG_FOLDER, models.ARTIFACT_TYPE_LOG, matchId)
 	uploadFolder(util.REPLAY_FOLDER, models.ARTIFACT_TYPE_REPLAY, matchId)
+	uploadFolder(util.DUMP_FOLDER, models.ARTIFACT_TYPE_DUMP, matchId)
 	log.Printf("Artifacts for matchId %d successfully uploaded", matchId)
 }
 
@@ -67,6 +68,10 @@ func uploadFile(filePath string, artifactType models.ArtifactType, matchId int64
 		filename = fmt.Sprintf("%d.dem", matchId)
 		contentType = "application/octet-stream"
 		bucket = "replays"
+	} else if artifactType == models.ARTIFACT_TYPE_DUMP {
+		filename = fmt.Sprintf("%d_%s", matchId, filepath.Base(filePath))
+		contentType = "application/octet-stream"
+		bucket = "dumps"
 	}
 
 	log.Printf("Uploading %s to bucket %s", filename, bucket)

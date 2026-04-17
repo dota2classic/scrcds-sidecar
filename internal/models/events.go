@@ -7,6 +7,7 @@ type ArtifactType string
 const (
 	ARTIFACT_TYPE_REPLAY ArtifactType = "REPLAY"
 	ARTIFACT_TYPE_LOG    ArtifactType = "LOG"
+	ARTIFACT_TYPE_DUMP   ArtifactType = "DUMP"
 )
 
 type RunRconCommand struct {
