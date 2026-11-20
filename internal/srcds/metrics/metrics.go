@@ -45,8 +45,9 @@ func Delete() {
 func getGroupLabels() map[string]string {
 	return map[string]string{
 		"jobName": "srcds-sidecar", "host": state.GlobalMatchInfo.Host,
-		"match_id": strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10),
-		"pod_name": os.Getenv("POD_NAME"),
+		// The push client rejects grouping keys already present in sample labels.
+		"match": strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10),
+		"pod":   os.Getenv("POD_NAME"),
 	}
 }
 
