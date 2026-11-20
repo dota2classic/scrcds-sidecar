@@ -22,15 +22,17 @@ func TestConcurrentMatchPushAndDeleteAreIsolated(t *testing.T) {
 	pushgateway = server.URL
 	t.Setenv("POD_NAME", "game-a")
 	state.GlobalMatchInfo = &state.MatchInfo{Host: "same-host", MatchID: 101}
+	FpsGauge.WithLabelValues("game-a", "101", "same-host:1", "1").Set(60)
 	pushMetrics(getGroupLabels())
 	t.Setenv("POD_NAME", "game-b")
 	state.GlobalMatchInfo = &state.MatchInfo{Host: "same-host", MatchID: 102}
+	FpsGauge.WithLabelValues("game-b", "102", "same-host:2", "1").Set(30)
 	pushMetrics(getGroupLabels())
 	Delete()
 	if len(requests) != 3 {
 		t.Fatalf("unexpected requests: %v", requests)
 	}
-	if !strings.Contains(requests[0]+"/", "/match_id/101/") || !strings.Contains(requests[1]+"/", "/match_id/102/") || !strings.HasPrefix(requests[2], "DELETE ") || !strings.Contains(requests[2]+"/", "/match_id/102/") {
+	if !strings.Contains(requests[0]+"/", "/match/101/") || !strings.Contains(requests[1]+"/", "/match/102/") || !strings.HasPrefix(requests[2], "DELETE ") || !strings.Contains(requests[2]+"/", "/match/102/") {
 		t.Fatalf("push/delete crossed match groups: %v", requests)
 	}
 }
