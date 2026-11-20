@@ -23,6 +23,9 @@ func CollectMetrics() error {
 		return err
 	}
 	collectPlayerMetrics()
+	if os.Getenv("FRAME_METRICS_ENABLED") == "true" {
+		collectFrameMetrics()
+	}
 	pushMetrics(getGroupLabels())
 	return nil
 }
@@ -40,7 +43,11 @@ func Delete() {
 }
 
 func getGroupLabels() map[string]string {
-	return map[string]string{"jobName": "srcds-sidecar", "host": state.GlobalMatchInfo.Host}
+	return map[string]string{
+		"jobName": "srcds-sidecar", "host": state.GlobalMatchInfo.Host,
+		"match_id": strconv.FormatInt(state.GlobalMatchInfo.MatchID, 10),
+		"pod_name": os.Getenv("POD_NAME"),
+	}
 }
 
 // PushMetrics Push all metrics to the Pushgateway
@@ -79,6 +86,8 @@ func initMetrics() {
 			InGauge,
 			OutGauge,
 			PlayerCountGauge,
+			FrameWindowGauge, FrameMeanGauge, FrameP95Gauge, FrameP99Gauge,
+			FrameMaxGauge, FrameOverBudgetGauge,
 
 			// Player metrics
 			PingGauge,
